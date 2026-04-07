@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>台灣主動式ETF持股監控</title>
+<style>
+  :root {
+    --bg: #0f1117; --surface: #1a1d26; --surface2: #222535;
+    --border: #2e3347; --text: #e2e8f0; --muted: #8892a4;
+    --blue: #3b82f6; --green: #22c55e; --red: #ef4444;
+    --yellow: #f59e0b; --purple: #a855f7; --teal: #14b8a6;
+    --gold: #f59e0b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif; font-size: 14px; line-height: 1.6; }
+
+  /* ── Layout ── */
+  .container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
+
+  /* ── Header ── */
+  header { background: linear-gradient(135deg, #1e2236 0%, #16192a 100%); border-bottom: 1px solid var(--border); padding: 20px 0; }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  h1 { font-size: 22px; font-weight: 700; color: #fff; }
+  h1 span { color: var(--blue); }
+  .badge { background: var(--green); color: #fff; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; letter-spacing: .5px; }
+  .date-badge { background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 6px 14px; font-size: 13px; color: var(--muted); }
+  .date-badge strong { color: var(--text); }
+
+  /* ── Nav Tabs ── */
+  .nav { display: flex; gap: 6px; padding: 16px 0 0; flex-wrap: wrap; }
+  .nav-btn { background: var(--surface); border: 1px solid var(--border); color: var(--muted); padding: 8px 18px; border-radius: 8px 8px 0 0; cursor: pointer; font-size: 13px; font-weight: 600; transition: all .2s; white-space: nowrap; }
+  .nav-btn:hover { background: var(--surface2); color: var(--text); }
+  .nav-btn.active { background: var(--blue); border-color: var(--blue); color: #fff; }
+  .nav-btn.etf-981 { --c: #3b82f6; }
+  .nav-btn.etf-985 { --c: #1F4E79; }
+  .nav-btn.etf-987 { --c: #a855f7; }
+  .nav-btn.etf-988 { --c: #22c55e; }
+  .nav-btn.etf-992 { --c: #f59e0b; }
+  .nav-btn.active.etf-981 { background: #3b82f6; border-color: #3b82f6; }
+  .nav-btn.active.etf-985 { background: #2563eb; border-color: #2563eb; }
+  .nav-btn.active.etf-987 { background: #a855f7; border-color: #a855f7; }
+  .nav-btn.active.etf-988 { background: #16a34a; border-color: #16a34a; }
+  .nav-btn.active.etf-992 { background: #d97706; border-color: #d97706; }
+
+  /* ── Tab Content ── */
+  .tab-content { display: none; padding: 20px 0 40px; }
+  .tab-content.active { display: block; }
+
+  /* ── Cards ── */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px; margin-bottom: 24px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+  .card-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .8px; margin-bottom: 6px; }
+  .card-value { font-size: 26px; font-weight: 700; line-height: 1; }
+  .card-value.green { color: var(--green); }
+  .card-value.red { color: var(--red); }
+  .card-value.blue { color: var(--blue); }
+  .card-value.yellow { color: var(--yellow); }
+  .card-sub { font-size: 11px; color: var(--muted); margin-top: 4px; }
+
+  /* ── Section Headers ── */
+  .section-title { font-size: 15px; font-weight: 700; color: var(--text); margin: 28px 0 14px; display: flex; align-items: center; gap: 8px; }
+  .section-title::before { content: ''; display: block; width: 4px; height: 18px; border-radius: 2px; background: var(--blue); }
+
+  /* ── Grid 2-col ── */
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media(max-width: 900px) { .grid2 { grid-template-columns: 1fr; } }
+
+  /* ── Holdings Table ── */
+  .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; }
+  th { background: var(--surface2); color: var(--muted); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .6px; padding: 10px 14px; text-align: left; }
+  td { padding: 9px 14px; border-top: 1px solid var(--border); font-size: 13px; }
+  tr:hover td { background: rgba(255,255,255,.02); }
+  .rank { color: var(--muted); font-weight: 700; width: 32px; }
+  .code { font-family: monospace; color: var(--muted); font-size: 12px; }
+  .weight-cell { font-weight: 700; }
+  .weight-bar-wrap { display: flex; align-items: center; gap: 8px; }
+  .weight-bar { height: 6px; border-radius: 3px; background: var(--blue); opacity: .7; min-width: 2px; }
+  .tag { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 4px; margin-left: 6px; }
+  .tag-new { background: rgba(34,197,94,.15); color: var(--green); }
+  .tag-up { background: rgba(245,158,11,.15); color: var(--yellow); }
+  .tag-down { background: rgba(239,68,68,.12); color: var(--red); }
+
+  /* ── Changes Section ── */
+  .changes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media(max-width:700px) { .changes-grid { grid-template-columns: 1fr; } }
+  .change-box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+  .change-box-title { font-size: 12px; font-weight: 700; letter-spacing: .6px; margin-bottom: 12px; display: flex; align-items: center; gap: 6px; }
+  .change-box-title .dot { width: 8px; height: 8px; border-radius: 50%; }
+  .dot-green { background: var(--green); }
+  .dot-red { background: var(--red); }
+  .dot-yellow { background: var(--yellow); }
+  .change-item { display: flex; justify-content: space-between; align-items: center; padding: 7px 0; border-top: 1px solid var(--border); }
+  .change-item:first-child { border-top: none; }
+  .change-name { font-size: 13px; }
+  .change-code { font-size: 11px; color: var(--muted); font-family: monospace; }
+  .change-weight { font-weight: 700; font-size: 13px; }
+  .no-change { color: var(--muted); font-size: 13px; text-align: center; padding: 20px 0; }
+
+  /* ── Analysis Report ── */
+  .analysis-box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; line-height: 1.9; }
+  .analysis-box h3 { font-size: 14px; font-weight: 700; color: var(--blue); margin: 20px 0 8px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  .analysis-box h3:first-child { margin-top: 0; }
+  .analysis-box h4 { font-size: 13px; font-weight: 700; color: var(--green); margin: 14px 0 6px; }
+  .analysis-box p { color: var(--text); font-size: 13.5px; margin-bottom: 10px; }
+  .analysis-box ul { margin-left: 20px; margin-bottom: 10px; }
+  .analysis-box li { font-size: 13.5px; margin-bottom: 6px; }
+  .bullet-yellow::marker { color: var(--yellow); }
+  .meta-note { background: rgba(168,85,247,.08); border: 1px solid rgba(168,85,247,.25); border-radius: 8px; padding: 12px 16px; font-size: 12px; color: #c4a9f5; margin-top: 16px; }
+
+  /* ── Overview Tab ── */
+  .etf-overview-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-bottom: 24px; }
+  .etf-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .etf-card-header { padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; }
+  .etf-card-code { font-size: 15px; font-weight: 800; color: #fff; }
+  .etf-card-name { font-size: 11px; color: rgba(255,255,255,.7); margin-top: 2px; }
+  .etf-card-body { padding: 12px 0; }
+  .etf-mini-row { display: flex; justify-content: space-between; align-items: center; padding: 5px 16px; }
+  .etf-mini-row:hover { background: rgba(255,255,255,.03); }
+  .etf-mini-rank { color: var(--muted); font-size: 11px; width: 20px; }
+  .etf-mini-name { font-size: 12px; flex: 1; }
+  .etf-mini-w { font-size: 12px; font-weight: 700; }
+
+  /* ETF Color Themes */
+  .theme-981 .etf-card-header { background: linear-gradient(135deg, #1e40af, #3b82f6); }
+  .theme-981 .weight-bar { background: #3b82f6; }
+  .theme-985 .etf-card-header { background: linear-gradient(135deg, #1e3a5f, #2563eb); }
+  .theme-985 .weight-bar { background: #2563eb; }
+  .theme-987 .etf-card-header { background: linear-gradient(135deg, #6b21a8, #a855f7); }
+  .theme-987 .weight-bar { background: #a855f7; }
+  .theme-988 .etf-card-header { background: linear-gradient(135deg, #14532d, #16a34a); }
+  .theme-988 .weight-bar { background: #16a34a; }
+  .theme-992 .etf-card-header { background: linear-gradient(135deg, #92400e, #d97706); }
+  .theme-992 .weight-bar { background: #d97706; }
+
+  /* ── Common Stocks Section ── */
+  .common-table td:first-child { font-weight: 700; }
+  .etf-dot { display: inline-block; width: 26px; height: 18px; border-radius: 4px; font-size: 10px; font-weight: 700; color: #fff; text-align: center; line-height: 18px; }
+  .d-981 { background: #3b82f6; }
+  .d-985 { background: #2563eb; }
+  .d-987 { background: #a855f7; }
+  .d-988 { background: #16a34a; }
+  .d-992 { background: #d97706; }
+
+  /* ── Scrollbar ── */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+  /* ── Footer ── */
+  footer { border-top: 1px solid var(--border); padding: 20px 0; text-align: center; color: var(--muted); font-size: 12px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <div>
+        <h1>🔍 台灣<span>主動式ETF</span>持股監控</h1>
+        <div style="font-size:12px;color:var(--muted);margin-top:4px;">00981A · 00985A · 00987A · 00988A · 00992A</div>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+        <div class="badge">AUTO UPDATED</div>
+        <div class="date-badge">分析日期：<strong>2026/04/07</strong></div>
+        <div class="date-badge">前期：<strong>2026/04/02</strong></div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <button class="nav-btn active" onclick="switchTab('overview')">📊 總覽</button>
+      <button class="nav-btn etf-981" onclick="switchTab('t981')">00981A 統一台股增長</button>
+      <button class="nav-btn etf-985" onclick="switchTab('t985')">00985A 野村增強50</button>
+      <button class="nav-btn etf-987" onclick="switchTab('t987')">00987A 台新優勢成長</button>
+      <button class="nav-btn etf-988" onclick="switchTab('t988')">00988A 統一全球創新</button>
+      <button class="nav-btn etf-992" onclick="switchTab('t992')">00992A 群益科技創新</button>
+      <button class="nav-btn" onclick="switchTab('analysis')" style="margin-left:auto;">📝 今日分析</button>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+<!-- ═══════════════ OVERVIEW TAB ═══════════════ -->
+<div id="tab-overview" class="tab-content active">
+  <div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr));margin-top:20px;">
+    <div class="card"><div class="card-label">監控ETF</div><div class="card-value blue">5</div><div class="card-sub">檔主動式ETF</div></div>
+    <div class="card"><div class="card-label">今日新增</div><div class="card-value green">35</div><div class="card-sub">跨ETF合計持股</div></div>
+    <div class="card"><div class="card-label">今日移除</div><div class="card-value red">25</div><div class="card-sub">跨ETF合計持股</div></div>
+    <div class="card"><div class="card-label">00981A</div><div class="card-value blue">38</div><div class="card-sub">首次記錄</div></div>
+    <div class="card"><div class="card-label">00985A</div><div class="card-value">46</div><div class="card-sub">+5 / -8 持股</div></div>
+    <div class="card"><div class="card-label">00987A</div><div class="card-value blue">26</div><div class="card-sub">首次記錄</div></div>
+    <div class="card"><div class="card-label">00988A</div><div class="card-value">36</div><div class="card-sub">+10 / -5 持股</div></div>
+    <div class="card"><div class="card-label">00992A</div><div class="card-value">50</div><div class="card-sub">+19 / -12 持股</div></div>
+  </div>
+
+  <div class="section-title">各ETF前十大持股</div>
+  <div class="etf-overview-grid">
+
+    <!-- 00981A -->
+    <div class="etf-card theme-981">
+      <div class="etf-card-header">
+        <div><div class="etf-card-code">00981A</div><div class="etf-card-name">主動統一台股增長｜統一投信</div></div>
+        <div style="font-size:11px;color:rgba(255,255,255,.6);">38檔 · 首次</div>
+      </div>
+      <div class="etf-card-body">
+        <script>
+          var top981=[['台積電','2330',9.49],['台光電','2383',7.62],['台達電','2308',6.24],['奇鋐','3017',5.78],['貿聯-KY','3665',5.71],['金像電','2368',5.76],['智邦','2345',5.54],['欣興','3037',4.48],['南電','8046',4.43],['信驊','5274',3.43]];
+          top981.sort((a,b)=>b[2]-a[2]);
+          top981.forEach(function(s,i){document.write('<div class="etf-mini-row"><span class="etf-mini-rank">'+(i+1)+'</span><div class="etf-mini-name">'+s[0]+'<span class="code" style="margin-left:6px;">'+s[1]+'</span></div><span class="etf-mini-w" style="color:#60a5fa;">'+s[2]+'%</span></div>');});
+        </script>
+      </div>
+    </div>
+
+    <!-- 00985A -->
+    <div class="etf-card theme-985">
+      <div class="etf-card-header">
+        <div><div class="etf-card-code">00985A</div><div class="etf-card-name">野村臺灣增強50｜野村投信</div></div>
+        <div style="font-size:11px;color:rgba(255,255,255,.6);">46檔 · +5/-8</div>
+      </div>
+      <div class="etf-card-body">
+        <script>
+          var top985=[['台積電','2330',24.84],['研華','2395',5.48],['中華電信','2412',4.32],['指數期貨','202604TX',4.11],['鈊象電子','3293',3.49],['統一企業','1216',3.47],['台達電','2308',2.89],['遠傳電信','4904',2.71],['富邦金控','2881',2.14],['新應材','4749',1.91]];
+          top985.forEach(function(s,i){document.write('<div class="etf-mini-row"><span class="etf-mini-rank">'+(i+1)+'</span><div class="etf-mini-name">'+s[0]+'<span class="code" style="margin-left:6px;">'+s[1]+'</span></div><span class="etf-mini-w" style="color:#60a5fa;">'+s[2]+'%</span></div>');});
+        </script>
+      </div>
+    </div>
+
+    <!-- 00987A -->
+    <div class="etf-card theme-987">
+      <div class="etf-card-header">
+        <div><div class="etf-card-code">00987A</div><div class="etf-card-name">台新優勢成長｜台新投信</div></div>
+        <div style="font-size:11px;color:rgba(255,255,255,.6);">26檔 · 首次</div>
+      </div>
+      <div class="etf-card-body">
+        <script>
+          var top987=[['台積電','2330',7.77],['奇鋐','3017',6.33],['旺矽','6223',6.22],['台燿','6274',6.02],['貿聯-KY','3665',5.62],['群聯','8299',4.25],['台光電','2383',4.24],['智邦','2345',3.99],['健策','3653',3.98],['上詮','3363',3.60]];
+          top987.forEach(function(s,i){document.write('<div class="etf-mini-row"><span class="etf-mini-rank">'+(i+1)+'</span><div class="etf-mini-name">'+s[0]+'<span class="code" style="margin-left:6px;">'+s[1]+'</span></div><span class="etf-mini-w" style="color:#d8b4fe;">'+s[2]+'%</span></div>');});
+        </script>
+      </div>
+    </div>
+
+    <!-- 00988A -->
+    <div class="etf-card theme-988">
+      <div class="etf-card-header">
+        <div><div class="etf-card-code">00988A</div><div class="etf-card-name">統一全球創新｜統一投信</div></div>
+        <div style="font-size:11px;color:rgba(255,255,255,.6);">36檔 · +10/-5</div>
+      </div>
+      <div class="etf-card-body">
+        <script>
+          var top988=[['Lumentum','LITE US',9.42],['SanDisk','SNDK US',5.09],['Micron','MU US',4.59],['MEIKO Elec','6787 JP',4.12],['Corning','GLW US',4.07],['Ciena','CIEN US',3.88],['GE Vernova','GEV US',3.36],['奇鋐','3017',3.17],['台光電','2383',2.86],['欣興','3037',2.77]];
+          top988.forEach(function(s,i){document.write('<div class="etf-mini-row"><span class="etf-mini-rank">'+(i+1)+'</span><div class="etf-mini-name">'+s[0]+'<span class="code" style="margin-left:6px;">'+s[1]+'</span></div><span class="etf-mini-w" style="color:#4ade80;">'+s[2]+'%</span></div>');});
+        </script>
+      </div>
+    </div>
+
+    <!-- 00992A -->
+    <div class="etf-card theme-992">
+      <div class="etf-card-header">
+        <div><div class="etf-card-code">00992A</div><div class="etf-card-name">群益台灣科技創新｜群益投信</div></div>
+        <div style="font-size:11px;color:rgba(255,255,255,.6);">50檔 · +19/-12</div>
+      </div>
+      <div class="etf-card-body">
+        <script>
+          var top992=[['台積電','2330',7.00],['台光電','2383',4.35],['智邦','2345',4.01],['穎崴','6515',3.68],['旺矽','6223',3.59],['奇鋐','3017',3.51],['欣興','3037',3.36],['波若威','3163',3.30],['穩懋','3105',3.26],['嘉澤','3533',3.25]];
+          top992.forEach(function(s,i){document.write('<div class="etf-mini-row"><span class="etf-mini-rank">'+(i+1)+'</span><div class="etf-mini-name">'+s[0]+'<span class="code" style="margin-left:6px;">'+s[1]+'</span></div><span class="etf-mini-w" style="color:#fbbf24;">'+s[2]+'%</span></div>');});
+        </script>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Common Stocks -->
+  <div class="section-title">多ETF共同持股</div>
+  <div class="table-wrap">
+    <table class="common-table">
+      <thead><tr><th>股票</th><th>代號</th><th>出現於</th><th>00981A</th><th>00985A</th><th>00987A</th><th>00988A</th><th>00992A</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>台積電</td><td class="code">2330</td>
+          <td><span class="etf-dot d-981">981</span> <span class="etf-dot d-985">985</span> <span class="etf-dot d-987">987</span> <span class="etf-dot d-988">988</span> <span class="etf-dot d-992">992</span></td>
+          <td>9.49%</td><td>24.84%</td><td>7.77%</td><td>2.28%</td><td>7.00%</td>
+        </tr>
+        <tr>
+          <td>奇鋐</td><td class="code">3017</td>
+          <td><span class="etf-dot d-981">981</span> <span class="etf-dot d-987">987</span> <span class="etf-dot d-988">988</span> <span class="etf-dot d-992">992</span></td>
+          <td>5.78%</td><td>1.04%</td><td>6.33%</td><td>3.17%</td><td>3.51%</td>
+        </tr>
+        <tr>
+          <td>台光電</td><td class="code">2383</td>
+          <td><span class="etf-dot d-981">981</span> <span class="etf-dot d-985">985</span> <span class="etf-dot d-987">987</span> <span class="etf-dot d-988">988</span> <span class="etf-dot d-992">992</span></td>
+          <td>7.62%</td><td>1.27%</td><td>4.24%</td><td>2.86%</td><td>4.35%</td>
+        </tr>
+        <tr>
+          <td>智邦</td><td class="code">2345</td>
+          <td><span class="etf-dot d-981">981</span> <span class="etf-dot d-985">985</span> <span class="etf-dot d-987">987</span> <span class="etf-dot d-992">992</span></td>
+          <td>5.54%</td><td>1.52%</td><td>3.99%</td><td>—</td><td>4.01%</td>
+        </tr>
+        <tr>
+          <td>欣興</td><td class="code">3037</td>
+          <td><span class="etf-dot d-981">981</span> <span class="etf-dot d-988">988</span> <span class="etf-dot d-992">992</span></td>
+          <td>4.48%</td><td>0.36%</td><td>—</td><td>2.77%</td><td>3.36%</td>
+        </tr>
+        <tr>
+          <td>台達電</td><td class="code">2308</td>
+          <td><span class="etf-dot d-981">981</span> <span class="etf-dot d-985">985</span> <span class="etf-dot d-988">988</span> <span class="etf-dot d-992">992</span></td>
+          <td>6.24%</td><td>2.89%</td><td>4.54%</td><td>2.62%</td><td>0.96%</td>
+        </tr>
+        <tr>
+          <td>旺矽</td><td class="code">6223</td>
+          <td><span class="etf-dot d-987">987</span> <span class="etf-dot d-992">992</span></td>
+          <td>—</td><td>1.49%</td><td>6.22%</td><td>—</td><td>3.59%</td>
+        </tr>
+        <tr>
+          <td>貿聯-KY</td><td class="code">3665</td>
+          <td><span class="etf-dot d-981">981</span> <span class="etf-dot d-985">985</span> <span class="etf-dot d-987">987</span></td>
+          <td>5.71%</td><td>1.21%</td><td>5.62%</td><td>—</td><td>0.93%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════ 00981A TAB ═══════════════ -->
+<div id="tab-t981" class="tab-content">
+  <div class="cards" style="margin-top:20px;">
+    <div class="card"><div class="card-label">總持股</div><div class="card-value blue">38</div><div class="card-sub">首次記錄</div></div>
+    <div class="card"><div class="card-label">新增持股</div><div class="card-value green">38</div><div class="card-sub">全部為首次</div></div>
+    <div class="card"><div class="card-label">最大持股</div><div class="card-value">9.49%</div><div class="card-sub">台積電 2330</div></div>
+    <div class="card"><div class="card-label">投信</div><div class="card-value" style="font-size:18px;">統一</div><div class="card-sub">統一投信</div></div>
+  </div>
+
+  <div class="section-title">完整持股清單（依比重排序）</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>#</th><th>股票名稱</th><th>代號</th><th>今日比重</th><th>比重視覺化</th><th>狀態</th></tr></thead>
+      <tbody id="tbody-981"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════ 00985A TAB ═══════════════ -->
+<div id="tab-t985" class="tab-content">
+  <div class="cards" style="margin-top:20px;">
+    <div class="card"><div class="card-label">總持股</div><div class="card-value blue">46</div><div class="card-sub">前期49檔</div></div>
+    <div class="card"><div class="card-label">新增</div><div class="card-value green">5</div><div class="card-sub">文曄/富世達等</div></div>
+    <div class="card"><div class="card-label">移除</div><div class="card-value red">8</div><div class="card-sub">致茂/AES-KY等</div></div>
+    <div class="card"><div class="card-label">最大持股</div><div class="card-value">24.84%</div><div class="card-sub">台積電 2330</div></div>
+  </div>
+
+  <div class="grid2">
+    <div>
+      <div class="section-title">今日新增持股</div>
+      <div class="change-box">
+        <div id="new-985"></div>
+      </div>
+    </div>
+    <div>
+      <div class="section-title">今日移除持股</div>
+      <div class="change-box">
+        <div id="removed-985"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">完整持股清單</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>#</th><th>股票名稱</th><th>代號</th><th>今日比重</th><th>前期比重</th><th>變化</th><th>狀態</th></tr></thead>
+      <tbody id="tbody-985"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════ 00987A TAB ═══════════════ -->
+<div id="tab-t987" class="tab-content">
+  <div class="cards" style="margin-top:20px;">
+    <div class="card"><div class="card-label">總持股</div><div class="card-value" style="color:#a855f7;">26</div><div class="card-sub">首次記錄</div></div>
+    <div class="card"><div class="card-label">投信</div><div class="card-value" style="font-size:18px;color:#a855f7;">台新</div><div class="card-sub">台新投信</div></div>
+    <div class="card"><div class="card-label">最大持股</div><div class="card-value">7.77%</div><div class="card-sub">台積電 2330</div></div>
+    <div class="card"><div class="card-label">聚焦產業</div><div class="card-value" style="font-size:16px;">PCB</div><div class="card-sub">電路板 / 半導體</div></div>
+  </div>
+
+  <div class="section-title">完整持股清單（依比重排序）</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>#</th><th>股票名稱</th><th>代號</th><th>今日比重</th><th>比重視覺化</th><th>狀態</th></tr></thead>
+      <tbody id="tbody-987"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════ 00988A TAB ═══════════════ -->
+<div id="tab-t988" class="tab-content">
+  <div class="cards" style="margin-top:20px;">
+    <div class="card"><div class="card-label">總持股</div><div class="card-value blue">36</div><div class="card-sub">前期31檔</div></div>
+    <div class="card"><div class="card-label">新增</div><div class="card-value green">10</div><div class="card-sub">NVDA/KIOXIA等</div></div>
+    <div class="card"><div class="card-label">移除</div><div class="card-value red">5</div><div class="card-sub">古河電工等</div></div>
+    <div class="card"><div class="card-label">最大持股</div><div class="card-value">9.42%</div><div class="card-sub">Lumentum LITE US</div></div>
+  </div>
+
+  <div class="grid2">
+    <div>
+      <div class="section-title">今日新增持股</div>
+      <div class="change-box">
+        <div id="new-988"></div>
+      </div>
+    </div>
+    <div>
+      <div class="section-title">今日移除持股</div>
+      <div class="change-box">
+        <div id="removed-988"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">完整持股清單</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>#</th><th>股票名稱</th><th>代號</th><th>今日比重</th><th>前期比重</th><th>變化</th><th>狀態</th></tr></thead>
+      <tbody id="tbody-988"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════ 00992A TAB ═══════════════ -->
+<div id="tab-t992" class="tab-content">
+  <div class="cards" style="margin-top:20px;">
+    <div class="card"><div class="card-label">總持股</div><div class="card-value" style="color:var(--yellow);">50</div><div class="card-sub">前期43檔</div></div>
+    <div class="card"><div class="card-label">新增</div><div class="card-value green">19</div><div class="card-sub">大規模換股</div></div>
+    <div class="card"><div class="card-label">移除</div><div class="card-value red">12</div><div class="card-sub">聯發科/竑騰等</div></div>
+    <div class="card"><div class="card-label">最大持股</div><div class="card-value">7.00%</div><div class="card-sub">台積電 2330</div></div>
+  </div>
+
+  <div class="grid2">
+    <div>
+      <div class="section-title">今日新增持股</div>
+      <div class="change-box" style="max-height:320px;overflow-y:auto;">
+        <div id="new-992"></div>
+      </div>
+    </div>
+    <div>
+      <div class="section-title">今日移除持股</div>
+      <div class="change-box">
+        <div id="removed-992"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">完整持股清單</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>#</th><th>股票名稱</th><th>代號</th><th>今日比重</th><th>前期比重</th><th>變化</th><th>狀態</th></tr></thead>
+      <tbody id="tbody-992"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════ ANALYSIS TAB ═══════════════ -->
+<div id="tab-analysis" class="tab-content">
+  <div style="margin-top:20px;" class="analysis-box">
+
+    <h3>▌ 整體概況</h3>
+    <p>2026年4月7日，四檔主動式ETF（不含兩檔首次記錄的00981A與00987A）合計新增持股35檔，移除持股25檔，整體異動規模較大，尤其群益00992A出現明顯換股動作。整體操作方向分化：00985A與00988A積極輪替，00992A則呈現較大幅度的倉位重組。</p>
+
+    <h3>▌ 各ETF主要變動分析</h3>
+
+    <h4>【00981A 主動統一台股增長主動式ETF】（新加入）</h4>
+    <p>本日為首次記錄，無前日比較基準。00981A持股共38檔，以台灣本土科技股為主，前五大持股為台積電（9.49%）、台光電（7.62%）、台達電（6.24%）、奇鋐（5.78%）、金像電（5.76%）。持股高度集中於AI供應鏈相關族群，包括PCB材料（台光電、台燿）、散熱（奇鋐）、電源（台達電）等，呈現明顯的AI伺服器主題。</p>
+
+    <h4>【00985A 野村臺灣增強50主動式ETF】</h4>
+    <p>本日新增文曄科技（3036，0.09%）、富世達（6805，0.29%）、鴻勁精密（7769，0.10%）、穎崴科技（6515，0.08%）及台灣加權指數期貨（202604TX，4.11%）等五檔，多為小比重建倉。移除持股包括致茂電子（2360，1.85%）、AES-KY（6781，1.17%）、金像電子（2368，0.98%）、勤誠興業（8210，0.93%）、穩懋半導體（3105，0.47%）等共8檔，換股力道在調整ETF中最為明顯。台積電比重進一步上調至24.84%，期貨部位新增至4.11%，研華以5.48%維持第二大持股。</p>
+
+    <h4>【00987A 台新優勢成長主動式ETF】（新加入）</h4>
+    <p>本日為首次記錄，無前日比較基準。00987A共26檔持股，持股數量較其他ETF少，以精選集中型策略為主。前五大持股分別為台積電（7.77%）、奇鋐（6.33%）、旺矽（6.22%）、台燿（6.02%）、貿聯-KY（5.62%），高度集中在AI散熱、PCB/載板材料及高速傳輸連接器。旺矽與台燿的高比重顯示此ETF積極布局半導體材料測試及PCB上游材料。</p>
+
+    <h4>【00988A 統一全球創新主動式ETF】</h4>
+    <p>本日新增10檔海外股票，包括KIOXIA（日本，2.31%）、NVIDIA（1.52%）、Western Digital（1.48%）、HOCHTIEF（德國建築，2.14%）、Samsung Electro-Mechanics（韓國，1.05%）、Alphabet（0.94%）等，涵蓋AI半導體、儲存、基礎建設題材。Lumentum比重大幅提升至9.42%（前期8.63%），CIENA上升至3.88%，Corning升至4.07%，光通訊主題持續強化。移除古河電工（日本，3.33%）、Siemens Energy（德國，2.99%）、三井金屬（2.63%）等共5檔。</p>
+
+    <h4>【00992A 群益台灣科技創新主動式ETF】</h4>
+    <p>本日大規模換股，新增19檔（含世界先進、金居、一詮、文曄、旺宏、景碩、環宇KY、弘塑、聯亞等）、移除12檔（竑騰2.28%、聯發科1.73%、健鼎1.69%、技嘉1.66%等），呈現最大異動規模。光紅建聖大幅減碼至1.39%（前2.98%），華邦電重度減碼至0.28%（前1.81%），顯示對部分半導體股偏謹慎。新進的旺宏、文曄等顯示對記憶體復甦及電子通路的新興興趣。</p>
+
+    <h3>▌ 跨ETF共同動向</h3>
+    <p>台積電（2330）在00981A、00985A、00987A、00992A中均為重要持股，00988A亦有持倉，五檔ETF均有布局，顯示投信對台積電領先地位的高度共識。奇鋐（3017）在四檔台股ETF中均有顯著比重（3-6%），散熱題材持續受到多家投信關注。台光電（2383）同樣出現在五檔ETF中，AI PCB材料為今日最廣泛受青睞的個股主題。統一00988A的光通訊持股（Lumentum、CIENA、Corning、VIAV）合計超過23%，光纖/光模組族群為全球主動ETF最重要布局方向之一。</p>
+
+    <h3>▌ 今日重點觀察</h3>
+    <ul>
+      <li class="bullet-yellow">台積電為5檔ETF唯一共同核心持股，比重介於2.28%（00988A）至24.84%（00985A），地位無可撼動。</li>
+      <li class="bullet-yellow">統一00988A大幅換股（+10/-5），新增NVIDIA與Alphabet，積極布局AI大科技，光通訊Lumentum比重升至9.42%創新高。</li>
+      <li class="bullet-yellow">群益00992A單日換股規模最大（+19/-12），移除聯發科，新增旺宏、文曄、弘塑等，主題從原有均衡持股轉向PCB材料與特殊記憶體聚焦。</li>
+      <li class="bullet-yellow">新加入監控的00987A（台新優勢成長）持股高度集中（26檔），前五大佔比達32%，屬精選集中型策略，旺矽與台燿雙雙進入前五大。</li>
+      <li class="bullet-yellow">台光電（2383）是今日唯一出現於5檔ETF的台股，AI PCB材料主題在台灣主動投信界具有高度共識。</li>
+    </ul>
+
+    <div class="meta-note">
+      ⚠️ 本日新加入監控名單：<strong>00981A 主動統一台股增長ETF</strong>（取代00980A）及 <strong>00987A 台新優勢成長主動式ETF</strong>。00981A與00987A為首次記錄，無前日比較基準。資料來源：pocket.tw，持股資料日期2026/04/07。前期資料為2026/04/02，相差3個交易日。本分析僅描述持股結構事實，不構成任何投資建議。
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <div class="container">
+    台灣主動式ETF持股監控 · 資料來源：pocket.tw · 資料日期：2026/04/07 · 每工作日8:00自動更新
+  </div>
+</footer>
+
+<script>
+// ── Data ──────────────────────────────────────────────────────────────────────
+var data = {
+  '981': {
+    stocks: [
+      ['2330','台積電',9.49,null],['2383','台光電',7.62,null],['2308','台達電',6.24,null],
+      ['3017','奇鋐',5.78,null],['3665','貿聯-KY',5.71,null],['2368','金像電',5.76,null],
+      ['2345','智邦',5.54,null],['3037','欣興',4.48,null],['8046','南電',4.43,null],
+      ['5274','信驊',3.43,null],['2327','國巨',2.67,null],['3711','日月光投控',2.04,null],
+      ['6510','精測',1.89,null],['6515','穎崴',1.79,null],['6274','台燿',1.58,null],
+      ['1303','南亞',1.49,null],['3211','順達',1.37,null],['3189','景碩',0.90,null],
+      ['8358','金居',0.45,null],['8996','高力',0.44,null],['3264','欣銓',0.42,null],
+      ['1326','台化',0.39,null],['2404','漢唐',0.48,null],['6187','萬潤',0.34,null],
+      ['3443','創意',0.59,null],['3661','世芯-KY',0.59,null],['5347','世界',0.67,null],
+      ['2454','聯發科',0.70,null],['8210','勤誠',0.18,null],['6669','緯穎',0.24,null],
+      ['3324','雙鴻',0.14,null],['3583','辛耘',0.09,null],['2002','中鋼',0.09,null],
+      ['6191','精成科',0.29,null],['3217','優群',0.07,null],['6147','頎邦',0.47,null],
+      ['3008','大立光',0.02,null]
+    ],
+    new_stocks: [],
+    removed: [],
+    weight_up: [],
+    weight_down: []
+  },
+  '985': {
+    stocks: [
+      ['2330','台灣積體電路製造',24.84,24.51],['2395','研華',5.48,5.58],['2412','中華電信',4.32,4.38],
+      ['202604TX','台灣加權指數期貨',4.11,null],['3293','鈊象電子',3.49,3.49],['1216','統一企業',3.47,3.47],
+      ['2308','台達電子工業',2.89,2.76],['4904','遠傳電信',2.71,2.71],['2881','富邦金控',2.14,2.14],
+      ['4749','新應材',1.91,1.91],['6789','采鈺科技',1.68,1.62],['3533','嘉澤端子',1.60,1.60],
+      ['6442','光紅建聖',1.42,1.42],['2454','聯發科',1.37,1.37],['6488','環球晶圓',1.31,1.31],
+      ['2317','鴻海',1.28,1.28],['2383','台光電',1.27,null],['6223','旺矽',1.49,null],
+      ['1477','聚陽實業',1.13,1.13],['3264','欣銓科技',1.13,1.32],['6239','力成科技',1.07,1.14],
+      ['3661','世芯電子',1.06,null],['3711','日月光投控',1.04,1.04],['3017','奇鋐',1.04,null],
+      ['6669','緯穎',0.97,null],['6805','富世達',0.29,null],['3653','健策',0.94,null],
+      ['2059','川湖',0.72,null],['6415','矽力杰',0.81,null],['1519','華城電機',0.64,null],
+      ['2344','華邦電',0.68,null],['2881富邦','富邦金控',2.14,null],['3529','力旺電子',0.43,null],
+      ['1605','華新麗華',0.76,null],['6274','台燿',0.11,null],['2891','中信金',1.08,null],
+      ['2449','京元電子',0.09,null],['3036','文曄',0.09,null],['2408','南亞科',0.09,null],
+      ['7769','鴻勁精密',0.10,null],['2327','國巨',0.10,null],['6515','穎崴',0.08,null],
+      ['2345','智邦',1.52,1.52],['3665','貿聯-KY',1.21,1.21],['3037','欣興',0.36,null],['2382','廣達',1.03,null]
+    ],
+    new_stocks: [['3036','文曄科技',0.09],['6805','富世達',0.29],['7769','鴻勁精密',0.10],['6515','穎崴科技',0.08],['202604TX','指數期貨',4.11]],
+    removed: [['2360','致茂電子',1.85],['6781','AES-KY',1.17],['2368','金像電子',0.98],['8210','勤誠興業',0.93],['3105','穩懋半導體',0.47],['2376','技嘉科技',0.10],['6510','精測',0.10],['2548','華固建設',0.10]],
+    weight_up: [['2330','台積電',24.51,24.84,0.33],['2308','台達電',2.76,2.89,0.13],['6789','采鈺科技',1.62,1.68,0.06]],
+    weight_down: [['2395','研華',5.58,5.48,-0.10],['6239','力成科技',1.14,1.07,-0.07],['2412','中華電信',4.38,4.32,-0.06]]
+  },
+  '987': {
+    stocks: [
+      ['2330','台積電',7.77,null],['3017','奇鋐',6.33,null],['6223','旺矽',6.22,null],
+      ['6274','台燿',6.02,null],['3665','貿聯-KY',5.62,null],['8299','群聯',4.25,null],
+      ['2383','台光電',4.24,null],['2345','智邦',3.99,null],['3653','健策',3.98,null],
+      ['3363','上詮',3.60,null],['6683','雍智科技',3.57,null],['3491','昇達科',3.38,null],
+      ['6805','富世達',3.16,null],['2308','台達電',4.54,null],['2368','金像電',3.22,null],
+      ['3037','欣興',3.08,null],['2337','旺宏',2.73,null],['2360','致茂',2.12,null],
+      ['2455','全新',2.12,null],['6739','竹陞科技',1.75,null],['6510','精測',1.76,null],
+      ['6442','光聖',1.60,null],['7769','鴻勁',1.41,null],['6770','力積電',0.69,null],
+      ['8358','金居',2.88,null],['2330台積','台積電',7.77,null]
+    ],
+    new_stocks: [],
+    removed: [],
+    weight_up: [],
+    weight_down: []
+  },
+  '988': {
+    stocks: [
+      ['LITE US','Lumentum Holdings',9.42,8.63],['SNDK US','SanDisk Corp',5.09,4.97],
+      ['MU US','Micron Technology',4.59,4.57],['6787 JP','MEIKO Electronics',4.12,4.45],
+      ['GLW US','Corning Inc',4.07,3.88],['CIEN US','Ciena Corp',3.88,3.56],
+      ['GEV US','GE Vernova',3.36,null],['3017','奇鋐',3.17,null],
+      ['2383','台光電',2.86,null],['3037','欣興',2.77,2.48],
+      ['2330','台積電',2.28,null],['005930 KS','Samsung Electronics',2.51,2.69],
+      ['285A JP','KIOXIA Holdings',2.31,null],['HOT GY','HOCHTIEF AG',2.14,null],
+      ['5274','信驊',2.00,null],['TER US','Teradyne',1.98,2.14],
+      ['FSLY US','Fastly Inc',1.91,null],['NVDA US','NVIDIA',1.52,null],
+      ['WDC US','Western Digital',1.48,null],['COHR US','Coherent Inc',2.65,2.52],
+      ['5803 JP','Fujikura Ltd',1.29,null],['AIXA GY','Aixtron SE',1.36,null],
+      ['2360','致茂',1.31,null],['2308','台達電',2.62,2.68],
+      ['009150 KS','Samsung Electro-Mech',1.05,null],['403870 KS','HPSP Co',0.61,0.67],
+      ['BKSY US','BlackSky Technology',0.74,null],['VIAV US','Viavi Solutions',0.84,null],
+      ['6869 HK','Yangtze Optical Fibre',0.80,null],['GOOGL US','Alphabet Inc',0.94,null],
+      ['KEYS US','Keysight Technologies',0.66,null],['EXENS FP','Exosens SAS',0.63,null],
+      ['SMHN GY','SUSS MicroTec SE',0.33,null],['268A JP','Rigaku Holdings',0.98,null],
+      ['7769','鴻勁精密',1.09,null],['6961 JP','Enplas Corp',0.34,null]
+    ],
+    new_stocks: [['285A JP','KIOXIA Holdings',2.31],['NVDA US','NVIDIA',1.52],['WDC US','Western Digital',1.48],['HOT GY','HOCHTIEF AG',2.14],['009150 KS','Samsung Electro-Mech',1.05],['GOOGL US','Alphabet Inc',0.94],['KEYS US','Keysight',0.66],['6961 JP','Enplas Corp',0.34],['EXENS FP','Exosens SAS',0.63],['SMHN GY','SUSS MicroTec',0.33]],
+    removed: [['5801 JP','古河電工',3.33],['6515','穎崴科技',3.09],['ENR GY','Siemens Energy',2.99],['5706 JP','三井金屬',2.63],['2059','川湖科技',1.09]],
+    weight_up: [['LITE US','Lumentum',8.63,9.42,0.79],['CIEN US','Ciena',3.56,3.88,0.32],['3037','欣興',2.48,2.77,0.29],['GLW US','Corning',3.88,4.07,0.19],['COHR US','Coherent',2.52,2.65,0.13]],
+    weight_down: [['6787 JP','MEIKO Electronics',4.45,4.12,-0.33],['005930 KS','Samsung Elec',2.69,2.51,-0.18],['TER US','Teradyne',2.14,1.98,-0.16]]
+  },
+  '992': {
+    stocks: [
+      ['2330','台積電',7.00,7.02],['2383','台光電',4.35,4.33],['2345','智邦',4.01,4.06],
+      ['6515','穎崴',3.68,null],['6223','旺矽',3.59,null],['3017','奇鋐',3.51,null],
+      ['3037','欣興',3.36,3.19],['3163','波若威',3.30,3.10],['3105','穩懋',3.26,3.11],
+      ['3533','嘉澤',3.25,3.25],['8299','群聯',3.18,null],['3105穩','穩懋半導體',3.26,null],
+      ['2360','致茂',2.71,2.71],['8046','南電',2.50,2.35],['6669','緯穎',2.31,null],
+      ['6510','精測',2.21,null],['6805','富世達',1.89,1.53],['7769','鴻勁精密',2.66,null],
+      ['4749','新應材',1.99,null],['2059','川湖',2.83,null],['8358','金居',1.97,null],
+      ['3081','聯亞',1.73,null],['3653','健策',1.76,null],['6584','南俊國際',1.58,null],
+      ['3665','貿聯-KY',0.93,null],['6442','光紅建聖',1.39,2.98],['5347','世界',1.29,null],
+      ['3131','弘塑',1.28,null],['3189','景碩',0.77,null],['6274','台燿',0.73,1.96],
+      ['3443','創意',0.73,1.23],['3661','世芯-KY',0.75,1.88],['2449','京元電子',0.21,1.57],
+      ['2344','華邦電',0.28,1.81],['5289','宜鼎',0.41,null],['3260','威剛',0.39,null],
+      ['3324','雙鴻',0.40,null],['2337','旺宏',0.43,null],['6781','AES-KY',0.89,null],
+      ['3491','昇達科',0.54,null],['2368','金像電',0.98,null],['2486','一詮',0.83,null],
+      ['3529','力旺',0.87,null],['3036','文曄',1.01,null],['8021','尖點',0.71,null],
+      ['4991','環宇-KY',1.12,null],['6531','愛普',0.81,null],['5274','信驊',1.55,null],
+      ['2408','南亞科',2.34,null],['2308','台達電',0.96,1.16]
+    ],
+    new_stocks: [['5347','世界先進',1.29],['8358','金居',1.97],['2486','一詮',0.83],['3036','文曄',1.01],['2337','旺宏',0.43],['8021','尖點',0.71],['6584','南俊國際',1.58],['4991','環宇-KY',1.12],['3189','景碩',0.77],['6531','愛普',0.81],['3260','威剛',0.39],['6781','AES-KY',0.89],['3081','聯亞',1.73],['3665','貿聯-KY',0.93],['3324','雙鴻',0.40],['5289','宜鼎',0.41],['3131','弘塑',1.28],['3491','昇達科',0.54],['3529','力旺',0.87]],
+    removed: [['7751','竑騰科技',2.28],['2454','聯發科',1.73],['3044','健鼎',1.69],['2376','技嘉',1.66],['8210','勤誠',1.62],['3264','欣銓',1.48],['3293','鈊象電子',1.38],['6831','邁科科技',1.30],['6239','力成科技',1.26],['3231','緯創',1.10],['5234','達興材料',0.85],['1519','華城電機',0.81]],
+    weight_up: [['6805','富世達',1.53,1.89,0.36],['3163','波若威',3.10,3.30,0.20],['3037','欣興',3.19,3.36,0.17],['3105','穩懋',3.11,3.26,0.15],['8046','南電',2.35,2.50,0.15]],
+    weight_down: [['6442','光紅建聖',2.98,1.39,-1.59],['2344','華邦電',1.81,0.28,-1.53],['2449','京元電子',1.57,0.21,-1.36],['6274','台燿',1.96,0.73,-1.23],['3661','世芯-KY',1.88,0.75,-1.13]]
+  }
+};
+
+// ── Render Holdings Table ─────────────────────────────────────────────────────
+function renderHoldings(etf, tbodyId, showPrev) {
+  var d = data[etf];
+  var stocks = d.stocks.slice().sort(function(a,b){return b[2]-a[2];});
+  // Deduplicate
+  var seen = {}; var unique = [];
+  stocks.forEach(function(s){ if(!seen[s[0]]){seen[s[0]]=1;unique.push(s);} });
+  var maxW = unique[0] ? unique[0][2] : 10;
+  var tbody = document.getElementById(tbodyId);
+  if(!tbody) return;
+  var html = '';
+  unique.forEach(function(s, i){
+    var code=s[0], name=s[1], w=s[2], prev=s[3];
+    var isNew = d.new_stocks.some(function(n){return n[0]===code;});
+    var diff = (prev !== null && prev !== undefined) ? (w - prev).toFixed(2) : null;
+    var barW = Math.round((w / maxW) * 120);
+    var tag = '';
+    if(isNew) tag = '<span class="tag tag-new">新增</span>';
+    else if(diff && parseFloat(diff) > 0.05) tag = '<span class="tag tag-up">↑ +'+diff+'%</span>';
+    else if(diff && parseFloat(diff) < -0.05) tag = '<span class="tag tag-down">↓ '+diff+'%</span>';
+
+    if(showPrev) {
+      var prevStr = (prev!==null && prev!==undefined) ? prev+'%' : '<span style="color:var(--muted)">首次</span>';
+      var diffStr = diff ? (parseFloat(diff)>0?'<span style="color:var(--green)">+'+diff+'%</span>':'<span style="color:var(--red)">'+diff+'%</span>') : '—';
+      html += '<tr><td class="rank">'+( i+1)+'</td><td>'+name+'</td><td class="code">'+code+'</td><td class="weight-cell">'+w+'%</td><td>'+prevStr+'</td><td>'+diffStr+'</td><td>'+tag+'</td></tr>';
+    } else {
+      html += '<tr><td class="rank">'+(i+1)+'</td><td>'+name+'</td><td class="code">'+code+'</td><td class="weight-cell">'+w+'%</td><td><div class="weight-bar-wrap"><div class="weight-bar" style="width:'+barW+'px;"></div></div></td><td>'+tag+'</td></tr>';
+    }
+  });
+  tbody.innerHTML = html;
+}
+
+function renderChanges(etf, newId, removedId) {
+  var d = data[etf];
+  var newEl = document.getElementById(newId);
+  var remEl = document.getElementById(removedId);
+  if(newEl) {
+    if(!d.new_stocks.length) { newEl.innerHTML = '<div class="no-change">無新增持股</div>'; }
+    else {
+      var h='';
+      d.new_stocks.forEach(function(s){
+        h+='<div class="change-item"><div><div class="change-name">'+s[1]+'</div><div class="change-code">'+s[0]+'</div></div><div class="change-weight" style="color:var(--green)">+'+s[2]+'%</div></div>';
+      });
+      newEl.innerHTML=h;
+    }
+  }
+  if(remEl) {
+    if(!d.removed.length) { remEl.innerHTML = '<div class="no-change">無移除持股</div>'; }
+    else {
+      var h='';
+      d.removed.forEach(function(s){
+        h+='<div class="change-item"><div><div class="change-name">'+s[1]+'</div><div class="change-code">'+s[0]+'</div></div><div class="change-weight" style="color:var(--red)">-'+s[2]+'%</div></div>';
+      });
+      remEl.innerHTML=h;
+    }
+  }
+}
+
+// ── Tab Switching ─────────────────────────────────────────────────────────────
+function switchTab(id) {
+  document.querySelectorAll('.tab-content').forEach(function(el){ el.classList.remove('active'); });
+  document.querySelectorAll('.nav-btn').forEach(function(el){ el.classList.remove('active'); });
+  document.getElementById('tab-'+id).classList.add('active');
+  event.target.classList.add('active');
+
+  // Lazy render
+  if(id==='t981' && !window._r981){ renderHoldings('981','tbody-981',false); window._r981=1; }
+  if(id==='t985' && !window._r985){ renderHoldings('985','tbody-985',true); renderChanges('985','new-985','removed-985'); window._r985=1; }
+  if(id==='t987' && !window._r987){ renderHoldings('987','tbody-987',false); window._r987=1; }
+  if(id==='t988' && !window._r988){ renderHoldings('988','tbody-988',true); renderChanges('988','new-988','removed-988'); window._r988=1; }
+  if(id==='t992' && !window._r992){ renderHoldings('992','tbody-992',true); renderChanges('992','new-992','removed-992'); window._r992=1; }
+}
+</script>
+
+</body>
+</html>
