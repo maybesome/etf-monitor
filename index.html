@@ -510,118 +510,2651 @@
 <script>
 // ── Data ──────────────────────────────────────────────────────────────────────
 var data = {
-  '981': {
-    stocks: [
-      ['2330','台積電',9.49,null],['2383','台光電',7.62,null],['2308','台達電',6.24,null],
-      ['3017','奇鋐',5.78,null],['3665','貿聯-KY',5.71,null],['2368','金像電',5.76,null],
-      ['2345','智邦',5.54,null],['3037','欣興',4.48,null],['8046','南電',4.43,null],
-      ['5274','信驊',3.43,null],['2327','國巨',2.67,null],['3711','日月光投控',2.04,null],
-      ['6510','精測',1.89,null],['6515','穎崴',1.79,null],['6274','台燿',1.58,null],
-      ['1303','南亞',1.49,null],['3211','順達',1.37,null],['3189','景碩',0.90,null],
-      ['8358','金居',0.45,null],['8996','高力',0.44,null],['3264','欣銓',0.42,null],
-      ['1326','台化',0.39,null],['2404','漢唐',0.48,null],['6187','萬潤',0.34,null],
-      ['3443','創意',0.59,null],['3661','世芯-KY',0.59,null],['5347','世界',0.67,null],
-      ['2454','聯發科',0.70,null],['8210','勤誠',0.18,null],['6669','緯穎',0.24,null],
-      ['3324','雙鴻',0.14,null],['3583','辛耘',0.09,null],['2002','中鋼',0.09,null],
-      ['6191','精成科',0.29,null],['3217','優群',0.07,null],['6147','頎邦',0.47,null],
-      ['3008','大立光',0.02,null]
-    ],
-    new_stocks: [],
-    removed: [],
-    weight_up: [],
-    weight_down: []
+  "updateDate": "2026/04/08",
+  "etfs": {
+    "00981A": {
+      "name": "主動統一台股增長",
+      "company": "統一投信",
+      "holdings": [
+        {
+          "rank": 1,
+          "code": "1303",
+          "name": "南亞",
+          "weight": 1.49,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 2,
+          "code": "2327",
+          "name": "國巨",
+          "weight": 2.67,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 3,
+          "code": "1326",
+          "name": "台化",
+          "weight": 0.39,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 4,
+          "code": "3037",
+          "name": "欣興",
+          "weight": 4.48,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 5,
+          "code": "8046",
+          "name": "南電",
+          "weight": 4.43,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 6,
+          "code": "2449",
+          "name": "京元電子",
+          "weight": 1.89,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 7,
+          "code": "2368",
+          "name": "金像電",
+          "weight": 5.76,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 8,
+          "code": "3711",
+          "name": "日月光投控",
+          "weight": 2.04,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 9,
+          "code": "5347",
+          "name": "世界",
+          "weight": 0.67,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 10,
+          "code": "6147",
+          "name": "頎邦",
+          "weight": 0.47,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 11,
+          "code": "2330",
+          "name": "台積電",
+          "weight": 9.49,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 12,
+          "code": "2002",
+          "name": "中鋼",
+          "weight": 0.09,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 13,
+          "code": "2308",
+          "name": "台達電",
+          "weight": 6.24,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 14,
+          "code": "3211",
+          "name": "順達",
+          "weight": 1.37,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 15,
+          "code": "2345",
+          "name": "智邦",
+          "weight": 5.54,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 16,
+          "code": "6191",
+          "name": "精成科",
+          "weight": 0.29,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 17,
+          "code": "3665",
+          "name": "貿聯-KY",
+          "weight": 5.71,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 18,
+          "code": "3017",
+          "name": "奇鋐",
+          "weight": 5.78,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 19,
+          "code": "3264",
+          "name": "欣銓",
+          "weight": 0.42,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 20,
+          "code": "2383",
+          "name": "台光電",
+          "weight": 7.62,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 21,
+          "code": "3189",
+          "name": "景碩",
+          "weight": 0.9,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 22,
+          "code": "6274",
+          "name": "台燿",
+          "weight": 1.58,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 23,
+          "code": "8358",
+          "name": "金居",
+          "weight": 0.45,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 24,
+          "code": "3376",
+          "name": "新日興",
+          "weight": 0.28,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 25,
+          "code": "6223",
+          "name": "旺矽",
+          "weight": 5.21,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 26,
+          "code": "6488",
+          "name": "環球晶",
+          "weight": 0.52,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 27,
+          "code": "6805",
+          "name": "富世達",
+          "weight": 1.97,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 28,
+          "code": "4979",
+          "name": "華星光",
+          "weight": 0.39,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 29,
+          "code": "6510",
+          "name": "精測",
+          "weight": 1.89,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 30,
+          "code": "2404",
+          "name": "漢唐",
+          "weight": 0.48,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 31,
+          "code": "8996",
+          "name": "高力",
+          "weight": 0.44,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 32,
+          "code": "2454",
+          "name": "聯發科",
+          "weight": 0.7,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 33,
+          "code": "3217",
+          "name": "優群",
+          "weight": 0.07,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 34,
+          "code": "6187",
+          "name": "萬潤",
+          "weight": 0.34,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 35,
+          "code": "5274",
+          "name": "信驊",
+          "weight": 3.43,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 36,
+          "code": "6515",
+          "name": "穎崴",
+          "weight": 1.79,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 37,
+          "code": "3443",
+          "name": "創意",
+          "weight": 0.59,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 38,
+          "code": "8210",
+          "name": "勤誠",
+          "weight": 0.18,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 39,
+          "code": "3661",
+          "name": "世芯-KY",
+          "weight": 0.59,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 40,
+          "code": "3583",
+          "name": "辛耘",
+          "weight": 0.09,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 41,
+          "code": "3324",
+          "name": "雙鴻",
+          "weight": 0.14,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 42,
+          "code": "6669",
+          "name": "緯穎",
+          "weight": 0.24,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 43,
+          "code": "3008",
+          "name": "大立光",
+          "weight": 0.02,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        }
+      ],
+      "added": [
+        {
+          "code": "3037",
+          "name": "欣興",
+          "weight": 4.48
+        },
+        {
+          "code": "8046",
+          "name": "南電",
+          "weight": 4.43
+        },
+        {
+          "code": "2327",
+          "name": "國巨",
+          "weight": 2.67
+        },
+        {
+          "code": "1303",
+          "name": "南亞",
+          "weight": 1.49
+        },
+        {
+          "code": "3211",
+          "name": "順達",
+          "weight": 1.37
+        },
+        {
+          "code": "3189",
+          "name": "景碩",
+          "weight": 0.9
+        },
+        {
+          "code": "5347",
+          "name": "世界",
+          "weight": 0.67
+        },
+        {
+          "code": "3661",
+          "name": "世芯-KY",
+          "weight": 0.59
+        },
+        {
+          "code": "6488",
+          "name": "環球晶",
+          "weight": 0.52
+        },
+        {
+          "code": "2404",
+          "name": "漢唐",
+          "weight": 0.48
+        },
+        {
+          "code": "6147",
+          "name": "頎邦",
+          "weight": 0.47
+        },
+        {
+          "code": "8358",
+          "name": "金居",
+          "weight": 0.45
+        },
+        {
+          "code": "4979",
+          "name": "華星光",
+          "weight": 0.39
+        },
+        {
+          "code": "1326",
+          "name": "台化",
+          "weight": 0.39
+        },
+        {
+          "code": "6187",
+          "name": "萬潤",
+          "weight": 0.34
+        },
+        {
+          "code": "6191",
+          "name": "精成科",
+          "weight": 0.29
+        },
+        {
+          "code": "3376",
+          "name": "新日興",
+          "weight": 0.28
+        },
+        {
+          "code": "3324",
+          "name": "雙鴻",
+          "weight": 0.14
+        },
+        {
+          "code": "2002",
+          "name": "中鋼",
+          "weight": 0.09
+        },
+        {
+          "code": "3583",
+          "name": "辛耘",
+          "weight": 0.09
+        },
+        {
+          "code": "3217",
+          "name": "優群",
+          "weight": 0.07
+        },
+        {
+          "code": "3008",
+          "name": "大立光",
+          "weight": 0.02
+        }
+      ],
+      "removed": [
+        {
+          "code": "202604TX",
+          "name": "台灣證交所加權股價指數",
+          "prevWeight": 3.74
+        },
+        {
+          "code": "2317",
+          "name": "鴻海精密工業",
+          "prevWeight": 3.04
+        },
+        {
+          "code": "2382",
+          "name": "廣達電腦",
+          "prevWeight": 2.91
+        },
+        {
+          "code": "7769",
+          "name": "鴻勁精密",
+          "prevWeight": 2.86
+        },
+        {
+          "code": "2408",
+          "name": "南亞科技",
+          "prevWeight": 2.58
+        },
+        {
+          "code": "2891",
+          "name": "中國信託金融控股",
+          "prevWeight": 2.52
+        },
+        {
+          "code": "6584",
+          "name": "南俊國際",
+          "prevWeight": 2.33
+        },
+        {
+          "code": "2360",
+          "name": "致茂電子",
+          "prevWeight": 2.2
+        },
+        {
+          "code": "2059",
+          "name": "川湖科技",
+          "prevWeight": 2.16
+        },
+        {
+          "code": "3653",
+          "name": "健策精密工業",
+          "prevWeight": 2.06
+        },
+        {
+          "code": "3231",
+          "name": "緯創資通",
+          "prevWeight": 1.51
+        },
+        {
+          "code": "2884",
+          "name": "玉山金融控股",
+          "prevWeight": 1.5
+        },
+        {
+          "code": "2881",
+          "name": "富邦金融控股",
+          "prevWeight": 1.5
+        },
+        {
+          "code": "3293",
+          "name": "鈊象電子",
+          "prevWeight": 1.46
+        },
+        {
+          "code": "8299",
+          "name": "群聯電子",
+          "prevWeight": 1.43
+        },
+        {
+          "code": "3036",
+          "name": "文曄科技",
+          "prevWeight": 1.31
+        },
+        {
+          "code": "6442",
+          "name": "光紅建聖",
+          "prevWeight": 1.23
+        },
+        {
+          "code": "2376",
+          "name": "技嘉科技",
+          "prevWeight": 1.14
+        },
+        {
+          "code": "2344",
+          "name": "華邦電子",
+          "prevWeight": 1.03
+        },
+        {
+          "code": "5234",
+          "name": "達興材料",
+          "prevWeight": 1.02
+        },
+        {
+          "code": "6831",
+          "name": "邁科科技",
+          "prevWeight": 1.02
+        },
+        {
+          "code": "3533",
+          "name": "嘉澤端子工業",
+          "prevWeight": 0.91
+        },
+        {
+          "code": "5434",
+          "name": "崇越科技",
+          "prevWeight": 0.88
+        },
+        {
+          "code": "1590",
+          "name": "亞德客國際集團",
+          "prevWeight": 0.78
+        },
+        {
+          "code": "5904",
+          "name": "寶雅國際",
+          "prevWeight": 0.76
+        },
+        {
+          "code": "3044",
+          "name": "健鼎科技",
+          "prevWeight": 0.75
+        },
+        {
+          "code": "4915",
+          "name": "致伸科技",
+          "prevWeight": 0.71
+        },
+        {
+          "code": "1477",
+          "name": "聚陽實業",
+          "prevWeight": 0.67
+        },
+        {
+          "code": "1519",
+          "name": "華城電機",
+          "prevWeight": 0.49
+        },
+        {
+          "code": "2548",
+          "name": "華固建設",
+          "prevWeight": 0.48
+        }
+      ]
+    },
+    "00985A": {
+      "name": "野村臺灣增強50",
+      "company": "野村投信",
+      "holdings": [
+        {
+          "rank": 1,
+          "code": "1216",
+          "name": "統一企業",
+          "weight": 3.47,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 2,
+          "code": "2412",
+          "name": "中華電信",
+          "weight": 4.32,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 3,
+          "code": "4904",
+          "name": "遠傳電信",
+          "weight": 2.71,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 4,
+          "code": "1605",
+          "name": "華新麗華",
+          "weight": 0.76,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 5,
+          "code": "2881",
+          "name": "富邦金融控股",
+          "weight": 2.14,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 6,
+          "code": "2891",
+          "name": "中國信託金融控股",
+          "weight": 1.08,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 7,
+          "code": "2395",
+          "name": "研華",
+          "weight": 5.48,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 8,
+          "code": "2330",
+          "name": "台灣積體電路製造",
+          "weight": 24.84,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 9,
+          "code": "2344",
+          "name": "華邦電子",
+          "weight": 0.68,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 10,
+          "code": "3264",
+          "name": "欣銓科技",
+          "weight": 1.13,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 11,
+          "code": "2317",
+          "name": "鴻海精密工業",
+          "weight": 1.28,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 12,
+          "code": "6239",
+          "name": "力成科技",
+          "weight": 1.07,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 13,
+          "code": "1477",
+          "name": "聚陽實業",
+          "weight": 1.13,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 14,
+          "code": "6789",
+          "name": "采鈺科技",
+          "weight": 1.68,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 15,
+          "code": "3293",
+          "name": "鈊象電子",
+          "weight": 3.49,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 16,
+          "code": "2382",
+          "name": "廣達電腦",
+          "weight": 1.03,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 17,
+          "code": "6488",
+          "name": "環球晶圓",
+          "weight": 1.31,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 18,
+          "code": "3711",
+          "name": "日月光投資控股",
+          "weight": 1.04,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 19,
+          "code": "6415",
+          "name": "矽力杰",
+          "weight": 0.81,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 20,
+          "code": "4749",
+          "name": "新應材",
+          "weight": 1.91,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 21,
+          "code": "2308",
+          "name": "台達電子工業",
+          "weight": 2.89,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 22,
+          "code": "3376",
+          "name": "新日興企業",
+          "weight": 0.45,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 23,
+          "code": "3036",
+          "name": "文曄科技",
+          "weight": 1.26,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 24,
+          "code": "5269",
+          "name": "祥碩科技",
+          "weight": 2.04,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 25,
+          "code": "2379",
+          "name": "瑞昱半導體",
+          "weight": 1.17,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 26,
+          "code": "6669",
+          "name": "緯穎科技服務",
+          "weight": 1.94,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 27,
+          "code": "2301",
+          "name": "光寶科技",
+          "weight": 0.55,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 28,
+          "code": "4966",
+          "name": "譜瑞-KY",
+          "weight": 1.46,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 29,
+          "code": "6770",
+          "name": "力積電",
+          "weight": 0.12,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 30,
+          "code": "2356",
+          "name": "英業達",
+          "weight": 0.53,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        }
+      ],
+      "added": [
+        {
+          "code": "5269",
+          "name": "祥碩科技",
+          "weight": 2.04
+        },
+        {
+          "code": "4966",
+          "name": "譜瑞-KY",
+          "weight": 1.46
+        },
+        {
+          "code": "2379",
+          "name": "瑞昱半導體",
+          "weight": 1.17
+        },
+        {
+          "code": "2301",
+          "name": "光寶科技",
+          "weight": 0.55
+        },
+        {
+          "code": "2356",
+          "name": "英業達",
+          "weight": 0.53
+        },
+        {
+          "code": "3376",
+          "name": "新日興企業",
+          "weight": 0.45
+        },
+        {
+          "code": "6770",
+          "name": "力積電",
+          "weight": 0.12
+        }
+      ],
+      "removed": [
+        {
+          "code": "202604TX",
+          "name": "台灣證交所加權股價指數",
+          "prevWeight": 4.11
+        },
+        {
+          "code": "3533",
+          "name": "嘉澤端子工業",
+          "prevWeight": 1.6
+        },
+        {
+          "code": "2345",
+          "name": "智邦科技",
+          "prevWeight": 1.52
+        },
+        {
+          "code": "6223",
+          "name": "旺矽科技",
+          "prevWeight": 1.49
+        },
+        {
+          "code": "6442",
+          "name": "光紅建聖",
+          "prevWeight": 1.42
+        },
+        {
+          "code": "2454",
+          "name": "聯發科技",
+          "prevWeight": 1.37
+        },
+        {
+          "code": "2383",
+          "name": "台光電子材料",
+          "prevWeight": 1.27
+        },
+        {
+          "code": "3665",
+          "name": "貿聯控股",
+          "prevWeight": 1.21
+        },
+        {
+          "code": "3661",
+          "name": "世芯電子",
+          "prevWeight": 1.06
+        },
+        {
+          "code": "3017",
+          "name": "奇鋐科技",
+          "prevWeight": 1.04
+        },
+        {
+          "code": "3653",
+          "name": "健策精密工業",
+          "prevWeight": 0.94
+        },
+        {
+          "code": "2059",
+          "name": "川湖科技",
+          "prevWeight": 0.72
+        },
+        {
+          "code": "1519",
+          "name": "華城電機",
+          "prevWeight": 0.64
+        },
+        {
+          "code": "3529",
+          "name": "力旺電子",
+          "prevWeight": 0.43
+        },
+        {
+          "code": "3037",
+          "name": "欣興電子",
+          "prevWeight": 0.36
+        },
+        {
+          "code": "6805",
+          "name": "富世達",
+          "prevWeight": 0.29
+        },
+        {
+          "code": "5274",
+          "name": "信驊科技",
+          "prevWeight": 0.14
+        },
+        {
+          "code": "6274",
+          "name": "台燿科技",
+          "prevWeight": 0.11
+        },
+        {
+          "code": "2327",
+          "name": "國巨",
+          "prevWeight": 0.1
+        },
+        {
+          "code": "7769",
+          "name": "鴻勁精密",
+          "prevWeight": 0.1
+        },
+        {
+          "code": "2408",
+          "name": "南亞科技",
+          "prevWeight": 0.09
+        },
+        {
+          "code": "2449",
+          "name": "京元電子",
+          "prevWeight": 0.09
+        },
+        {
+          "code": "6515",
+          "name": "穎崴科技",
+          "prevWeight": 0.08
+        }
+      ]
+    },
+    "00987A": {
+      "name": "台新優勢成長",
+      "company": "台新投信",
+      "holdings": [
+        {
+          "rank": 1,
+          "code": "2337",
+          "name": "旺宏",
+          "weight": 2.73,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 2,
+          "code": "6770",
+          "name": "力積電",
+          "weight": 0.69,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 3,
+          "code": "8358",
+          "name": "金居",
+          "weight": 2.88,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 4,
+          "code": "6274",
+          "name": "台燿",
+          "weight": 6.02,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 5,
+          "code": "2455",
+          "name": "全新",
+          "weight": 2.12,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 6,
+          "code": "3037",
+          "name": "欣興",
+          "weight": 3.08,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 7,
+          "code": "3363",
+          "name": "上詮",
+          "weight": 3.6,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 8,
+          "code": "2330",
+          "name": "台積電",
+          "weight": 7.77,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 9,
+          "code": "2368",
+          "name": "金像電",
+          "weight": 3.22,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 10,
+          "code": "3017",
+          "name": "奇鋐",
+          "weight": 6.33,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 11,
+          "code": "2308",
+          "name": "台達電",
+          "weight": 4.54,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 12,
+          "code": "3665",
+          "name": "貿聯 -KY",
+          "weight": 5.62,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 13,
+          "code": "8299",
+          "name": "群聯",
+          "weight": 4.25,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 14,
+          "code": "2345",
+          "name": "智邦",
+          "weight": 3.99,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 15,
+          "code": "6683",
+          "name": "雍智科技",
+          "weight": 3.57,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 16,
+          "code": "3491",
+          "name": "昇達科",
+          "weight": 3.38,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 17,
+          "code": "6805",
+          "name": "富世達",
+          "weight": 3.16,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 18,
+          "code": "6223",
+          "name": "旺矽",
+          "weight": 6.22,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 19,
+          "code": "2383",
+          "name": "台光電",
+          "weight": 4.24,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 20,
+          "code": "3443",
+          "name": "創意",
+          "weight": 3.34,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 21,
+          "code": "2360",
+          "name": "致茂",
+          "weight": 2.12,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 22,
+          "code": "6739",
+          "name": "竹陞科技",
+          "weight": 1.75,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 23,
+          "code": "3653",
+          "name": "健策",
+          "weight": 3.98,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 24,
+          "code": "6442",
+          "name": "光聖",
+          "weight": 1.6,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 25,
+          "code": "6510",
+          "name": "精測",
+          "weight": 1.76,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 26,
+          "code": "7769",
+          "name": "鴻勁",
+          "weight": 1.41,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        }
+      ],
+      "added": [
+        {
+          "code": "2330",
+          "name": "台積電",
+          "weight": 7.77
+        },
+        {
+          "code": "3017",
+          "name": "奇鋐",
+          "weight": 6.33
+        },
+        {
+          "code": "6223",
+          "name": "旺矽",
+          "weight": 6.22
+        },
+        {
+          "code": "6274",
+          "name": "台燿",
+          "weight": 6.02
+        },
+        {
+          "code": "3665",
+          "name": "貿聯 -KY",
+          "weight": 5.62
+        },
+        {
+          "code": "2308",
+          "name": "台達電",
+          "weight": 4.54
+        },
+        {
+          "code": "8299",
+          "name": "群聯",
+          "weight": 4.25
+        },
+        {
+          "code": "2383",
+          "name": "台光電",
+          "weight": 4.24
+        },
+        {
+          "code": "2345",
+          "name": "智邦",
+          "weight": 3.99
+        },
+        {
+          "code": "3653",
+          "name": "健策",
+          "weight": 3.98
+        },
+        {
+          "code": "3363",
+          "name": "上詮",
+          "weight": 3.6
+        },
+        {
+          "code": "6683",
+          "name": "雍智科技",
+          "weight": 3.57
+        },
+        {
+          "code": "3491",
+          "name": "昇達科",
+          "weight": 3.38
+        },
+        {
+          "code": "3443",
+          "name": "創意",
+          "weight": 3.34
+        },
+        {
+          "code": "2368",
+          "name": "金像電",
+          "weight": 3.22
+        },
+        {
+          "code": "6805",
+          "name": "富世達",
+          "weight": 3.16
+        },
+        {
+          "code": "3037",
+          "name": "欣興",
+          "weight": 3.08
+        },
+        {
+          "code": "8358",
+          "name": "金居",
+          "weight": 2.88
+        },
+        {
+          "code": "2337",
+          "name": "旺宏",
+          "weight": 2.73
+        },
+        {
+          "code": "2455",
+          "name": "全新",
+          "weight": 2.12
+        },
+        {
+          "code": "2360",
+          "name": "致茂",
+          "weight": 2.12
+        },
+        {
+          "code": "6510",
+          "name": "精測",
+          "weight": 1.76
+        },
+        {
+          "code": "6739",
+          "name": "竹陞科技",
+          "weight": 1.75
+        },
+        {
+          "code": "6442",
+          "name": "光聖",
+          "weight": 1.6
+        },
+        {
+          "code": "7769",
+          "name": "鴻勁",
+          "weight": 1.41
+        },
+        {
+          "code": "6770",
+          "name": "力積電",
+          "weight": 0.69
+        }
+      ],
+      "removed": []
+    },
+    "00988A": {
+      "name": "統一全球創新",
+      "company": "統一投信",
+      "holdings": [
+        {
+          "rank": 1,
+          "code": "3037",
+          "name": "欣興",
+          "weight": 2.77,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 2,
+          "code": "268A JP",
+          "name": "RIGAKU HOLDINGS CORP",
+          "weight": 0.98,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 3,
+          "code": "2308",
+          "name": "台達電",
+          "weight": 2.62,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 4,
+          "code": "FSLY US",
+          "name": "FASTLY INC - CLASS A",
+          "weight": 1.91,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 5,
+          "code": "3017",
+          "name": "奇鋐",
+          "weight": 3.17,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 6,
+          "code": "5803 JP",
+          "name": "FUJIKURA LTD",
+          "weight": 1.29,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 7,
+          "code": "2330",
+          "name": "台積電",
+          "weight": 2.28,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 8,
+          "code": "AIXA GY",
+          "name": "AIXTRON SE",
+          "weight": 1.36,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 9,
+          "code": "6869 HK",
+          "name": "YANGTZE OPTICAL FIBRE AND-H",
+          "weight": 0.8,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 10,
+          "code": "2383",
+          "name": "台光電",
+          "weight": 2.86,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 11,
+          "code": "GLW US",
+          "name": "CORNING INC",
+          "weight": 4.07,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 12,
+          "code": "2360",
+          "name": "致茂",
+          "weight": 1.31,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 13,
+          "code": "6787 JP",
+          "name": "MEIKO ELECTRONICS CO LTD",
+          "weight": 4.12,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 14,
+          "code": "BKSY US",
+          "name": "BLACKSKY TECHNOLOGY INC",
+          "weight": 0.74,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 15,
+          "code": "VIAV US",
+          "name": "VIAVI SOLUTIONS INC",
+          "weight": 0.84,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 16,
+          "code": "403870 KS",
+          "name": "HPSP CO LTD",
+          "weight": 0.61,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 17,
+          "code": "005930 KS",
+          "name": "samsung electronics co ltd(005930 KS)",
+          "weight": 2.51,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 18,
+          "code": "285A JP",
+          "name": "KIOXIA HOLDINGS CORP",
+          "weight": 2.31,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 19,
+          "code": "AXTI US",
+          "name": "AXT INC",
+          "weight": 0.82,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 20,
+          "code": "SOI FP",
+          "name": "S.O.I.T.E.C.",
+          "weight": 0.85,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 21,
+          "code": "6515",
+          "name": "穎崴",
+          "weight": 2.82,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 22,
+          "code": "5706 JP",
+          "name": "Mitsui Mining & Smelting Co",
+          "weight": 2.54,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 23,
+          "code": "3110 JP",
+          "name": "NITTO BOSEKI CO LTD",
+          "weight": 1.58,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 24,
+          "code": "MU US",
+          "name": "MICRON TECHNOLOGY INC",
+          "weight": 4.59,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 25,
+          "code": "LITE US",
+          "name": "LUMENTUM HOLDINGS INC",
+          "weight": 9.42,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 26,
+          "code": "COHR US",
+          "name": "COHERENT INC",
+          "weight": 2.65,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 27,
+          "code": "7769",
+          "name": "鴻勁",
+          "weight": 1.09,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 28,
+          "code": "CIEN US",
+          "name": "CIENA CORP",
+          "weight": 3.88,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 29,
+          "code": "NVDA US",
+          "name": "NVIDIA CORP",
+          "weight": 1.52,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 30,
+          "code": "EXENS FP",
+          "name": "EXOSENS SAS",
+          "weight": 0.63,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 31,
+          "code": "SNDK US",
+          "name": "SANDISK CORP",
+          "weight": 5.09,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 32,
+          "code": "TER US",
+          "name": "TERADYNE INC",
+          "weight": 1.98,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 33,
+          "code": "SMHN GY",
+          "name": "SUSS MICROTEC SE",
+          "weight": 0.33,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 34,
+          "code": "5274",
+          "name": "信驊",
+          "weight": 2.0,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 35,
+          "code": "WDC US",
+          "name": "WESTERN DIGITAL CORP",
+          "weight": 1.48,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 36,
+          "code": "HOT GY",
+          "name": "HOCHTIEF AG",
+          "weight": 2.14,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 37,
+          "code": "6961 JP",
+          "name": "ENPLAS CORP",
+          "weight": 0.34,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 38,
+          "code": "009150 KS",
+          "name": "Samsung Electro-Mechanics co",
+          "weight": 1.05,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        }
+      ],
+      "added": [
+        {
+          "code": "6515",
+          "name": "穎崴",
+          "weight": 2.82
+        },
+        {
+          "code": "5706 JP",
+          "name": "Mitsui Mining & Smelting Co",
+          "weight": 2.54
+        },
+        {
+          "code": "3110 JP",
+          "name": "NITTO BOSEKI CO LTD",
+          "weight": 1.58
+        },
+        {
+          "code": "SOI FP",
+          "name": "S.O.I.T.E.C.",
+          "weight": 0.85
+        },
+        {
+          "code": "AXTI US",
+          "name": "AXT INC",
+          "weight": 0.82
+        }
+      ],
+      "removed": [
+        {
+          "code": "GEV US",
+          "name": "GE VERNOVA INC",
+          "prevWeight": 3.36
+        },
+        {
+          "code": "GOOGL US",
+          "name": "ALPHABET INC-CL A",
+          "prevWeight": 0.94
+        },
+        {
+          "code": "KEYS US",
+          "name": "KEYSIGHT TECHNOLOGIES",
+          "prevWeight": 0.66
+        }
+      ]
+    },
+    "00992A": {
+      "name": "群益台灣科技創新",
+      "company": "群益投信",
+      "holdings": [
+        {
+          "rank": 1,
+          "code": "2408",
+          "name": "南亞科",
+          "weight": 2.34,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 2,
+          "code": "5347",
+          "name": "世界",
+          "weight": 1.29,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 3,
+          "code": "8358",
+          "name": "金居",
+          "weight": 1.97,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 4,
+          "code": "3105",
+          "name": "穩懋",
+          "weight": 3.26,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 5,
+          "code": "3037",
+          "name": "欣興",
+          "weight": 3.36,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 6,
+          "code": "2486",
+          "name": "一詮",
+          "weight": 0.83,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 7,
+          "code": "3036",
+          "name": "文曄",
+          "weight": 1.01,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 8,
+          "code": "8046",
+          "name": "南電",
+          "weight": 2.5,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 9,
+          "code": "2330",
+          "name": "台積電",
+          "weight": 7.0,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 10,
+          "code": "8996",
+          "name": "高力",
+          "weight": 3.02,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 11,
+          "code": "3163",
+          "name": "波若威",
+          "weight": 3.3,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 12,
+          "code": "2337",
+          "name": "旺宏",
+          "weight": 0.43,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 13,
+          "code": "2344",
+          "name": "華邦電",
+          "weight": 0.28,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 14,
+          "code": "8021",
+          "name": "尖點",
+          "weight": 0.71,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 15,
+          "code": "6584",
+          "name": "南俊國際",
+          "weight": 1.58,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 16,
+          "code": "2345",
+          "name": "智邦",
+          "weight": 4.01,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 17,
+          "code": "4749",
+          "name": "新應材",
+          "weight": 1.99,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 18,
+          "code": "4991",
+          "name": "環宇-KY",
+          "weight": 1.12,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 19,
+          "code": "3189",
+          "name": "景碩",
+          "weight": 0.77,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 20,
+          "code": "8299",
+          "name": "群聯",
+          "weight": 3.18,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 21,
+          "code": "3017",
+          "name": "奇鋐",
+          "weight": 3.51,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 22,
+          "code": "2360",
+          "name": "致茂",
+          "weight": 2.71,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 23,
+          "code": "6531",
+          "name": "愛普",
+          "weight": 0.81,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 24,
+          "code": "3533",
+          "name": "嘉澤",
+          "weight": 3.25,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 25,
+          "code": "2383",
+          "name": "台光電",
+          "weight": 4.35,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 26,
+          "code": "6442",
+          "name": "光聖",
+          "weight": 1.58,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 27,
+          "code": "3260",
+          "name": "威剛",
+          "weight": 0.39,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 28,
+          "code": "6274",
+          "name": "台燿",
+          "weight": 0.73,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 29,
+          "code": "2368",
+          "name": "金像電",
+          "weight": 0.98,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 30,
+          "code": "6805",
+          "name": "富世達",
+          "weight": 1.89,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 31,
+          "code": "6781",
+          "name": "AES-KY",
+          "weight": 0.89,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 32,
+          "code": "6223",
+          "name": "旺矽",
+          "weight": 3.59,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 33,
+          "code": "2059",
+          "name": "川湖",
+          "weight": 2.83,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 34,
+          "code": "3081",
+          "name": "聯亞",
+          "weight": 1.73,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 35,
+          "code": "2449",
+          "name": "京元電子",
+          "weight": 0.21,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 36,
+          "code": "6669",
+          "name": "緯穎",
+          "weight": 2.31,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 37,
+          "code": "7769",
+          "name": "鴻勁",
+          "weight": 2.66,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 38,
+          "code": "6510",
+          "name": "精測",
+          "weight": 2.21,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 39,
+          "code": "2308",
+          "name": "台達電",
+          "weight": 0.96,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 40,
+          "code": "6515",
+          "name": "穎崴",
+          "weight": 3.68,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 41,
+          "code": "3653",
+          "name": "健策",
+          "weight": 1.76,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 42,
+          "code": "3665",
+          "name": "貿聯-KY",
+          "weight": 0.93,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 43,
+          "code": "3324",
+          "name": "雙鴻",
+          "weight": 0.4,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 44,
+          "code": "5289",
+          "name": "宜鼎",
+          "weight": 0.41,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 45,
+          "code": "3131",
+          "name": "弘塑",
+          "weight": 1.28,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 46,
+          "code": "3491",
+          "name": "昇達科",
+          "weight": 0.54,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 47,
+          "code": "3529",
+          "name": "力旺",
+          "weight": 0.87,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 48,
+          "code": "3443",
+          "name": "創意",
+          "weight": 0.73,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 49,
+          "code": "3661",
+          "name": "世芯-KY",
+          "weight": 0.75,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        },
+        {
+          "rank": 50,
+          "code": "5274",
+          "name": "信驊",
+          "weight": 1.55,
+          "prevWeight": 0,
+          "change": 0,
+          "status": ""
+        }
+      ],
+      "added": [],
+      "removed": []
+    }
   },
-  '985': {
-    stocks: [
-      ['2330','台灣積體電路製造',24.84,24.51],['2395','研華',5.48,5.58],['2412','中華電信',4.32,4.38],
-      ['202604TX','台灣加權指數期貨',4.11,null],['3293','鈊象電子',3.49,3.49],['1216','統一企業',3.47,3.47],
-      ['2308','台達電子工業',2.89,2.76],['4904','遠傳電信',2.71,2.71],['2881','富邦金控',2.14,2.14],
-      ['4749','新應材',1.91,1.91],['6789','采鈺科技',1.68,1.62],['3533','嘉澤端子',1.60,1.60],
-      ['6442','光紅建聖',1.42,1.42],['2454','聯發科',1.37,1.37],['6488','環球晶圓',1.31,1.31],
-      ['2317','鴻海',1.28,1.28],['2383','台光電',1.27,null],['6223','旺矽',1.49,null],
-      ['1477','聚陽實業',1.13,1.13],['3264','欣銓科技',1.13,1.32],['6239','力成科技',1.07,1.14],
-      ['3661','世芯電子',1.06,null],['3711','日月光投控',1.04,1.04],['3017','奇鋐',1.04,null],
-      ['6669','緯穎',0.97,null],['6805','富世達',0.29,null],['3653','健策',0.94,null],
-      ['2059','川湖',0.72,null],['6415','矽力杰',0.81,null],['1519','華城電機',0.64,null],
-      ['2344','華邦電',0.68,null],['2881富邦','富邦金控',2.14,null],['3529','力旺電子',0.43,null],
-      ['1605','華新麗華',0.76,null],['6274','台燿',0.11,null],['2891','中信金',1.08,null],
-      ['2449','京元電子',0.09,null],['3036','文曄',0.09,null],['2408','南亞科',0.09,null],
-      ['7769','鴻勁精密',0.10,null],['2327','國巨',0.10,null],['6515','穎崴',0.08,null],
-      ['2345','智邦',1.52,1.52],['3665','貿聯-KY',1.21,1.21],['3037','欣興',0.36,null],['2382','廣達',1.03,null]
-    ],
-    new_stocks: [['3036','文曄科技',0.09],['6805','富世達',0.29],['7769','鴻勁精密',0.10],['6515','穎崴科技',0.08],['202604TX','指數期貨',4.11]],
-    removed: [['2360','致茂電子',1.85],['6781','AES-KY',1.17],['2368','金像電子',0.98],['8210','勤誠興業',0.93],['3105','穩懋半導體',0.47],['2376','技嘉科技',0.10],['6510','精測',0.10],['2548','華固建設',0.10]],
-    weight_up: [['2330','台積電',24.51,24.84,0.33],['2308','台達電',2.76,2.89,0.13],['6789','采鈺科技',1.62,1.68,0.06]],
-    weight_down: [['2395','研華',5.58,5.48,-0.10],['6239','力成科技',1.14,1.07,-0.07],['2412','中華電信',4.38,4.32,-0.06]]
-  },
-  '987': {
-    stocks: [
-      ['2330','台積電',7.77,null],['3017','奇鋐',6.33,null],['6223','旺矽',6.22,null],
-      ['6274','台燿',6.02,null],['3665','貿聯-KY',5.62,null],['8299','群聯',4.25,null],
-      ['2383','台光電',4.24,null],['2345','智邦',3.99,null],['3653','健策',3.98,null],
-      ['3363','上詮',3.60,null],['6683','雍智科技',3.57,null],['3491','昇達科',3.38,null],
-      ['6805','富世達',3.16,null],['2308','台達電',4.54,null],['2368','金像電',3.22,null],
-      ['3037','欣興',3.08,null],['2337','旺宏',2.73,null],['2360','致茂',2.12,null],
-      ['2455','全新',2.12,null],['6739','竹陞科技',1.75,null],['6510','精測',1.76,null],
-      ['6442','光聖',1.60,null],['7769','鴻勁',1.41,null],['6770','力積電',0.69,null],
-      ['8358','金居',2.88,null],['2330台積','台積電',7.77,null]
-    ],
-    new_stocks: [],
-    removed: [],
-    weight_up: [],
-    weight_down: []
-  },
-  '988': {
-    stocks: [
-      ['LITE US','Lumentum Holdings',9.42,8.63],['SNDK US','SanDisk Corp',5.09,4.97],
-      ['MU US','Micron Technology',4.59,4.57],['6787 JP','MEIKO Electronics',4.12,4.45],
-      ['GLW US','Corning Inc',4.07,3.88],['CIEN US','Ciena Corp',3.88,3.56],
-      ['GEV US','GE Vernova',3.36,null],['3017','奇鋐',3.17,null],
-      ['2383','台光電',2.86,null],['3037','欣興',2.77,2.48],
-      ['2330','台積電',2.28,null],['005930 KS','Samsung Electronics',2.51,2.69],
-      ['285A JP','KIOXIA Holdings',2.31,null],['HOT GY','HOCHTIEF AG',2.14,null],
-      ['5274','信驊',2.00,null],['TER US','Teradyne',1.98,2.14],
-      ['FSLY US','Fastly Inc',1.91,null],['NVDA US','NVIDIA',1.52,null],
-      ['WDC US','Western Digital',1.48,null],['COHR US','Coherent Inc',2.65,2.52],
-      ['5803 JP','Fujikura Ltd',1.29,null],['AIXA GY','Aixtron SE',1.36,null],
-      ['2360','致茂',1.31,null],['2308','台達電',2.62,2.68],
-      ['009150 KS','Samsung Electro-Mech',1.05,null],['403870 KS','HPSP Co',0.61,0.67],
-      ['BKSY US','BlackSky Technology',0.74,null],['VIAV US','Viavi Solutions',0.84,null],
-      ['6869 HK','Yangtze Optical Fibre',0.80,null],['GOOGL US','Alphabet Inc',0.94,null],
-      ['KEYS US','Keysight Technologies',0.66,null],['EXENS FP','Exosens SAS',0.63,null],
-      ['SMHN GY','SUSS MicroTec SE',0.33,null],['268A JP','Rigaku Holdings',0.98,null],
-      ['7769','鴻勁精密',1.09,null],['6961 JP','Enplas Corp',0.34,null]
-    ],
-    new_stocks: [['285A JP','KIOXIA Holdings',2.31],['NVDA US','NVIDIA',1.52],['WDC US','Western Digital',1.48],['HOT GY','HOCHTIEF AG',2.14],['009150 KS','Samsung Electro-Mech',1.05],['GOOGL US','Alphabet Inc',0.94],['KEYS US','Keysight',0.66],['6961 JP','Enplas Corp',0.34],['EXENS FP','Exosens SAS',0.63],['SMHN GY','SUSS MicroTec',0.33]],
-    removed: [['5801 JP','古河電工',3.33],['6515','穎崴科技',3.09],['ENR GY','Siemens Energy',2.99],['5706 JP','三井金屬',2.63],['2059','川湖科技',1.09]],
-    weight_up: [['LITE US','Lumentum',8.63,9.42,0.79],['CIEN US','Ciena',3.56,3.88,0.32],['3037','欣興',2.48,2.77,0.29],['GLW US','Corning',3.88,4.07,0.19],['COHR US','Coherent',2.52,2.65,0.13]],
-    weight_down: [['6787 JP','MEIKO Electronics',4.45,4.12,-0.33],['005930 KS','Samsung Elec',2.69,2.51,-0.18],['TER US','Teradyne',2.14,1.98,-0.16]]
-  },
-  '992': {
-    stocks: [
-      ['2330','台積電',7.00,7.02],['2383','台光電',4.35,4.33],['2345','智邦',4.01,4.06],
-      ['6515','穎崴',3.68,null],['6223','旺矽',3.59,null],['3017','奇鋐',3.51,null],
-      ['3037','欣興',3.36,3.19],['3163','波若威',3.30,3.10],['3105','穩懋',3.26,3.11],
-      ['3533','嘉澤',3.25,3.25],['8299','群聯',3.18,null],['3105穩','穩懋半導體',3.26,null],
-      ['2360','致茂',2.71,2.71],['8046','南電',2.50,2.35],['6669','緯穎',2.31,null],
-      ['6510','精測',2.21,null],['6805','富世達',1.89,1.53],['7769','鴻勁精密',2.66,null],
-      ['4749','新應材',1.99,null],['2059','川湖',2.83,null],['8358','金居',1.97,null],
-      ['3081','聯亞',1.73,null],['3653','健策',1.76,null],['6584','南俊國際',1.58,null],
-      ['3665','貿聯-KY',0.93,null],['6442','光紅建聖',1.39,2.98],['5347','世界',1.29,null],
-      ['3131','弘塑',1.28,null],['3189','景碩',0.77,null],['6274','台燿',0.73,1.96],
-      ['3443','創意',0.73,1.23],['3661','世芯-KY',0.75,1.88],['2449','京元電子',0.21,1.57],
-      ['2344','華邦電',0.28,1.81],['5289','宜鼎',0.41,null],['3260','威剛',0.39,null],
-      ['3324','雙鴻',0.40,null],['2337','旺宏',0.43,null],['6781','AES-KY',0.89,null],
-      ['3491','昇達科',0.54,null],['2368','金像電',0.98,null],['2486','一詮',0.83,null],
-      ['3529','力旺',0.87,null],['3036','文曄',1.01,null],['8021','尖點',0.71,null],
-      ['4991','環宇-KY',1.12,null],['6531','愛普',0.81,null],['5274','信驊',1.55,null],
-      ['2408','南亞科',2.34,null],['2308','台達電',0.96,1.16]
-    ],
-    new_stocks: [['5347','世界先進',1.29],['8358','金居',1.97],['2486','一詮',0.83],['3036','文曄',1.01],['2337','旺宏',0.43],['8021','尖點',0.71],['6584','南俊國際',1.58],['4991','環宇-KY',1.12],['3189','景碩',0.77],['6531','愛普',0.81],['3260','威剛',0.39],['6781','AES-KY',0.89],['3081','聯亞',1.73],['3665','貿聯-KY',0.93],['3324','雙鴻',0.40],['5289','宜鼎',0.41],['3131','弘塑',1.28],['3491','昇達科',0.54],['3529','力旺',0.87]],
-    removed: [['7751','竑騰科技',2.28],['2454','聯發科',1.73],['3044','健鼎',1.69],['2376','技嘉',1.66],['8210','勤誠',1.62],['3264','欣銓',1.48],['3293','鈊象電子',1.38],['6831','邁科科技',1.30],['6239','力成科技',1.26],['3231','緯創',1.10],['5234','達興材料',0.85],['1519','華城電機',0.81]],
-    weight_up: [['6805','富世達',1.53,1.89,0.36],['3163','波若威',3.10,3.30,0.20],['3037','欣興',3.19,3.36,0.17],['3105','穩懋',3.11,3.26,0.15],['8046','南電',2.35,2.50,0.15]],
-    weight_down: [['6442','光紅建聖',2.98,1.39,-1.59],['2344','華邦電',1.81,0.28,-1.53],['2449','京元電子',1.57,0.21,-1.36],['6274','台燿',1.96,0.73,-1.23],['3661','世芯-KY',1.88,0.75,-1.13]]
-  }
+  "analysis": "
+═══════════════════════════════════════════════════════════
+2026/04/08 台灣主動式ETF持股監控 每日分析報告
+資料日期：2026/04/07
+═══════════════════════════════════════════════════════════
+
+【一、整體概況】
+
+本日5檔主動式ETF中，以00981A（統一台股增長）與00985A（野村臺灣增強50）的持股調整幅度最為顯著，合計新增標的達55檔次（含00987A首次建立記錄），整體持股結構由先前偏重網路/科技成長股，轉向PCB板材、被動元件及記憶體等供應鏈族群，操作方向趨於分散化，並著重佈局中游製造產業鏈。
+
+【二、各ETF主要變動分析】
+
+▍00981A 主動統一台股增長（統一投信）
+
+本日00981A出現大規模持股調整，新增22檔、移除30檔，係5檔ETF中調整幅度最大者。新增標的包含南亞（1303）、台化（1326）、欣興（3037）、南電（8046）、國巨（2327）等，涵蓋石化塑料、覆銅板及封裝載板領域，顯示基金經理人積極往中下游材料族群佈局。移除標的則包含202604TX（台灣加權指數期貨，因4月合約到期自然退出）、鴻海（2317）、廣達（2382）、鴻勁（7769）、南亞科（2408）等大型權值或AI伺服器相關股。比重增加最大的前三檔為旺矽（6223，+2.90%）、智邦（2345，+2.75%）、信驊（5274，+1.05%）；比重減少最明顯的為緯穎（6669，-2.69%）及聯發科（2454，-1.20%）。
+
+▍00985A 野村臺灣增強50（野村投信）
+
+00985A本日新增7檔：譜瑞-KY（4966）、瑞昱（2379）、光寶科技（2301）、新日興（3376）、力積電（6770）、英業達（2356）及力積電（6770），新增標的多屬IC設計及連接器通訊類股。同時移除23檔，包含華城電機（1519）、202604TX期貨合約、力旺電子（3529）、欣興電子（3037）及穎崴（6515）等，移除標的涉及電力設備、半導體封測及高速傳輸等多元領域。比重顯著上升的標的為文曄（3036，+1.17%）及緯穎（6669，+0.97%）。
+
+▍00987A 台新優勢成長主動式ETF（台新投信）
+
+00987A為本次首次完整記錄，共計26檔持股（符合說明中25-30檔的正常範圍），無前日比較基準，故所有持股均標記為首次建立。前五大持股依序為台燿（6274，6.02%）、旺矽（6223，6.22%）、奇鋐（3017，6.33%）、貿聯-KY（3665，5.62%）、台積電（2330，7.77%），以散熱、PCB材料及AI伺服器供應鏈為主軸。
+
+▍00988A 統一全球創新主動式ETF（統一投信）
+
+00988A本日資料日期為2026/04/02，較其他ETF延遲更新。新增5檔國際股票：Soitec（法國半導體晶圓，SOI FP）、AXT Inc（美國砷化鎵基板，AXTI US）、日東紡（日本玻璃纖維，3110 JP）、穎崴（6515）、三井金屬（5706 JP）。移除3檔：Alphabet（GOOGL US）、GE Vernova（GEV US，電力轉型）、Keysight（KEYS US，測試量測）。整體持倉轉向光通訊材料及特殊基板領域，LUMENTUM（LITE US，9.42%）維持第一大持股。
+
+▍00992A 群益台灣科技創新主動式ETF（群益投信）
+
+00992A本日持股最為穩定，無新增或移除標的，僅光聖（6442）比重小幅上升0.19個百分點。前五大持股維持為台積電（7.00%）、台光電（4.35%）、智邦（4.01%）、奇鋐（3.51%）及穩懋（3.26%），持股結構延續以AI基礎設施及半導體材料為核心的配置。
+
+【三、跨ETF共同動向】
+
+本日多檔ETF出現共同買進跡象：欣興（3037）同時獲00981A與00987A加入持股；金居（8358）亦被上述兩檔ETF同步納入，顯示覆銅板（CCL）及玻纖布相關族群受到投信關注；新日興（3376）同時進入00981A及00985A，力積電（6770）則同時被00985A與00987A納入。綜合來看，本日最受多家投信青睞的產業主題為PCB/CCL材料族群，以及特殊記憶體/利基型半導體，此趨勢或反映市場對AI伺服器供應鏈中游材料短缺的預期。
+
+【四、今日重點觀察】
+
+1. 00981A出現最大規模持股調整，202604TX台指期貨合約因4月到期自然移除，同時組合大幅轉向PCB/化工材料股。
+2. 覆銅板概念股（欣興3037、南電8046、金居8358、台燿6274）在多檔ETF中同步出現，CCL產業鏈受到多家投信關注。
+3. 00987A本日為首次完整記錄，26檔持股聚焦散熱、CCL及AI伺服器供應鏈。
+4. 00988A持有LUMENTUM（9.42%）為最大單一持股，光通訊材料主題持續主導其全球佈局。
+5. 00985A新增記憶體相關（力積電6770）及IC設計（瑞昱2379、譜瑞-KY4966），加速佈局邏輯/記憶體復甦題材。
+
+【五、注意事項】
+
+・00987A為本次首次建立持股記錄，無前日比較基準，所有持股均標記為新增。
+・00988A資料日期為2026/04/02，與其他ETF（資料日期2026/04/07）有時間差，比較結果需注意時效性。
+・本報告依持股結構事實進行客觀描述，不構成任何投資建議。
+",
+  "commonStocks": [
+    {
+      "code": "3037",
+      "name": "欣興",
+      "etfs": [
+        "00981A",
+        "00987A",
+        "00988A",
+        "00992A"
+      ],
+      "weights": {
+        "00981A": 4.48,
+        "00987A": 3.08,
+        "00988A": 2.77,
+        "00992A": 3.36
+      }
+    },
+    {
+      "code": "2368",
+      "name": "金像電",
+      "etfs": [
+        "00981A",
+        "00987A",
+        "00992A"
+      ],
+      "weights": {
+        "00981A": 5.76,
+        "00987A": 3.22,
+        "00992A": 0.98
+      }
+    },
+    {
+      "code": "2330",
+      "name": "台積電",
+      "etfs": [
+        "00981A",
+        "00985A",
+        "00987A",
+        "00988A",
+        "00992A"
+      ],
+      "weights": {
+        "00981A": 9.49,
+        "00985A": 24.84,
+        "00987A": 7.77,
+        "00988A": 2.28,
+        "00992A": 7.0
+      }
+    },
+    {
+      "code": "2308",
+      "name": "台達電",
+      "etfs": [
+        "00981A",
+        "00985A",
+        "00987A",
+        "00988A",
+        "00992A"
+      ],
+      "weights": {
+        "00981A": 6.24,
+        "00985A": 2.89,
+        "00987A": 4.54,
+        "00988A": 2.62,
+        "00992A": 0.96
+      }
+    },
+    {
+      "code": "2345",
+      "name": "智邦",
+      "etfs": [
+        "00981A",
+        "00987A",
+        "00992A"
+      ],
+      "weights": {
+        "00981A": 5.54,
+        "00987A": 3.99,
+        "00992A": 4.01
+      }
+    },
+    {
+      "code": "3665",
+      "name": "貿聯-KY",
+      "etfs": [
+        "00981A",
+        "00987A",
+        "00992A"
+      ],
+      "weights": {
+        "00981A": 5.71,
+        "00987A": 5.62,
+        "00992A": 0.93
+      }
+    },
+    {
+      "code": "3017",
+      "name": "奇鋐",
+      "etfs": [
+        "00981A",
+        "00987A",
+        "00988A",
+        "00992A"
+      ],
+      "weights": {
+        "00981A": 5.78,
+        "00987A": 6.33,
+        "00988A": 3.17,
+        "00992A": 3.51
+      }
+    },
+    {
+      "code": "2383",
+      "name": "台光電",
+      "etfs": [
+        "00981A",
+        "00987A",
+        "00988A",
+        "00992A"
+      ],
+      "weights": {
+        "00981A": 7.62,
+        "00987A": 4.24,
+        "00988A": 2.86,
+        "00992A": 4.35
+      }
+    },
+    {
+      "code": "6274",
+      "name": "台燿",
+      "etfs": [
+        "00981A",
+        "00987A",
+        "00992A"
+      ],
+      "weights": {
+        "00981A": 1.58,
+        "00987A": 6.02,
+        "00992A": 0.73
+      }
+    },
+    {
+      "code": "8358",
+      "name": "金居",
+      "etfs": [
+        "00981A",
+        "00987A",
+        "00992A"
+      ],
+      "weights": {
+        "00981A": 0.45,
+        "00987A": 2.88,
+        "00992A": 1.97
+      }
+    },
+    {
+      "code": "6223",
+      "name": "旺矽",
+      "etfs": [
+        "00981A",
+        "00987A",
+        "00992A"
+      ],
+      "weights": {
+        "00981A": 5.21,
+        "00987A": 6.22,
+        "00992A": 3.59
+      }
+    },
+    {
+      "code": "6805",
+      "name": "富世達",
+      "etfs": [
+        "00981A",
+        "00987A",
+        "00992A"
+      ],
+      "weights": {
+        "00981A": 1.97,
+        "00987A": 3.16,
+        "00992A": 1.89
+      }
+    },
+    {
+      "code": "6510",
+      "name": "精測",
+      "etfs": [
+        "00981A",
+        "00987A",
+        "00992A"
+      ],
+      "weights": {
+        "00981A": 1.89,
+        "00987A": 1.76,
+        "00992A": 2.21
+      }
+    },
+    {
+      "code": "5274",
+      "name": "信驊",
+      "etfs": [
+        "00981A",
+        "00988A",
+        "00992A"
+      ],
+      "weights": {
+        "00981A": 3.43,
+        "00988A": 2.0,
+        "00992A": 1.55
+      }
+    },
+    {
+      "code": "6515",
+      "name": "穎崴",
+      "etfs": [
+        "00981A",
+        "00988A",
+        "00992A"
+      ],
+      "weights": {
+        "00981A": 1.79,
+        "00988A": 2.82,
+        "00992A": 3.68
+      }
+    },
+    {
+      "code": "3443",
+      "name": "創意",
+      "etfs": [
+        "00981A",
+        "00987A",
+        "00992A"
+      ],
+      "weights": {
+        "00981A": 0.59,
+        "00987A": 3.34,
+        "00992A": 0.73
+      }
+    },
+    {
+      "code": "6669",
+      "name": "緯穎",
+      "etfs": [
+        "00981A",
+        "00985A",
+        "00992A"
+      ],
+      "weights": {
+        "00981A": 0.24,
+        "00985A": 1.94,
+        "00992A": 2.31
+      }
+    },
+    {
+      "code": "2360",
+      "name": "致茂",
+      "etfs": [
+        "00987A",
+        "00988A",
+        "00992A"
+      ],
+      "weights": {
+        "00987A": 2.12,
+        "00988A": 1.31,
+        "00992A": 2.71
+      }
+    },
+    {
+      "code": "7769",
+      "name": "鴻勁",
+      "etfs": [
+        "00987A",
+        "00988A",
+        "00992A"
+      ],
+      "weights": {
+        "00987A": 1.41,
+        "00988A": 1.09,
+        "00992A": 2.66
+      }
+    }
+  ]
 };
 
 // ── Render Holdings Table ─────────────────────────────────────────────────────
