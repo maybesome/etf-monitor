@@ -155,7 +155,11 @@
 <body>
 
 <header>
-  <div class="container">
+  <div style="background:#7c2d12; color:#fef3c7; padding:14px 20px; border-radius:8px; margin:16px 0; border:1px solid #b45309; font-size:14px;">
+  ⚠️ <strong>資料更新暫停</strong>（2026/04/16）：本日自動排程執行時 Chrome 瀏覽器未連線，且財務資料來源（pocket.tw 等）受網路封鎖。<br>
+  顯示資料為最後成功抓取日期 <strong>2026/04/14</strong>，下次成功執行時將自動更新。
+</div>
+<div class="container">
     <div class="header-inner">
       <div>
         <h1>🔍 台灣<span>主動式ETF</span>持股監控</h1>
@@ -163,7 +167,7 @@
       </div>
       <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
         <div class="badge">AUTO UPDATED</div>
-        <div class="date-badge">分析日期：<strong>2026/04/14</strong></div>
+        <div class="date-badge">分析日期：<strong>2026/04/16（資料暫缺）</strong></div>
         <div class="date-badge">前期：<strong>2026/04/14</strong></div>
       </div>
     </div>
@@ -511,7 +515,7 @@
 <script>
 // ── Data ──────────────────────────────────────────────────────────────────────
 var data = {
-  "updateDate": "2026/04/14",
+  "updateDate": "2026/04/16",
   "etfs": {
     "00981A": {
       "name": "主動統一台股增長",
@@ -2690,7 +2694,7 @@ var data = {
       ]
     }
   },
-  "analysis": "【整體概況】
+  "analysis": "【資料暫缺通知 - 2026/04/16 08:11】\n本次自動排程執行遭遇技術問題，無法取得最新持股資料：\n• Chrome瀏覽器擴充功能未連線（extension not reachable）\n• 主要資料來源（pocket.tw、moneydj.com等）受網路封鎖限制\n\n最新有效資料日期：2026/04/14\n下次成功執行時將恢復正常更新。\n\n（以下為上次分析 2026/04/14 內容）\n\n【整體概況】
 今日（資料日期：2026/04/14）五檔主動式ETF出現明顯持股調整，合計新增持股24檔次、移除13檔次，顯示各投信主動管理動作積極。整體而言，操作方向偏向擴散布局，尤其00992A群益台灣科技創新大幅增加持股廣度，同時也有部分ETF進行精簡，如00988A統一全球創新出現較多持股汰換。
 
 【各ETF主要變動分析】
