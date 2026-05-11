@@ -37,11 +37,13 @@
   .nav-btn.etf-987 { --c: #a855f7; }
   .nav-btn.etf-988 { --c: #22c55e; }
   .nav-btn.etf-992 { --c: #f59e0b; }
+  .nav-btn.etf-400 { --c: #dc2626; }
   .nav-btn.active.etf-981 { background: #3b82f6; border-color: #3b82f6; }
   .nav-btn.active.etf-985 { background: #2563eb; border-color: #2563eb; }
   .nav-btn.active.etf-987 { background: #a855f7; border-color: #a855f7; }
   .nav-btn.active.etf-988 { background: #16a34a; border-color: #16a34a; }
   .nav-btn.active.etf-992 { background: #d97706; border-color: #d97706; }
+  .nav-btn.active.etf-400 { background: #dc2626; border-color: #dc2626; }
 
   /* ── Tab Content ── */
   .tab-content { display: none; padding: 20px 0 40px; }
@@ -133,6 +135,8 @@
   .theme-988 .weight-bar { background: #16a34a; }
   .theme-992 .etf-card-header { background: linear-gradient(135deg, #92400e, #d97706); }
   .theme-992 .weight-bar { background: #d97706; }
+  .theme-400 .etf-card-header { background: linear-gradient(135deg, #7f1d1d, #dc2626); }
+  .theme-400 .weight-bar { background: #dc2626; }
 
   /* ── Common Stocks Section ── */
   .common-table td:first-child { font-weight: 700; }
@@ -142,6 +146,7 @@
   .d-987 { background: #a855f7; }
   .d-988 { background: #16a34a; }
   .d-992 { background: #d97706; }
+  .d-400 { background: #dc2626; }
 
   /* ── Scrollbar ── */
   ::-webkit-scrollbar { width: 6px; height: 6px; }
@@ -177,6 +182,7 @@
       <button class="nav-btn etf-987" onclick="switchTab('t987')">00987A 台新優勢成長</button>
       <button class="nav-btn etf-988" onclick="switchTab('t988')">00988A 統一全球創新</button>
       <button class="nav-btn etf-992" onclick="switchTab('t992')">00992A 群益科技創新</button>
+      <button class="nav-btn etf-400" onclick="switchTab('t400')">00400A 國泰動能高息</button>
       <button class="nav-btn" onclick="switchTab('analysis')" style="margin-left:auto;">📝 今日分析</button>
     </nav>
   </div>
@@ -365,6 +371,22 @@
   ⏰ 排程更新時間：每個台股交易日下午 <strong>17:30</strong>（台灣時間，cron <code>30 17 * * 1-5</code>）<br>
   資料來源：StockQ.org · pocket.tw · GitHub Pages（自動發布）
 </div>
+
+
+<!-- ═══════════════ 00400A TAB ═══════════════ -->
+<div id="tab-t400" class="tab-content">
+  <div class="cards" style="margin-top:20px;"><div class="card"><div class="card-label">總持股</div><div class="card-value blue">47</div><div class="card-sub">首次納入監控</div></div><div class="card"><div class="card-label">資料日期</div><div class="card-value yellow" style="font-size:18px;">2026/05/08</div><div class="card-sub">pocket.tw 來源</div></div><div class="card"><div class="card-label">總權重</div><div class="card-value green">87.67%</div><div class="card-sub">扣現金與應付款</div></div><div class="card"><div class="card-label">最大持股</div><div class="card-value yellow" style="font-size:18px;">聯發科</div><div class="card-sub">8.90% / 2454</div></div></div>
+
+  <div class="section-title">完整持股清單（依比重排序）</div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>#</th><th>股票名稱</th><th>代號</th><th>今日比重</th><th>比重視覺化</th><th>狀態</th></tr></thead>
+      <tbody id="tbody-400"></tbody>
+    </table>
+  </div>
+</div>
+
+
 </main>
 
 <footer>
@@ -377,6 +399,294 @@
 // ── Data ──────────────────────────────────────────────────────────────────────
 var data = {
   "updateDate": "2026/05/11",
+  "400": {
+    "stocks": [
+      [
+        "2454",
+        "聯發科",
+        8.9,
+        null
+      ],
+      [
+        "2330",
+        "台積電",
+        8.36,
+        null
+      ],
+      [
+        "2383",
+        "台光電",
+        6.13,
+        null
+      ],
+      [
+        "2308",
+        "台達電",
+        5.96,
+        null
+      ],
+      [
+        "2360",
+        "致茂",
+        4.37,
+        null
+      ],
+      [
+        "5274",
+        "信驊",
+        4.18,
+        null
+      ],
+      [
+        "2368",
+        "金像電",
+        3.96,
+        null
+      ],
+      [
+        "2059",
+        "川湖",
+        3.46,
+        null
+      ],
+      [
+        "2408",
+        "南亞科",
+        3.28,
+        null
+      ],
+      [
+        "3037",
+        "欣興",
+        2.98,
+        null
+      ],
+      [
+        "3665",
+        "貿聯-KY",
+        2.79,
+        null
+      ],
+      [
+        "3017",
+        "奇鋐",
+        2.56,
+        null
+      ],
+      [
+        "3044",
+        "健鼎",
+        2.36,
+        null
+      ],
+      [
+        "6669",
+        "緯穎",
+        2.0,
+        null
+      ],
+      [
+        "8210",
+        "勤誠",
+        1.68,
+        null
+      ],
+      [
+        "6223",
+        "旺矽",
+        1.64,
+        null
+      ],
+      [
+        "4958",
+        "臻鼎-KY",
+        1.51,
+        null
+      ],
+      [
+        "2376",
+        "技嘉",
+        1.38,
+        null
+      ],
+      [
+        "1590",
+        "亞德客-KY",
+        1.38,
+        null
+      ],
+      [
+        "6488",
+        "環球晶",
+        1.32,
+        null
+      ],
+      [
+        "6147",
+        "頎邦",
+        1.16,
+        null
+      ],
+      [
+        "3036",
+        "文曄",
+        1.14,
+        null
+      ],
+      [
+        "2449",
+        "京元電子",
+        1.11,
+        null
+      ],
+      [
+        "2885",
+        "元大金",
+        1.08,
+        null
+      ],
+      [
+        "2382",
+        "廣達",
+        1.07,
+        null
+      ],
+      [
+        "1519",
+        "華城",
+        1.0,
+        null
+      ],
+      [
+        "2891",
+        "中信金",
+        0.95,
+        null
+      ],
+      [
+        "2357",
+        "華碩",
+        0.93,
+        null
+      ],
+      [
+        "1303",
+        "南亞",
+        0.77,
+        null
+      ],
+      [
+        "6187",
+        "萬潤",
+        0.77,
+        null
+      ],
+      [
+        "7750",
+        "新代",
+        0.7,
+        null
+      ],
+      [
+        "2345",
+        "智邦",
+        0.69,
+        null
+      ],
+      [
+        "2313",
+        "華通",
+        0.65,
+        null
+      ],
+      [
+        "2404",
+        "漢唐",
+        0.61,
+        null
+      ],
+      [
+        "3131",
+        "弘塑",
+        0.59,
+        null
+      ],
+      [
+        "6285",
+        "啟碁",
+        0.56,
+        null
+      ],
+      [
+        "3163",
+        "波若威",
+        0.47,
+        null
+      ],
+      [
+        "3293",
+        "鈊象",
+        0.46,
+        null
+      ],
+      [
+        "5434",
+        "崇越",
+        0.4,
+        null
+      ],
+      [
+        "2881",
+        "富邦金",
+        0.37,
+        null
+      ],
+      [
+        "1717",
+        "長興",
+        0.34,
+        null
+      ],
+      [
+        "6121",
+        "新普",
+        0.33,
+        null
+      ],
+      [
+        "6715",
+        "嘉基",
+        0.3,
+        null
+      ],
+      [
+        "3374",
+        "精材",
+        0.29,
+        null
+      ],
+      [
+        "3702",
+        "大聯大",
+        0.27,
+        null
+      ],
+      [
+        "6683",
+        "雍智科技",
+        0.25,
+        null
+      ],
+      [
+        "2385",
+        "群光",
+        0.21,
+        null
+      ]
+    ],
+    "new_stocks": [],
+    "removed": []
+  },
   "981": {
     "stocks": [
       [
@@ -1835,6 +2145,7 @@ function switchTab(id) {
   if(id==='t987' && !window._r987){ renderHoldings('987','tbody-987',false); window._r987=1; }
   if(id==='t988' && !window._r988){ renderHoldings('988','tbody-988',true); renderChanges('988','new-988','removed-988'); window._r988=1; }
   if(id==='t992' && !window._r992){ renderHoldings('992','tbody-992',true); renderChanges('992','new-992','removed-992'); window._r992=1; }
+  if(id==='t400' && !window._r400){ renderHoldings('400','tbody-400',false); window._r400=1; }
 }
 </script>
 
