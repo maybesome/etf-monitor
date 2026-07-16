@@ -14,6 +14,7 @@
   }
   .container { max-width: 900px; margin: 0 auto; }
   h1 { font-size: 22px; margin-bottom: 4px; }
+  .section-title { font-size: 18px; margin: 28px 0 12px; }
   .meta { color: #94a3b8; font-size: 14px; margin-bottom: 16px; }
   .stats {
     display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px;
@@ -33,6 +34,15 @@
   .back-link { display:inline-block; margin-top: 20px; color: #38bdf8; text-decoration: none; }
   .back-link:hover { text-decoration: underline; }
   .footer { margin-top: 24px; color: #64748b; font-size: 12px; }
+  .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-bottom: 16px; }
+  .news-card { background: #1e293b; border-radius: 8px; padding: 12px 16px; }
+  .news-card-title { font-weight: 700; font-size: 14px; margin-bottom: 8px; }
+  .news-card ul { list-style: none; margin: 0; padding: 0; font-size: 13px; color: #cbd5e1; line-height: 1.6; }
+  .focus-card { background: #2a1518; border-left: 4px solid #ef4444; border-radius: 8px; padding: 14px 16px; margin-bottom: 8px; }
+  .focus-title { color: #f87171; font-weight: 700; margin-bottom: 6px; font-size: 14px; }
+  .focus-body { font-size: 13px; color: #e2e8f0; line-height: 1.7; }
+  .news-sources { font-size: 11px; color: #64748b; margin-bottom: 24px; }
+  .news-sources a { color: #64748b; }
 </style>
 </head>
 <body>
@@ -263,6 +273,40 @@
     </tbody>
   </table>
   <div class="footer">前3名：00913 兆豐台灣晶圓製造 (109.99%)、00935 野村臺灣新科技50 (92.08%)、00735 國泰臺韓科技 (91.31%)　|　排除正2/反1槓桿反向ETF　|　資料來源：stockq.org</div>
+  
+  <h2 class="section-title">🔔 台股盤前快報</h2>
+  <div class="news-grid">
+        <div class="news-card" style="border-left:4px solid #10b981">
+          <div class="news-card-title" style="color:#10b981">🇺🇸 隔夜美股</div>
+          <ul><li>▸ 道瓊漲0.02%收52,508.27點，那斯達克漲0.90%收26,107.01點，標普500漲0.38%收7,543.59點；6月CPI年增降至3.5%（低於預期），核心CPI降至2.6%，通膨降溫帶動風險偏好回升</li><li>▸ 費城半導體指數(SOX)重挫2.08%收12,398.89點，美光跌8.02%、邁威爾跌7.27%、英特爾跌4.43%、AMD跌3.46%，記憶體與晶片股領跌大盤</li><li>▸ 指數表現分歧：CPI降溫支撐大盤收紅，但半導體類股遭獲利了結賣壓，與稍後亞股重挫形成對比</li></ul>
+        </div>
+        <div class="news-card" style="border-left:4px solid #06b6d4">
+          <div class="news-card-title" style="color:#06b6d4">🎯 台股 ADR</div>
+          <ul><li>▸ 台積電ADR(TSM)收419.48美元，跌0.22%，較台北股價溢價約9.64%</li><li>▸ SOX重挫壓抑晶片股ADR表現，聯電、日月光ADR同步偏弱</li><li>▸ 溢價幅度收斂，反映外資對台股半導體開盤氣氛轉趨謹慎</li></ul>
+        </div>
+        <div class="news-card" style="border-left:4px solid #f59e0b">
+          <div class="news-card-title" style="color:#f59e0b">💱 匯率與利率</div>
+          <ul><li>▸ 美元/新台幣約32.11元（近期資料，實際開盤匯率請以央行/銀行當日掛牌為準）</li><li>▸ Fed維持利率3.50%-3.75%不變機率約74.9%，CPI降溫帶動降息預期升溫</li><li>▸ Fed主席Warsh移除傳統前瞻指引，改採純數據依賴決策模式，市場對後續路徑敏感度提高</li></ul>
+        </div>
+        <div class="news-card" style="border-left:4px solid #fb923c">
+          <div class="news-card-title" style="color:#fb923c">🛢️ 大宗商品</div>
+          <ul><li>▸ WTI原油上漲至79.92美元/桶，布蘭特原油盤中一度衝上86.43美元，因美國對伊朗展開新一輪打擊並恢復荷姆茲海峽港口封鎖，地緣風險推升油價</li><li>▸ 川普宣布對經荷姆茲海峽貨物課徵20%通行費，能源運輸風險持續發酵</li><li>▸ 黃金持穩於4,060美元/盎司附近，避險買盤維持一定水位</li></ul>
+        </div>
+        <div class="news-card" style="border-left:4px solid #3b82f6">
+          <div class="news-card-title" style="color:#3b82f6">🌏 亞股與期貨</div>
+          <ul><li>▸ 日韓股市7/16早盤重挫：日經225下跌逾2%以上，韓國KOSPI一度重挫逾5-6%，觸發「SIDECAR」機制暫停程式交易</li><li>▸ SK海力士、三星電子、鎧俠等記憶體/AI晶片股領跌，主因存儲晶片板塊疲軟疊加短線獲利了結</li><li>▸ 台指期夜盤缺乏明確數據，惟區域晶片股重挫恐為台股開盤帶來壓力</li></ul>
+        </div>
+        <div class="news-card" style="border-left:4px solid #a855f7">
+          <div class="news-card-title" style="color:#a855f7">📰 總經與地緣</div>
+          <ul><li>▸ 美國6月CPI年增3.5%（前值4.2%），核心CPI降至2.6%，通膨降溫帶動降息預期升溫</li><li>▸ 中東地緣風險升溫：美國對伊朗新一輪打擊、恢復荷姆茲海峽港口封鎖並課徵20%通行費，能源供應風險成市場觀察焦點</li><li>▸ 日韓記憶體/AI晶片股7/16重挫並觸發熔斷機制，反映全球AI類股獲利了結壓力，需留意是否蔓延至台股電子權值股</li></ul>
+        </div>
+  </div>
+  <div class="focus-card">
+    <div class="focus-title">🎯 今日台股開盤關注重點</div>
+    <div class="focus-body">今日台股開盤預期呈現震盪偏空格局：主要壓力來自日韓記憶體/AI晶片股當日早盤重挫（KOSPI一度觸發熔斷）透過供應鏈與ADR連動衝擊台股半導體氣氛，加上台積電ADR小跌、溢價收斂；惟隔夜美股在CPI降溫帶動下收紅、Fed降息預期升溫，可提供部分支撐。建議留意半導體（記憶體、IC設計）、AI供應鏈類股是否跟跌，以及受油價走升影響的塑化、航運類股。</div>
+  </div>
+  <div class="news-sources"><a href="https://finance.sina.com.cn/stock/usstock/c/2026-07-15/doc-inihvivs5022331.shtml" target="_blank" rel="noopener">來源1</a>　<a href="https://www.wantgoo.com/global/tsm" target="_blank" rel="noopener">來源2</a>　<a href="https://www.tradingkey.com/zh-hant/analysis/stocks/more/262033127-kospi-nekki-kioxia-samsung-skhynix-ai-softbank-adr-skhy-etf-tradingkey" target="_blank" rel="noopener">來源3</a>　<a href="https://www.sina.cn/news/detail/5321234046781223.html" target="_blank" rel="noopener">來源4</a></div>
+
   <a class="back-link" href="index.html">&larr; 返回歷史總覽</a>
 </div>
 </body>
