@@ -1,0 +1,97 @@
+{
+  "date": "2026-07-17",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "美股三大指數收盤全面下跌：S&P 500 收7,533.77點（-0.51%）、那斯達克收25,881.95點（-1.47%）、道瓊收52,552.97點（-0.20%，-105.67點）。",
+        "費城半導體指數（SOX）連兩日重挫逾2%，盤中一度由12,774跌至12,335附近，AI資本支出疑慮引發獲利了結賣壓。",
+        "台積電上調全年資本支出展望至600-640億美元（原520-560億美元），市場卻解讀為晶片股「利多出盡」，連帶拖累費半與那斯達克。",
+        "Alphabet與其他科技股同步走弱，加重那斯達克跌幅。",
+        "VIX恐慌指數收15.67，波動率仍處相對低檔，市場尚未出現恐慌性拋售。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR（TSM）收413.50美元，單日下跌1.43%，週跌幅擴大至5.77%，跟隨美股晶片股同步走弱。",
+        "換算台北股價（以匯率約32計算）近期仍呈現溢價，7月上旬溢價率一度達9-17%區間（7/7約17.68%），惟隔夜TSM下跌後溢價可能收斂，實際以開盤為準。",
+        "聯電ADR（UMC）最新可查數據約26.65美元（6/29），資料較舊，建議以台股開盤實際表現為準。",
+        "日月光（ASE）ADR今日查無最新報價。",
+        "整體ADR訊號偏向：晶圓代工類股開盤面臨獲利了結賣壓。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元兌新台幣約32.15-32.21，新台幣續呈弱勢，週線走貶約0.2%，月線貶值約1.73%。",
+        "美元指數（DXY）報100.49，處於今年關鍵區間，牽動外資進出方向。",
+        "10年期美債殖利率報4.563%，週漲近0.9%，殖利率走升增添成長股評價壓力。",
+        "新台幣偏弱格局若延續，可能減緩外資調節台股賣壓，但幅度有限。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI原油報79.67美元/桶，Brent原油報84.86美元/桶，中東地緣緊張持續支撐油價高檔。",
+        "黃金期貨報3,983.05美元，小漲0.07%，避險買盤持穩。",
+        "銅價報6.2918美元，小漲0.15%，反映電子與工業需求尚稱穩定。",
+        "油價維持高檔對散裝航運、塑化成本面偏不利，需留意相關類股表現。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "日經225大跌3.06%（-2,106點），收66,645.51點，晶片股拋壓外溢至日本科技股。",
+        "台指期夜盤同步走弱，16日以45,450點開低，盤中一度殺至44,576點，重挫逾1,100點、失守45,000關卡。",
+        "南韓KOSPI及香港恆生指數今日盤中即時收盤數據暫未取得，但區域晶片供應鏈類股同步承壓機率高。",
+        "台指期夜盤走勢通常對隔日台股開盤具高度領先性，本次夜盤破底暗示今日開盤壓力沉重。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "美國6月CPI年增3.5%、月減0.4%，優於市場預期（原估3.8%/-0.2%），核心CPI年增2.6%、月率持平，通膨降溫。",
+        "Fed主席Warsh表態「尚非任務完成」，市場預期7/29 FOMC按兵不動，惟部分分析仍預期9月可能升息，政策路徑仍存不確定性。",
+        "台美關稅協議已於1月15日拍板：對等關稅降至15%且不與最惠國關稅疊加，半導體及其衍生品獲最優惠待遇，短期貿易面風險降低。",
+        "美中在貿易與台灣議題上長期緊張格局未解，有國會議員示警2026年美中關係可能再度轉趨緊繃，惟短期未見突發性台海事件。"
+      ]
+    }
+  ],
+  "focus": "受台積電上修資本支出後遭市場「利多出盡」解讀影響，美股費半、那斯達克連兩日重挫，日經重挫逾3%，台指期夜盤更一度摜破45,000點、重挫超過1,100點，預期今日台股開盤將偏空震盪，賣壓主要來自晶圓代工與AI供應鏈類股的獲利了結；匯率面新台幣續弱、殖利率走升亦不利成長股評價。建議留意半導體（台積電、聯電、日月光）、AI供應鏈，以及原油走高受惠的塑化類股表現，同時關注美債殖利率與Fed政策動向是否引發進一步賣壓。",
+  "sources": [
+    "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-16-2026",
+    "https://www.cnbc.com/2026/07/15/stock-market-today-live-updates.html",
+    "https://finance.yahoo.com/markets/live/stock-market-today-thursday-july-16-dow-sp-500-nasdaq-103116735.html",
+    "https://finance.yahoo.com/quote/%5ESOX/",
+    "https://finance.yahoo.com/quote/%5EVIX/history/",
+    "https://finance.yahoo.com/quote/TSM/",
+    "https://www.wantgoo.com/global/tsm",
+    "https://money.udn.com/money/story/5599/9611356",
+    "https://finance.yahoo.com/quote/UMC/",
+    "https://finance.yahoo.com/quote/TWD=X/",
+    "https://finance.yahoo.com/quote/DX-Y.NYB/",
+    "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
+    "https://www.investing.com/commodities/crude-oil",
+    "https://www.investing.com/commodities/brent-oil",
+    "https://finance.yahoo.com/quote/%5EN225/",
+    "https://tw.stock.yahoo.com/future/WTX&",
+    "https://udn.com/news/story/7255/9632489",
+    "https://www.cnbc.com/2026/07/14/consumer-price-index-inflation-report-june-2026.html",
+    "https://federalnewsnetwork.com/prediction-markets/2026/07/cpi-falls-june-trade-prediction-markets-fed-decision-in-july-2026/",
+    "https://blog.104.com.tw/what-is-the-us-reciprocal-tariff-storm/"
+  ]
+}
