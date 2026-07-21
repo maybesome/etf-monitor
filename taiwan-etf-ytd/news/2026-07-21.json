@@ -1,0 +1,93 @@
+{
+  "date": "2026-07-21",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "道瓊工業指數7/20收跌307點（-0.59%）至51,839點，S&P 500下跌0.2%，那斯達克近乎持平；大盤受中東緊張情勢升溫及避險情緒壓抑。",
+        "費城半導體指數（SOX）逆勢收漲0.6%至11,743.80點，顯示晶片股表現相對抗跌。",
+        "VIX恐慌指數近期在16~17區間震盪，市場對後續波動仍保持警戒。",
+        "科技與AI硬體股表現分歧，市場等待本週重量級財報公布，短線氣氛偏謹慎。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR（TSM）收409.74美元，下跌2.32%，跌幅大於台北現貨股價，盤前參考略偏空。",
+        "聯電ADR（UMC）重挫10.55%至22.29美元，跌幅明顯放大，需留意是否為個別利空（如財報或展望）所致。",
+        "日月光（ASE）ADR今日未查得明確數據，建議開盤前另行確認。",
+        "整體ADR表現偏弱，尤其聯電跌幅顯著，對台股半導體族群開盤情緒可能形成壓力。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元／新台幣約在32.28附近，較前一交易日走升0.42%，新台幣持續偏弱格局。",
+        "美元指數（DXY）近期落在約100.9附近，較月初高點101.4略為降溫。",
+        "美國10年期公債殖利率回升至約4.57%，受中東情勢推升油價、通膨疑慮升溫影響。",
+        "美元／日圓貼近162.5，日圓續處於近數十年低點附近，亞幣普遍承壓。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI原油約82.2美元/桶，下跌0.34%；布蘭特原油約87.7美元/桶，下跌0.44%，稍早一度衝高至91美元後回落，市場關注美伊外交進展。",
+        "現貨黃金站穩4,000美元關卡上方，一度反彈至4,090美元附近，受美元走軟與避險需求支撐。",
+        "油價從高點回落有助降低運輸、塑化成本壓力，但地緣風險未除，波動仍大。",
+        "銅價與半導體相關原物料今日未查得明確數據，建議另行確認。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "台指期夜盤收43,134點，較台股日盤大漲472點（+1.11%），暗示今日開盤偏多動能。",
+        "台股加權指數7/20日盤收42,449.70點，下跌221.57點。",
+        "南韓KOSPI指數7/20重挫4.5%至6,516.27點，創4月24日以來新低，市場氣氛明顯轉弱。",
+        "日本因海之日（Marine Day）休市一日，日經225上一交易日（7/17）收64,141.12點，重挫4.03%，主因晶片股拋售引發修正；今日恢復交易，期貨走勢值得留意。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "Fed維持利率於3.50%–3.75%區間，但市場對9月升息機率一度升高至73%，主因伊朗戰事帶來的通膨壓力擴散至核心PCE。",
+        "美伊/以中東緊張情勢仍是市場最大變數，近期傳出外交斡旋跡象，若情勢降溫可能減緩油價與Fed升息壓力。",
+        "新任Fed主席相關談話帶動美元走軟、金價走揚，市場正重新評估Fed政策路徑。",
+        "整體總經環境仍存在跳空缺口風險，建議密切留意中東情勢與美國通膨數據後續發展。"
+      ]
+    }
+  ],
+  "focus": "今日台股開盤預期呈現震盪偏多開出，台指期夜盤逆勢收漲472點（+1.11%）為主要支撐訊號；但聯電ADR重挫逾10%、南韓KOSPI大跌4.5%創波段新低，加上美股受中東地緣風險與美債殖利率走升壓抑，構成上檔壓力。建議留意半導體（聯電相關族群）、AI硬體、金融（受惠殖利率走升）與塑化（油價回落）類股表現，並關注中東情勢與Fed動向是否引發盤中跳空。",
+  "sources": [
+    "https://www.cnbc.com/2026/07/06/stock-market-today-live-updates.html",
+    "https://finance.yahoo.com/markets/live/stock-market-today-monday-july-20-dow-sp-500-nasdaq-111429441.html",
+    "https://www.wantgoo.com/global/sox",
+    "https://www.cboe.com/tradable-products/vix/",
+    "https://finance.yahoo.com/quote/TSM/",
+    "https://finviz.com/stock?t=TSM",
+    "https://rate.bot.com.tw/xrt?Lang=zh-TW",
+    "https://tradingeconomics.com/united-states/government-bond-yield",
+    "https://finance.yahoo.com/quote/DX-Y.NYB/",
+    "https://www.forbes.com/advisor/investing/oil-prices-today/",
+    "https://tradingeconomics.com/commodity/brent-crude-oil",
+    "https://www.gold-tw.com/blog/gold-price-july-15-2026-analysis",
+    "https://news.cnyes.com/news/id/6518159",
+    "https://www.cmoney.tw/forum/futures/TXF1?s=p",
+    "https://www.ebc.com/forex/nikkei-correction-chip-selloff-july-2026",
+    "https://ts2.tech/en/tokyo-market-shuts-for-marine-day-holiday-nikkei-chip-focus-to-be-tested-tuesday/",
+    "https://www.indexbox.io/blog/fed-rate-hike-probability-surges-to-73-as-iran-war-inflation-spreads-beyond-energy/",
+    "https://www.exchangerates.org.uk/USD-JPY-spot-exchange-rates-history-2026.html"
+  ]
+}
