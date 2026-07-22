@@ -1,0 +1,86 @@
+{
+  "date": "2026-07-22",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "那斯達克大漲1.29%收25,837.21點，標普500上漲0.89%收7,509.20點，道瓊上漲385點(+0.74%)收52,224.64點，三大指數終止連三日跌勢。",
+        "費城半導體指數(SOX)同步走揚，晶片股全面反彈；輝達(NVIDIA)因入股AI雲端商Nebius，股價上漲近2%。",
+        "VIX恐慌指數降至18.65，較前一交易日下跌0.64%，市場恐慌情緒略為緩解。",
+        "儘管美股收紅，油價飆漲與中東地緣政治風險仍是市場隱憂，須留意後續波動放大。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR收398.37美元，單日下跌2.77%；換算後（匯率32.37、1ADR=5股）約對應台股2,579元，較台北收盤價呈溢價，顯示外資對後市偏正向。",
+        "聯電ADR收26.65美元；日月光ADR(ASX)收40.02美元，表現平穩。",
+        "整體ADR走勢優於美股大盤，反映資金動能持續集中於半導體供應鏈。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元兌新台幣報32.37，較前一日升值0.07元(+0.22%)，新台幣走弱，需留意外資匯出動向。",
+        "美國10年期公債殖利率維持4.22%~4.24%附近，市場預期Fed於7/28-29 FOMC會議維持利率不變機率逾九成。",
+        "6月CPI年增3.5%~3.9%優於市場預期，核心CPI年增2.6%，通膨降溫但降息時點市場仍有分歧。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI/Brent原油因中東地緣風險（荷莫茲海峽與曼德海峽雙重封鎖疑慮）大漲，Brent一度衝上91美元以上。",
+        "黃金約在每盎司4,030美元附近，受油價推升的通膨預期與Fed可能升息影響，金價承壓走弱。",
+        "銅價上漲約3%至每磅6.32~6.50美元，中國現貨緊俏及智利供應中斷支撐銅價。",
+        "油價飆升對台股塑化、航運類股是雙面刃：原物料成本上升，但運價可能受惠。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "日經225近期於67,700~68,000點區間震盪整理。",
+        "韓國KOSPI因地緣政治恐慌一度單日重挫逾5%後又V型反彈，波動明顯放大。",
+        "台股加權指數上一交易日在台積電、聯發科等電子權值股帶動下強勢表現，台積電站上2,410~2,470元關卡。",
+        "亞股普遍受中東情勢牽動，建議留意夜盤台指期走勢作為開盤方向即時參考。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "美伊衝突持續延燒，荷莫茲海峽自2月以來已大致受阻，青年運動組織(Houthis)宣布同步封鎖曼德海峽，雙重海峽封鎖威脅全球能源運輸。",
+        "Fed下週(7/28-29)召開FOMC會議，市場預期逾九成機率維持利率不變，但官員談話中仍保留升息選項以因應油價推升的通膨風險。",
+        "中東緊張情勢若進一步升級，恐令油價劇烈波動並牽動全球股市避險情緒，台海及中美關係亦需持續留意潛在意外事件。"
+      ]
+    }
+  ],
+  "focus": "今日台股開盤預期呈現「震盪偏多」格局：隔夜美股三大指數走揚且晶片股全面反彈，加上台積電ADR溢價，為開盤提供支撐；但中東雙海峽封鎖疑慮推升油價與波動度，可能限制漲幅並帶來盤中震盪。建議留意半導體、AI概念股是否延續美股慣性表現，同時關注塑化、航運類股受油價影響，以及金融股在美債殖利率變化下的表現。",
+  "sources": [
+    "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-july-21-dow-sp-500-nasdaq-084631499.html",
+    "https://www.washingtonpost.com/business/2026/07/21/wall-street-stocks-dow-nasdaq/047ed8ae-8541-11f1-9cec-0fb26676f07e_story.html",
+    "https://us.trendlyne.com/us/equity/1404971/TSM/taiwan-semiconductor-manufacturing-adr/",
+    "https://www.investing.com/equities/united-microelectronics-corp",
+    "https://www.investing.com/equities/advanced-semiconductor-engineering",
+    "https://invest.cnyes.com/forex/detail/USDTWD",
+    "https://tradingeconomics.com/united-states/government-bond-yield",
+    "https://www.investing.com/commodities/brent-oil",
+    "https://www.goldlegend.com/tw/price",
+    "https://carboncredits.com/copper-prices-today/",
+    "https://www.npr.org/2026/07/21/nx-s1-5901846/us-iran-updates",
+    "https://federalnewsnetwork.com/prediction-markets/2026/07/cpi-falls-june-trade-prediction-markets-fed-decision-in-july-2026/",
+    "https://www.ebc.com/zh/jinrong/303901.html",
+    "https://money.udn.com/money/story/12509/9631716"
+  ]
+}
