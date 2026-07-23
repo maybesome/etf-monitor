@@ -1,0 +1,91 @@
+{
+  "date": "2026-07-23",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "美股三大指數全面收紅：S&P 500 +0.9% 收 7,509.20，那斯達克 +1.3% 收 25,837.21，道瓊 +0.7% 收 52,224.64。",
+        "費城半導體指數（SOX）大漲 5.2%，AI與晶片股領漲大盤，市場聚焦AI基礎建設需求持續強勁。",
+        "VIX恐慌指數重挫 8.6% 至 17.05，市場風險情緒明顯降溫。",
+        "油價走高一度壓抑漲幅，但科技股強勢表現仍蓋過中東地緣政治疑慮。",
+        "市場關注稍晚 Alphabet、Tesla 財報，可能牽動今晚美股走勢。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR大漲 5.55% 收 424.61 美元，換算台股約 2,746.8 元，較台北現股溢價約 14.2%，為外資買盤重要領先指標。",
+        "ADR強勢連動SOX大漲，顯示國際資金對台灣半導體供應鏈信心回升。",
+        "聯電、日月光ADR公開即時數據有限，但可望隨半導體類股整體偏多氣氛連動走高。",
+        "ADR溢價若持續擴大，可能吸引外資今日加碼台積電現股，激勵大盤開高。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元/新台幣約在 32.34～32.39 區間，匯價原地踏步，波動有限。",
+        "新台幣近一個月貶值約 2.1%，過去12個月貶值逾10%，反映資金流向與利差因素。",
+        "美元指數（DXY）近期回落至約 100.9，較月初高點 101.39 略降，反映降息預期與勞動市場數據轉弱。",
+        "10年期美債殖利率約 4.2% 附近，CPI降溫後殖利率走低，有利成長股評價。",
+        "人民幣兌美元約 6.79，日圓同步偏弱，亞洲貨幣普遍承壓。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI原油約 82.2 美元（-0.34%），布蘭特原油約 88.8 美元（-0.48%），因中東（以色列-伊朗-美國）衝突持續，油價維持高檔。",
+        "黃金大漲 1.35% 至 4,070 美元，避險買盤湧入，反映地緣政治風險升溫。",
+        "銅價上漲 2.91%，工業金屬需求穩健，對電子原物料成本面偏正向。",
+        "高油價可能壓抑運輸、塑化類股成本端表現，需留意類股輪動。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "日經225期貨約在 66,600～67,200 點區間震盪，追蹤美股科技股強勢表現。",
+        "南韓KOSPI近期走勢偏多，市場氣氛隨美股半導體大漲同步樂觀。",
+        "台指期夜盤通常緊貼美股走勢，SOX大漲5.2%可望激勵台指期夜盤走高，為今日開盤最直接領先指標。",
+        "亞股今早開盤普遍可望呈現偏多氣氛，惟需留意香港恆生指數受中國政策面消息影響。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "Fed維持利率於 3.50%–3.75% 不變機率偏高，下次FOMC會議訂於7月29日，市場預期暫不升息。",
+        "6月CPI年增3.5%，核心CPI年增2.6%，通膨降溫幅度優於預期，降低近期升息急迫性。",
+        "美國預計對約60個貿易夥伴課徵新關稅（10%–12.5%），台灣半導體產業面臨赴美增產壓力（傳美方要求40%以上產能移轉），供應鏈布局仍具不確定性。",
+        "中東美伊以衝突持續延燒，美軍已連續多日空襲伊朗，波及荷莫茲海峽航運安全，為油價與市場風險情緒最大變數。",
+        "台海地緣政治風險仍在，兩岸產業「競合並存」格局延續，美中戰略競爭增添台灣政治風險溢酬。"
+      ]
+    }
+  ],
+  "focus": "受美股科技與半導體股大漲（那斯達克+1.3%、SOX+5.2%）及台積電ADR溢價擴大至14.2%激勵，預期今日台股開盤偏多、可望開高震盪；主要支撐來自國際資金回補半導體權值股的動能，壓力則來自中東地緣政治升溫推升油價與美國新關稅政策對供應鏈的不確定性。建議留意半導體、AI相關類股表現，同時關注塑化、運輸類股因油價偏高承受的成本壓力。",
+  "sources": [
+    "https://www.fool.com/coverage/stock-market-today/2026/07/22/stock-market-today-july-22-nasdaq-slides-prior-to-tesla-and-alphabet-s-earnings-after-market-close/",
+    "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-july-22-dow-sp-500-nasdaq-alphabet-tesla-earnings-083644887.html",
+    "https://www.investing.com/indices/phlx-semiconductor",
+    "https://news.pchome.com.tw/finance/cna_business/20260722/index-17846766797651922003.html",
+    "https://udn.com/news/story/6811/9601685",
+    "https://www.investing.com/currencies/usd-twd",
+    "https://tradingeconomics.com/united-states/stock-market",
+    "https://www.investing.com/commodities/crude-oil",
+    "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
+    "https://intellectia.ai/blog/us-cpi-inflation-fed-policy-july-2026",
+    "https://www.secretchina.com/news/b5/2026/07/22/1102357.html",
+    "https://zh.wikipedia.org/zh-tw/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_(2026%E5%B9%B4)",
+    "https://newtalk.tw/news/view/2026-07-20/1048302"
+  ]
+}
