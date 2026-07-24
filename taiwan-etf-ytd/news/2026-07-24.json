@@ -1,0 +1,90 @@
+{
+  "date": "2026-07-24",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "S&P 500下跌1.21%收7,408.30，那斯達克重挫2.15%收25,137.69，道瓊跌506.93點(-0.97%)收51,711.65，三大指數集體轉弱",
+        "Alphabet財報後重挫7%，主因AI資本支出疑慮升溫；特斯拉財報後暴跌14%，科技股領跌大盤",
+        "中東衝突擴大推升油價，通膨與利率憂慮壓抑風險偏好，為大盤主要拖累因素",
+        "費城半導體指數(SOX)最新報12,499點，較前一交易日上漲約1.16%，半導體股相對抗跌",
+        "VIX恐慌指數降至16.81(-1.41%)，市場恐慌情緒未明顯升溫，但需留意後續波動"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR(TSM)收421.21美元，下跌0.8%，換算後較台北股價溢價縮小至13.8%",
+        "聯電ADR(UMC)約21.19美元，走勢平穩",
+        "TSM ADR溢價較去年初高點(約25%)已明顯收斂，反映市場對AI晶片需求熱度略降溫",
+        "ADR溢價縮小通常顯示外資追價意願減弱，開盤初期台積電現股表現可能相對保守"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元兌新台幣約32.26–32.34，新台幣近一個月貶值約1.6%，近一年貶值近9.7%",
+        "美元指數(DXY)約100.9附近，因避險需求與聯準會態度審慎而持穩",
+        "美國10年期公債殖利率約4.66%，逼近兩個月高點，主因油價飆升推升通膨疑慮",
+        "市場預期聯準會年底前升息機率一度升至近88%，與先前降息預期大幅逆轉，需留意外資資金流向"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI原油約86–89美元/桶，布蘭特原油飆升至99–101美元/桶，創5月以來新高",
+        "中東情勢(美伊衝突、胡塞武裝襲擊沙國油輪及封鎖)是油價飆漲主因，牽動通膨與運輸成本",
+        "黃金回落至約4,045美元/盎司(-2.06%)，銅價跌至6.28美元/磅(-2.7%)，避險買盤暫未跟進油價漲勢",
+        "油價上漲對塑化、航運成本面偏空；需留意後續能源成本傳導至通膨數據"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "日經225指數約67,242點，下跌1.92%，受美股收黑與油價上漲牽動",
+        "韓股KOSPI相關期貨明顯走弱，市場對台韓科技股同步轉趨保守",
+        "台指期夜盤及台積電ADR溢價縮小，加上美股科技股重挫，暗示今日開盤承壓",
+        "亞股普遍受中東地緣風險與美股表現拖累，早盤留意資金是否轉趨防禦"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "台美貿易協議拍板，關稅由20%降至15%，台灣承諾投資美國5,000億美元於半導體、AI、能源產業",
+        "美伊衝突進入第11天，胡塞武裝封鎖威脅沙國石油航道，地緣風險持續升溫",
+        "聯準會年底前升息機率上升至近88%，市場對降息路徑預期大幅逆轉",
+        "美國BIS新增出口管制授權代碼C79，針對晶圓廠輸往中國的半導體設備加強審查",
+        "中美貿易與台海議題仍是市場關注焦點，需留意突發地緣政治消息造成跳空風險"
+      ]
+    }
+  ],
+  "focus": "受美股科技股重挫(Alphabet -7%、特斯拉-14%)與中東地緣風險推升油價、殖利率走高影響，預期今日台股開盤偏空、震盪整理為主；主要壓力來自那斯達克重挫與聯準會升息預期升溫，支撐則來自SOX相對抗跌及台積電ADR溢價仍維持正值；建議留意半導體、AI概念股逢低承接機會，並留意塑化、航運類股受油價上漲的成本壓力。",
+  "sources": [
+    "https://www.washingtonpost.com/business/2026/07/23/wall-street-dow-nasdaq-stocks/70df2dda-86d3-11f1-9cec-0fb26676f07e_story.html",
+    "https://www.investing.com/indices/phlx-semiconductor",
+    "https://money.udn.com/money/story/123398/9645356",
+    "https://www.barchart.com/stocks/quotes/UMC",
+    "https://tradingeconomics.com/taiwan/currency",
+    "https://tradingeconomics.com/united-states/government-bond-yield",
+    "https://www.forbes.com/advisor/investing/oil-prices-today/",
+    "https://federalnewsnetwork.com/prediction-markets/2026/07/oil-prices-rise-conflict-middle-east-resumes-trade-markets-wti-oil-price/",
+    "https://tradingeconomics.com/commodity/gold",
+    "https://tradingeconomics.com/commodity/copper",
+    "https://www.cnbc.com/2026/07/03/stock-market-today-live-updates.html",
+    "https://www.sinotrade.com.tw/richclub/hotstock/%E5%8F%B0%E7%BE%8E%E8%B2%BF%E6%98%93%E5%8D%94%E8%AD%B0%E6%8B%8D%E6%9D%BF-%E9%97%9C%E7%A8%85%E9%99%8D%E8%87%B315",
+    "https://fortune.com/2026/07/13/oil-price-rises-inflation-expectations-warsh-fed-goldman/"
+  ]
+}
