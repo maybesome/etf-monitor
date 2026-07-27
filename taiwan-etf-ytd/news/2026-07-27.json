@@ -1,0 +1,86 @@
+{
+  "date": "2026-07-27",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "上週五（7/24）美股收盤：S&P 500 收 7,411.98 點（+0.05%）、Nasdaq 收 24,975.82 點（-0.64%）、道瓊收 51,947.25 點（+0.46%），三大指數當週皆收黑，Nasdaq 單週跌約 2%，主因晶片股賣壓與中東緊張情緒。",
+        "費半指數（SOX）持續測試季線支撐區（約 12,000 點附近），科技資本支出疑慮持續壓抑晶片股表現。",
+        "台灣時間週一清晨（亞洲盤前）美股期貨轉強：因美國連續第二晚未對伊朗發動軍事行動，地緣風險降溫，Nasdaq 100 期貨一度上漲逾 1%。",
+        "整體訊號偏向：晶片股短線仍疲弱，但地緣緩和帶動風險偏好回升，屬於偏多但需觀察延續性的格局。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電 ADR（TSM）最新報價約 403.41 美元，近期走勢隨美股晶片股回落而承壓。",
+        "聯電 ADR（UMC）約 19.48 美元，跌幅較台積電更明顯，反映成熟製程需求疑慮。",
+        "隨美股期貨轉強、地緣風險降溫，需留意 ADR 折溢價是否同步回升，作為法人開盤參考。",
+        "日月光（ASE）與其他權值 ADR 走勢建議另行確認即時報價，本次搜尋未取得最新完整數據。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元/新台幣近期於 32.26～32.48 區間震盪，處於今年相對高檔區，新台幣走弱不利外資匯出入誘因。",
+        "美國 10 年期公債殖利率約落在 4.6%～4.7% 區間，2 年期約 4.18%，近期受 6 月 CPI 降溫影響略為下滑。",
+        "美元指數（DXY）約 100.9，較 7 月初高點 101.39 略為降溫。",
+        "FOMC 會議訂於 7/29（本週三）登場，市場普遍預期維持利率區間 3.50%～3.75% 不變，全年可能僅降息一碼。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "受美國暫緩對伊朗軍事行動影響，週一亞洲盤原油明顯回落，布蘭特原油一度跌破 90 美元/桶，市場鬆一口氣。",
+        "上週五 WTI 原油約 85.15 美元/桶、布蘭特約 96.78 美元/桶，中東衝突溢價仍在，油價波動劇烈。",
+        "黃金約 4,070.80 美元（+0.51%），避險買盤仍具支撐力道。",
+        "銅價約 6.36 美元/磅（+0.16%），電子原料成本相對平穩。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "受 AI 類股估值疑慮影響，日經、KOSPI 上週表現偏弱。",
+        "隨美股期貨週一清晨轉強、油價回落，亞股早盤情緒可望隨之改善。",
+        "台指期夜盤走勢建議另行確認即時報價，本次搜尋未取得 7/27 當日完整數據，僅供參考此前一週夜盤多隨美股晶片股連動。",
+        "整體亞股風向：地緣風險降溫為短線正向因子，但科技股基本面疑慮尚未完全解除。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "美國、以色列與伊朗衝突自今年 3 月延燒至今，荷姆茲海峽航運一度近乎停擺，7/26 起美方連續兩晚未再空襲伊朗，緊張情勢出現降溫跡象。",
+        "美國自 7/24 起對包含歐盟在內約 60 個貿易夥伴課徵新一輪 10%～12.5% 關稅，理由為強迫勞動法規執行不力。",
+        "台美貿易協議已於今年 1/16 敲定，台灣輸美關稅降為 15% 且不疊加（「台灣模式」）。",
+        "FOMC 會議 7/29 登場，市場關注利率聲明與點陣圖是否釋出降息訊號。",
+        "美中關稅戰雖暫歇，但供應鏈重組持續，台灣面臨「美國優先、大陸國產替代、ECFA 效應常態化」三大外部挑戰。"
+      ]
+    }
+  ],
+  "focus": "地緣風險降溫（美伊連兩晚未升溫）與原油回落為今日開盤正向因子，Nasdaq 100 期貨轉強，預期台股開盤偏多震盪；但上週五美股晶片股疲弱、SOX 測試支撐、ADR 走勢偏弱，仍是壓抑力道，加上本週三 FOMC 會議前市場觀望心態濃厚。建議留意半導體／AI 概念股能否隨美股期貨止穩、運輸與塑化股受惠油價回落，以及金融股對匯率與公債殖利率變化的反應。",
+  "sources": [
+    "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-24-dow-sp-500-nasdaq-081854465.html",
+    "https://www.washingtonpost.com/business/2026/07/24/stocks-dow-nasdaq-iran-oil/72ff5b36-879f-11f1-9cec-0fb26676f07e_story.html",
+    "https://www.bloomberg.com/news/articles/2026-07-26/oil-tumbles-as-us-and-iran-pause-military-strikes-markets-wrap",
+    "https://us.trendlyne.com/us/equity/1404971/TSM/taiwan-semiconductor-manufacturing-adr/",
+    "https://invest.cnyes.com/forex/detail/USDTWD/history",
+    "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
+    "https://intellectia.ai/blog/us-cpi-inflation-fed-policy-july-2026",
+    "https://www.investing.com/commodities/brent-oil",
+    "https://technews.tw/2026/07/23/tariffs-reshape-supply-chains-compliance-new-barrier-taiwan-capitalizes-order-transfers/",
+    "https://www.cier.edu.tw/focus-ch/29757/"
+  ]
+}
