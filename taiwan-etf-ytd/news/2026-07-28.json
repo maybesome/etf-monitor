@@ -1,0 +1,88 @@
+{
+  "date": "2026-07-28",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "道瓊工業指數上漲262.83點(+0.51%)收52,210.08，主因油價重挫提振情緒；標普500近乎持平(+0.02%)收7,413.18；那斯達克下跌0.18%收24,932.08",
+        "輝達(Nvidia)重挫約5%，拖累那斯達克與費城半導體指數，記憶體廠SanDisk單日暴跌11%",
+        "VIX恐慌指數約19.42，處中性偏低波動區間，尚無恐慌跡象",
+        "科技股與半導體股表現分歧，傳產與能源相關股受惠油價下跌走強"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR(TSM)收398.96美元，下跌1.10%，隨輝達重挫及半導體族群走弱同步承壓",
+        "聯電ADR(UMC)、日月光ADR(ASE)上一交易日(7/25)均大漲逾6.6%，最新一日報價尚未更新，但慣性動能偏多",
+        "整體ADR訊號偏空/震盪，法人開盤參考恐略偏保守，留意台積電開盤跳空風險"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元/新台幣近30日區間約31.84–32.39，全年均值約31.6，匯價相對穩定",
+        "美國10年期公債殖利率降至4.64%(-0.04個百分點)，因油價重挫緩解通膨疑慮，自六個月高點回落",
+        "美元指數(DXY)近期於101附近整理，未見大幅波動",
+        "FOMC會議7/28-29召開，週三(7/29)公布利率決策，市場預期偏鷹，降息機率下降，需留意台幣匯率反應"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI原油暴跌8.68%至82.62美元/桶，Brent原油跌8.23%至90.28美元/桶，因美伊週末傳出停火消息，地緣風險溢價快速消退",
+        "黃金上漲近1%至4,090–4,097美元/盎司，避險買盤與Fed決策前布局支撐金價",
+        "銅價維持穩定，約6.33–6.36美元/磅，波動有限",
+        "油價急跌有利航運、塑化成本面，但也反映地緣風險仍具高度不確定性"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "日經225期貨約66,592點，延續強勢多頭格局",
+        "韓國KOSPI收6,755.75點(+0.97%)，KOSDAQ上漲逾2%，區域科技股表現偏多",
+        "台指期夜盤在美伊降溫消息激勵下一度上漲逾300點觸及44,241點，尾盤拉回收在43,172–44,193區間，波動加大",
+        "電子期貨、半導體30期貨夜盤走弱，分別下跌約52.8點及378點，反映輝達重挫的外溢效應"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "美伊軍事衝突7月初一度升級（美方取消石油出口豁免並發動軍事行動），荷莫茲海峽航運一度驟減九成，上週末傳出停火消息，油價應聲重挫",
+        "FOMC會議今明兩天(7/28-29)召開，週三公布決策，市場預期偏鷹，降息機率下降，聯邦基金利率預期維持在3.75%左右直至2027年",
+        "中東地緣政治風險尚未完全解除，油輪運費與戰爭險保費仍有再度攀升可能，需留意後續談判進展",
+        "投資人靜待Fed決策與後續記者會措辭，作為評估下半年降息路徑的關鍵指標"
+      ]
+    }
+  ],
+  "focus": "美股漲跌互見（道瓊受惠油價重挫走高，但輝達重挫5%拖累那斯達克與費半），台積電ADR下跌1.1%、台指期夜盤先漲後回落收平盤附近，研判今日台股開盤震盪、方向不明；主要壓力來自輝達領跌的半導體族群及FOMC決策前的觀望氣氛，支撐則來自油價急跌緩解通膨疑慮與新台幣匯率穩定。建議留意半導體、AI概念股承壓風險，並關注塑化、航運族群受惠油價下跌的表現，以及金融股對Fed決策的敏感反應。",
+  "sources": [
+    "https://www.washingtonpost.com/business/2026/07/27/wall-street-stocks-dow-nasdaq/504db546-89f8-11f1-8912-d71e69d679d7_story.html",
+    "https://www.cnbc.com/2026/07/27/stock-market-today-live-updates.html",
+    "https://historicaloptiondata.com/market-analysis-07-27-2026-0203-pm-et/",
+    "https://www.etoro.com/markets/tsm",
+    "https://histock.tw/index/UMC",
+    "https://hk.investing.com/currencies/usd-twd",
+    "https://tradingeconomics.com/united-states/government-bond-yield",
+    "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-monday-july-27-2026-gold-prices-see-positive-traction-as-fighting-with-iran-has-paused-123327127.html",
+    "https://www.investing.com/commodities/copper",
+    "https://www.investing.com/indices/japan-225-futures",
+    "https://udn.com/news/story/7255/9654286",
+    "https://money.udn.com/money/story/11112/9654673",
+    "https://www.ctee.com.tw/news/20260727701448-430202",
+    "https://www.cmelitegroup.com/knowledge-hub/fomc-meeting-fed-decision-day/"
+  ]
+}
