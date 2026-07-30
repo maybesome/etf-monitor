@@ -16,6 +16,16 @@
   h1 { font-size: 22px; margin-bottom: 4px; }
   .section-title { font-size: 18px; margin: 28px 0 12px; }
   .meta { color: #94a3b8; font-size: 14px; margin-bottom: 16px; }
+  .market-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 20px;
+  }
+  .market-card { background: #1e293b; border-radius: 8px; padding: 14px 16px; }
+  .market-title { color: #94a3b8; font-size: 13px; margin-bottom: 6px; }
+  .market-value { font-size: 22px; font-weight: 700; }
+  .market-change { font-size: 13px; font-weight: 600; margin-top: 2px; }
+  .market-sub { color: #64748b; font-size: 11px; margin-top: 6px; line-height: 1.5; }
+  .market-us-row { display: flex; justify-content: space-between; font-size: 13px; padding: 3px 0; border-top: 1px solid #334155; }
+  .market-us-row:first-of-type { border-top: none; }
   .stats {
     display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px;
   }
@@ -49,6 +59,28 @@
 <div class="container">
   <h1>🏆 台灣ETF YTD前30名</h1>
   <div class="meta">資料日期：2026-07-30　更新時間：16:18（台灣時間）</div>
+
+  <div class="market-grid">
+    <div class="market-card">
+      <div class="market-title">🇹🇼 加權指數 (TAIEX)</div>
+      <div class="market-value" style="color:#22c55e">39,933.30</div>
+      <div class="market-change" style="color:#22c55e">▼105.88（-0.26%）</div>
+      <div class="market-sub">開40,048.94　高41,155.42　低39,404.65　量1.10兆元</div>
+    </div>
+    <div class="market-card">
+      <div class="market-title">🏪 櫃買指數 (OTC)</div>
+      <div class="market-value" style="color:#22c55e">326.23</div>
+      <div class="market-change" style="color:#22c55e">▼2.4%</div>
+      <div class="market-sub">中小型股賣壓相對集中市場更沉重</div>
+    </div>
+    <div class="market-card">
+      <div class="market-title">🇺🇸 美股前一交易日 (7/29)</div>
+      <div class="market-us-row"><span>道瓊</span><span style="color:#22c55e">51,594.14 ▼1,153.18（-2.2%）</span></div>
+      <div class="market-us-row"><span>那斯達克</span><span style="color:#22c55e">24,442.94 ▼433.97（-1.7%）</span></div>
+      <div class="market-us-row"><span>S&amp;P 500</span><span style="color:#22c55e">7,316.15 ▼112.63（-1.5%）</span></div>
+    </div>
+  </div>
+
   <div class="stats">
     <div class="stat-card"><div class="label">總樣本</div><div class="value">309 檔</div></div>
     <div class="stat-card"><div class="label">平均YTD</div><div class="value">13.00%</div></div>
@@ -308,7 +340,7 @@
   <div class="news-grid">
         <div class="news-card" style="border-left:4px solid #10b981">
           <div class="news-card-title" style="color:#10b981">📊 大盤收盤</div>
-          <ul><li>▸ 加權指數收盤40,039.18點，下跌1,564.18點，跌幅約3.76%，盤中一度重挫逾2,218點、下探39,384.85點，終場跌幅收斂但險守4萬點關卡</li><li>▸ 成交量放大至1.08兆元，顯示賣壓沉重、換手積極</li><li>▸ 背景因素：美國與伊朗緊張局勢升溫、油價走高引發通膨與升息疑慮，加上全球股市去槓桿及AI基礎建設成本疑慮衝擊國際股市，台積電熊本廠傳地震影響產能，融資多殺多加劇盤中跌幅</li></ul>
+          <ul><li>▸ 加權指數終場下跌105.88點，收39,933.30點，跌幅0.26%，失守4萬點整數關卡</li><li>▸ 盤中先受融資去槓桿賣壓衝擊下探39,404.65點，隨後電子權值股撐盤一度大漲1,116點、衝上41,155.42點，尾盤賣壓再現，終場僅小跌收場，全日高低震盪達1,750.77點，為台股史上第5大</li><li>▸ 成交值放大至1.1兆元；電子類股下跌0.34%（占大盤成交比重79%），金融股上漲1.49%</li><li>▸ 櫃買市場（中小型股）表現弱於集中市場，櫃買指數終場收326.23點，跌幅達2.4%</li></ul>
         </div>
         <div class="news-card" style="border-left:4px solid #06b6d4">
           <div class="news-card-title" style="color:#06b6d4">💰 三大法人動向</div>
@@ -316,11 +348,11 @@
         </div>
         <div class="news-card" style="border-left:4px solid #f59e0b">
           <div class="news-card-title" style="color:#f59e0b">🔧 類股與焦點股</div>
-          <ul><li>▸ 台積電（2330）逆勢上漲5元，收在2,200元，早盤大盤重挫時權值股仍相對抗跌</li><li>▸ 台積電股價較6月23日歷史高點2,535元已回落約13.21%，惟股東人數首度突破300萬人、達304萬1,119人</li><li>▸ 台股開盤下殺逾260點即失守4萬關卡，權值股表現分化，半導體類股普遍受國際股市震盪與AI信用疑慮拖累</li></ul>
+          <ul><li>▸ 台積電（2330）收在2,205元，上漲5元（+0.23%），權值股中相對抗跌</li><li>▸ 聯發科（2454）上漲85元（+2.70%）、台達電（2308）上漲2.34%，同為撐盤要角；聯電（2303）大漲逾7%，成交量逾37萬張居個股之冠</li><li>▸ 鴻海（2317）下跌7.5元（-3.16%）；廣達（2382）重挫9.85%收跌停，市場解讀為海外募資案利空</li><li>▸ 被動元件族群走弱，國巨、華新科、禾伸堂均以跌停作收；記憶體股同步承壓</li></ul>
         </div>
         <div class="news-card" style="border-left:4px solid #3b82f6">
           <div class="news-card-title" style="color:#3b82f6">📈 ETF市場廣度（本站樣本）</div>
-          <ul><li>▸ 過濾槓桿/反向後樣本共309檔，YTD平均報酬13.00%、中位數5.86%，正報酬占比61.8%（275檔有效資料中170檔正報酬），顯示今年以來多數ETF仍處正報酬</li><li>▸ 但近一個月平均報酬已轉為-7.43%、中位數-4.42%，正報酬占比降至18.0%（306檔有效資料中僅約55檔正報酬），顯示短線市場廣度持續轉弱，與今日大盤重挫相呼應</li></ul>
+          <ul><li>▸ 過濾槓桿/反向後樣本共309檔，YTD平均報酬13.00%、中位數5.86%，正報酬占比61.8%（275檔有效資料中170檔正報酬），顯示今年以來多數ETF仍處正報酬</li><li>▸ 但近一個月平均報酬已轉為-7.43%、中位數-4.42%，正報酬占比降至18.0%（306檔有效資料中約55檔正報酬），顯示短線市場廣度持續轉弱，與今日大盤及櫃買指數走勢相呼應</li></ul>
         </div>
         <div class="news-card" style="border-left:4px solid #a855f7">
           <div class="news-card-title" style="color:#a855f7">🔀 短線資金動能</div>
@@ -329,9 +361,9 @@
   </div>
   <div class="focus-card">
     <div class="focus-title">🎯 台股收盤分析報告</div>
-    <div class="focus-body">台股今日重挫1,564.18點，收在40,039.18點，盤中一度失守4萬點、下探39,384.85點，終場收斂跌幅險守關卡，成交量放大至1.08兆元。美伊緊張情勢推升油價、通膨與升息疑慮，加上全球股市去槓桿及AI基礎建設成本疑慮衝擊國際股市，台積電熊本廠傳地震影響產能，融資多殺多加劇賣壓；三大法人合計賣超508.74億元，投信逆勢連27日買超、累計已達2,728.39億元。台積電逆勢收漲，惟仍較歷史高點回落逾13%。本站ETF樣本顯示YTD正報酬占比達61.8%，但近一個月正報酬占比已降至18.0%，顯示短線市場廣度明顯轉弱，資金持續自台股主動式/科技主題ETF撤出、轉向海外與商品型資產，後續需觀察4萬點支撐能否延續。</div>
+    <div class="focus-body">台股今日開高走低，終場僅小跌105.88點，收在39,933.30點、失守4萬點關卡，但盤中一度因融資去槓桿賣壓下探39,404.65點，又因電子權值股撐盤急拉至41,155.42點，全日震盪達1,750.77點、為史上第5大，反映短線籌碼仍相當凌亂。美股前一交易日（7/29）三大指數同步重挫，道瓊跌2.2%、那指跌1.7%、標普跌1.5%，聯準會維持利率不變但內部分歧、AI資本支出疑慮及費半暴跌5.3%，為亞股投下不確定因子；台股櫃買指數同步收黑2.4%，中小型股賣壓更甚集中市場。三大法人合計賣超508.74億元，投信逆勢連27日買超、累計已達2,728.39億元。台積電、聯發科、台達電等權值股逆勢收紅撐盤，但廣達、被動元件族群重挫跌停，電子股表現分歧。本站ETF樣本顯示YTD正報酬占比達61.8%，但近一個月正報酬占比已降至18.0%，短線市場廣度明顯轉弱，資金持續自台股主動式/科技主題ETF撤出、轉向海外與商品型資產，後續需觀察4萬點支撐能否延續、美股AI資本支出疑慮是否進一步發酵。</div>
   </div>
-  <div class="news-sources"><a href="https://udn.com/news/story/7251/9660768" target="_blank" rel="noopener">來源1</a>　<a href="https://news.nextapple.com/finance/20260730/3FDB5DD7AC5A35F129FC885D486402EF" target="_blank" rel="noopener">來源2</a>　<a href="https://udn.com/news/story/7251/9658625" target="_blank" rel="noopener">來源3</a></div>
+  <div class="news-sources"><a href="https://finance.ettoday.net/news/3210350" target="_blank" rel="noopener">來源1（台股收盤）</a>　<a href="https://news.cnyes.com/news/id/6552262" target="_blank" rel="noopener">來源2（台股盤後）</a>　<a href="https://udn.com/news/story/7251/9660768" target="_blank" rel="noopener">來源3（三大法人）</a>　<a href="https://www.storm.mg/article/11152748" target="_blank" rel="noopener">來源4（美股）</a></div>
 
   <a class="back-link" href="index.html">&larr; 返回歷史總覽</a>
 </div>
