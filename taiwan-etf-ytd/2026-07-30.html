@@ -17,7 +17,7 @@
   .section-title { font-size: 18px; margin: 28px 0 12px; }
   .meta { color: #94a3b8; font-size: 14px; margin-bottom: 16px; }
   .market-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 20px;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 16px;
   }
   .market-card { background: #1e293b; border-radius: 8px; padding: 14px 16px; }
   .market-title { color: #94a3b8; font-size: 13px; margin-bottom: 6px; }
@@ -26,6 +26,7 @@
   .market-sub { color: #64748b; font-size: 11px; margin-top: 6px; line-height: 1.5; }
   .market-us-row { display: flex; justify-content: space-between; font-size: 13px; padding: 3px 0; border-top: 1px solid #334155; }
   .market-us-row:first-of-type { border-top: none; }
+  .us-macro-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 12px; margin-bottom: 20px; }
   .stats {
     display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px;
   }
@@ -81,6 +82,16 @@
     </div>
   </div>
 
+  <div class="us-macro-grid">
+        <div class="news-card" style="border-left:4px solid #fb7184">
+          <div class="news-card-title" style="color:#fb7184">🇺🇸 美股收盤重大新聞及分析</div>
+          <ul><li>▸ 三大指數全數重挫：道瓊跌2.2%（創2025年4月以來最大跌幅）、那斯達克跌1.7%、標普500跌1.5%創近一個月新低；那斯達克100指數單日跌1.8%，較6月高點回檔逾11%，正式進入技術性修正</li><li>▸ 聯準會（Fed）以9比3表決維持利率於3.50%-3.75%不變，符合市場預期，但Hammack、Kashkari、Logan三位地區聯準銀行總裁投下反對票，主張應升息1碼，反映內部對通膨風險意見分歧</li><li>▸ 費城半導體指數暴跌5.3%，連續第5個交易日收黑；輝達、美光、AMD等AI概念股領跌，市場對AI資本支出永續性疑慮加劇；南韓SK海力士單季獲利雖增6倍但不如市場超高預期，股價重挫10%，AI基礎建設商Vertiv營收不及預期同步拖累類股</li><li>▸ 地緣政治風險升溫：美沙聯軍空襲伊拉克境內伊朗相關目標，中東衝突牽動能源與通膨疑慮，布蘭特原油飆漲7.3%、站上88美元/桶</li><li>▸ 個股表現分歧：福特汽車上調全年獲利展望逆勢收高；威士（Visa）受惠世足賽帶動旅遊消費，獲利優於預期股價上揚；冷氣設備商雷諾士（Lennox）下修財測應聲重挫</li></ul>
+        </div>
+        <div class="news-card" style="border-left:4px solid #818cf8">
+          <div class="news-card-title" style="color:#818cf8">📐 最新總體經濟數據及分析</div>
+          <ul><li>▸ FOMC聲明：經濟活動仍穩健擴張，生產力與資本投資強勁，就業增長與勞動力增長同步、失業率變化不大；惟通膨仍高於2%目標，部分反映中東衝突推升能源等供給面價格上漲</li><li>▸ 6月CPI年增率持平於2.70%，核心CPI（排除食品能源）加速至3.1%，創5個月新高，顯示通膨黏著度上升</li><li>▸ 6月非農就業僅新增5.7萬人，遠低於市場預期的11.5萬人，且較5月下修後的12.9萬人明顯放緩；失業率微降至4.2%，但主因勞動參與率降至61.5%（2021年3月以來新低），而非就業實質改善；平均時薪年增3.5%，符合預期</li><li>▸ 分析：就業成長明顯降溫、但通膨受油價衝擊仍偏黏著，呈現類滯脹疑慮；儘管本次FOMC按兵不動，3位官員主張升息且油價續漲，市場對9月是否轉向升息的預期已明顯升溫，為後續台美股市增添不確定性</li></ul>
+        </div>
+  </div>
   <div class="stats">
     <div class="stat-card"><div class="label">總樣本</div><div class="value">309 檔</div></div>
     <div class="stat-card"><div class="label">平均YTD</div><div class="value">13.00%</div></div>
@@ -361,9 +372,9 @@
   </div>
   <div class="focus-card">
     <div class="focus-title">🎯 台股收盤分析報告</div>
-    <div class="focus-body">台股今日開高走低，終場僅小跌105.88點，收在39,933.30點、失守4萬點關卡，但盤中一度因融資去槓桿賣壓下探39,404.65點，又因電子權值股撐盤急拉至41,155.42點，全日震盪達1,750.77點、為史上第5大，反映短線籌碼仍相當凌亂。美股前一交易日（7/29）三大指數同步重挫，道瓊跌2.2%、那指跌1.7%、標普跌1.5%，聯準會維持利率不變但內部分歧、AI資本支出疑慮及費半暴跌5.3%，為亞股投下不確定因子；台股櫃買指數同步收黑2.4%，中小型股賣壓更甚集中市場。三大法人合計賣超508.74億元，投信逆勢連27日買超、累計已達2,728.39億元。台積電、聯發科、台達電等權值股逆勢收紅撐盤，但廣達、被動元件族群重挫跌停，電子股表現分歧。本站ETF樣本顯示YTD正報酬占比達61.8%，但近一個月正報酬占比已降至18.0%，短線市場廣度明顯轉弱，資金持續自台股主動式/科技主題ETF撤出、轉向海外與商品型資產，後續需觀察4萬點支撐能否延續、美股AI資本支出疑慮是否進一步發酵。</div>
+    <div class="focus-body">台股今日開高走低，終場僅小跌105.88點，收在39,933.30點、失守4萬點關卡，但盤中一度因融資去槓桿賣壓下探39,404.65點，又因電子權值股撐盤急拉至41,155.42點，全日震盪達1,750.77點、為史上第5大，反映短線籌碼仍相當凌亂。美股前一交易日（7/29）三大指數同步重挫，道瓊跌2.2%、那指跌1.7%、標普跌1.5%，聯準會維持利率不變但內部分歧、AI資本支出疑慮及費半暴跌5.3%，為亞股投下不確定因子；台股櫃買指數同步收黑2.4%，中小型股賣壓更甚集中市場。三大法人合計賣超508.74億元，投信逆勢連27日買超、累計已達2,728.39億元。台積電、聯發科、台達電等權值股逆勢收紅撐盤，但廣達、被動元件族群重挫跌停，電子股表現分歧。總經數據顯示美國就業降溫但通膨受油價衝擊仍偏黏著（核心CPI創5個月新高），中東情勢推升油價，市場對Fed 9月動向的不確定性升溫。本站ETF樣本顯示YTD正報酬占比達61.8%，但近一個月正報酬占比已降至18.0%，短線市場廣度明顯轉弱，資金持續自台股主動式/科技主題ETF撤出、轉向海外與商品型資產，後續需觀察4萬點支撐能否延續、美股AI資本支出疑慮與中東情勢是否進一步發酵。</div>
   </div>
-  <div class="news-sources"><a href="https://finance.ettoday.net/news/3210350" target="_blank" rel="noopener">來源1（台股收盤）</a>　<a href="https://news.cnyes.com/news/id/6552262" target="_blank" rel="noopener">來源2（台股盤後）</a>　<a href="https://udn.com/news/story/7251/9660768" target="_blank" rel="noopener">來源3（三大法人）</a>　<a href="https://www.storm.mg/article/11152748" target="_blank" rel="noopener">來源4（美股）</a></div>
+  <div class="news-sources"><a href="https://finance.ettoday.net/news/3210350" target="_blank" rel="noopener">來源1（台股收盤）</a>　<a href="https://news.cnyes.com/news/id/6552262" target="_blank" rel="noopener">來源2（台股盤後）</a>　<a href="https://udn.com/news/story/7251/9660768" target="_blank" rel="noopener">來源3（三大法人）</a>　<a href="https://www.storm.mg/article/11152748" target="_blank" rel="noopener">來源4（美股/FOMC）</a>　<a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm" target="_blank" rel="noopener">來源5（Fed聲明）</a>　<a href="https://www.cna.com.tw/news/aopl/202607020369.aspx" target="_blank" rel="noopener">來源6（6月就業數據）</a></div>
 
   <a class="back-link" href="index.html">&larr; 返回歷史總覽</a>
 </div>
