@@ -16,6 +16,17 @@
   h1 { font-size: 22px; margin-bottom: 4px; }
   .section-title { font-size: 18px; margin: 28px 0 12px; }
   .meta { color: #94a3b8; font-size: 14px; margin-bottom: 16px; }
+  .market-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 16px;
+  }
+  .market-card { background: #1e293b; border-radius: 8px; padding: 14px 16px; }
+  .market-title { color: #94a3b8; font-size: 13px; margin-bottom: 6px; }
+  .market-value { font-size: 22px; font-weight: 700; }
+  .market-change { font-size: 13px; font-weight: 600; margin-top: 2px; }
+  .market-sub { color: #64748b; font-size: 11px; margin-top: 6px; line-height: 1.5; }
+  .market-us-row { display: flex; justify-content: space-between; font-size: 13px; padding: 3px 0; border-top: 1px solid #334155; }
+  .market-us-row:first-of-type { border-top: none; }
+  .us-macro-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 12px; margin-bottom: 20px; }
   .stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
   .stat-card { background: #1e293b; border-radius: 8px; padding: 12px 16px; flex: 1; min-width: 140px; }
   .stat-card .label { color: #94a3b8; font-size: 12px; }
@@ -44,8 +55,39 @@
 <body>
 <div class="container">
   <h1>🏆 台灣ETF YTD前30名</h1>
-  <div class="meta">資料日期：2026-07-31　更新時間：15:20（台灣時間）</div>
+  <div class="meta">資料日期：2026-07-31　更新時間：16:20（台灣時間）</div>
 
+  <div class="market-grid">
+    <div class="market-card">
+      <div class="market-title">🇹🇼 加權指數 (TAIEX)</div>
+      <div class="market-value" style="color:#ef4444">43,119.75</div>
+      <div class="market-change" style="color:#ef4444">▲3,186.45（+7.98%）</div>
+      <div class="market-sub">開41,610.41　高43,214.36　低41,610.41　量8,337.1億元</div>
+    </div>
+    <div class="market-card">
+      <div class="market-title">🏪 櫃買指數 (OTC)</div>
+      <div class="market-value" style="color:#ef4444">347.51</div>
+      <div class="market-change" style="color:#ef4444">▲6.52%</div>
+      <div class="market-sub">車用記憶體、轉單利多概念領漲；本數值為盤中最新回報，正式收盤數字以櫃買中心公告為準</div>
+    </div>
+    <div class="market-card">
+      <div class="market-title">🇺🇸 美股前一交易日 (7/30)</div>
+      <div class="market-us-row"><span>道瓊</span><span style="color:#ef4444">52,208.06 ▲613.92（+1.19%）</span></div>
+      <div class="market-us-row"><span>那斯達克</span><span style="color:#ef4444">25,122.18 ▲679.24（+2.78%）</span></div>
+      <div class="market-us-row"><span>S&amp;P 500</span><span style="color:#ef4444">7,437.63 ▲121.48（+1.66%）</span></div>
+    </div>
+  </div>
+
+  <div class="us-macro-grid">
+        <div class="news-card" style="border-left:4px solid #fb7184">
+          <div class="news-card-title" style="color:#fb7184">🇺🇸 美股收盤重大新聞及分析</div>
+          <ul><li>▸ 三大指數全面上漲：道瓊漲1.19%、標普500漲1.66%、那斯達克漲2.78%；費城半導體指數強彈855.50點（+8.19%），收11,302.99點，創近期最大單日漲幅</li><li>▸ 微軟財報優於市場預期，Azure雲端業務成長強勁，股價暴漲15.51%，創近18年最大單日漲幅，成為市場反彈主要動力</li><li>▸ 台積電ADR飆漲28.64美元（+7.64%），收403.31美元；美光飆漲18.36%、AMD上漲13%、英特爾漲11.3%、博通漲4.73%、輝達漲2.65%，晶片股全面回神</li><li>▸ 亞馬遜於美股收盤後公告優於預期財報，進一步激勵亞洲交易時段科技股氣氛，帶動日韓股市同步強漲，南韓KOSPI單日飆漲近18%創紀錄</li><li>▸ 市場對AI資本支出永續性的疑慮暫時緩解，惟蘋果財報顯示零件短缺拖累財測，個股表現分歧</li></ul>
+        </div>
+        <div class="news-card" style="border-left:4px solid #818cf8">
+          <div class="news-card-title" style="color:#818cf8">📐 最新總體經濟數據及分析</div>
+          <ul><li>▸ 美國6月PCE通膨數據降溫，核心PCE年增率回落至3.3%，緩解市場對Fed政策路徑的疑慮，為7月31日台股盤前重要利多之一</li><li>▸ Fed於7月28-29日FOMC會議維持利率不變，市場預期概率約65%，惟9月是否轉向的不確定性仍偏高，期權定價顯示相關預期已明顯升溫</li><li>▸ 市場預期6月CPI年增率原估將升至2.8%、核心CPI估上看3.0%，仍遠高於Fed 2%目標，通膨黏著度疑慮尚未完全解除</li><li>▸ 分析：PCE降溫與科技巨頭財報報喜疊加，短線扭轉此前市場對「類滯脹」與AI泡沫化的悲觀情緒，惟通膨與9月政策路徑仍是後續觀察重點</li></ul>
+        </div>
+  </div>
   <div class="stats">
     <div class="stat-card"><div class="label">總樣本</div><div class="value">309 檔</div></div>
     <div class="stat-card"><div class="label">平均YTD</div><div class="value">17.43%</div></div>
@@ -54,13 +96,14 @@
   </div>
   <table>
     <thead>
-      <tr><th>排名</th><th>代號</th><th>名稱</th><th style="text-align:right">今年以來</th><th style="text-align:right">一個月</th></tr>
+      <tr><th>排名</th><th>代號</th><th>名稱</th><th style="text-align:right">當日漲跌</th><th style="text-align:right">今年以來</th><th style="text-align:right">一個月</th></tr>
     </thead>
     <tbody>
       <tr>
         <td class="rank">01</td>
         <td class="ticker">00735</td>
         <td class="name">國泰臺韓科技</td>
+        <td class="num" style="color:#ef4444">16.97%</td>
         <td class="num" style="color:#ef4444">84.89%</td>
         <td class="num" style="color:#22c55e">-16.22%</td>
       </tr>
@@ -68,6 +111,7 @@
         <td class="rank">02</td>
         <td class="ticker">00913</td>
         <td class="name">兆豐台灣晶圓製造</td>
+        <td class="num" style="color:#ef4444">9.98%</td>
         <td class="num" style="color:#ef4444">77.74%</td>
         <td class="num" style="color:#22c55e">-18.17%</td>
       </tr>
@@ -75,6 +119,7 @@
         <td class="rank">03</td>
         <td class="ticker">00642U</td>
         <td class="name">期元大S&amp;P石油</td>
+        <td class="num" style="color:#22c55e">-3.49%</td>
         <td class="num" style="color:#ef4444">76.58%</td>
         <td class="num" style="color:#ef4444">16.85%</td>
       </tr>
@@ -82,6 +127,7 @@
         <td class="rank">04</td>
         <td class="ticker">00935</td>
         <td class="name">野村臺灣新科技50</td>
+        <td class="num" style="color:#ef4444">9.92%</td>
         <td class="num" style="color:#ef4444">74.51%</td>
         <td class="num" style="color:#22c55e">-15.69%</td>
       </tr>
@@ -89,6 +135,7 @@
         <td class="rank">05</td>
         <td class="ticker">00892</td>
         <td class="name">富邦台灣半導體</td>
+        <td class="num" style="color:#ef4444">9.77%</td>
         <td class="num" style="color:#ef4444">74.09%</td>
         <td class="num" style="color:#22c55e">-14.98%</td>
       </tr>
@@ -96,6 +143,7 @@
         <td class="rank">06</td>
         <td class="ticker">00901</td>
         <td class="name">永豐智能車供應鏈</td>
+        <td class="num" style="color:#ef4444">9.99%</td>
         <td class="num" style="color:#ef4444">69.38%</td>
         <td class="num" style="color:#22c55e">-10.38%</td>
       </tr>
@@ -103,6 +151,7 @@
         <td class="rank">07</td>
         <td class="ticker">00891</td>
         <td class="name">中信關鍵半導體</td>
+        <td class="num" style="color:#ef4444">9.97%</td>
         <td class="num" style="color:#ef4444">66.33%</td>
         <td class="num" style="color:#22c55e">-11.13%</td>
       </tr>
@@ -110,6 +159,7 @@
         <td class="rank">08</td>
         <td class="ticker">00728</td>
         <td class="name">第一金工業30</td>
+        <td class="num" style="color:#ef4444">8.91%</td>
         <td class="num" style="color:#ef4444">66.08%</td>
         <td class="num" style="color:#22c55e">-4.71%</td>
       </tr>
@@ -117,6 +167,7 @@
         <td class="rank">09</td>
         <td class="ticker">00876</td>
         <td class="name">元大全球5G</td>
+        <td class="num" style="color:#ef4444">10.61%</td>
         <td class="num" style="color:#ef4444">65.59%</td>
         <td class="num" style="color:#22c55e">-19.86%</td>
       </tr>
@@ -124,6 +175,7 @@
         <td class="rank">10</td>
         <td class="ticker">009809</td>
         <td class="name">富邦淨零ESG50</td>
+        <td class="num" style="color:#ef4444">8.06%</td>
         <td class="num" style="color:#ef4444">63.11%</td>
         <td class="num" style="color:#22c55e">-3.41%</td>
       </tr>
@@ -131,6 +183,7 @@
         <td class="rank">11</td>
         <td class="ticker">00947</td>
         <td class="name">台新臺灣IC設計</td>
+        <td class="num" style="color:#ef4444">9.88%</td>
         <td class="num" style="color:#ef4444">63.03%</td>
         <td class="num" style="color:#22c55e">-22.08%</td>
       </tr>
@@ -138,6 +191,7 @@
         <td class="rank">12</td>
         <td class="ticker">00690</td>
         <td class="name">兆豐藍籌30</td>
+        <td class="num" style="color:#ef4444">9.97%</td>
         <td class="num" style="color:#ef4444">62.75%</td>
         <td class="num" style="color:#22c55e">-10.51%</td>
       </tr>
@@ -145,6 +199,7 @@
         <td class="rank">13</td>
         <td class="ticker">00911</td>
         <td class="name">兆豐洲際半導體</td>
+        <td class="num" style="color:#ef4444">11.01%</td>
         <td class="num" style="color:#ef4444">61.94%</td>
         <td class="num" style="color:#22c55e">-19.93%</td>
       </tr>
@@ -152,6 +207,7 @@
         <td class="rank">14</td>
         <td class="ticker">00904</td>
         <td class="name">台新臺灣半導體30</td>
+        <td class="num" style="color:#ef4444">9.98%</td>
         <td class="num" style="color:#ef4444">61.52%</td>
         <td class="num" style="color:#22c55e">-13.91%</td>
       </tr>
@@ -159,6 +215,7 @@
         <td class="rank">15</td>
         <td class="ticker">0053</td>
         <td class="name">元大電子</td>
+        <td class="num" style="color:#ef4444">9.99%</td>
         <td class="num" style="color:#ef4444">61.36%</td>
         <td class="num" style="color:#22c55e">-7.66%</td>
       </tr>
@@ -166,6 +223,7 @@
         <td class="rank">16</td>
         <td class="ticker">00988A</td>
         <td class="name">主動統一全球創新</td>
+        <td class="num" style="color:#ef4444">14.83%</td>
         <td class="num" style="color:#ef4444">61.31%</td>
         <td class="num" style="color:#22c55e">-27.02%</td>
       </tr>
@@ -173,6 +231,7 @@
         <td class="rank">17</td>
         <td class="ticker">0057</td>
         <td class="name">富邦摩台</td>
+        <td class="num" style="color:#ef4444">9.15%</td>
         <td class="num" style="color:#ef4444">60.18%</td>
         <td class="num" style="color:#22c55e">-4.48%</td>
       </tr>
@@ -180,6 +239,7 @@
         <td class="rank">18</td>
         <td class="ticker">009802</td>
         <td class="name">富邦旗艦50</td>
+        <td class="num" style="color:#ef4444">9.22%</td>
         <td class="num" style="color:#ef4444">58.88%</td>
         <td class="num" style="color:#22c55e">-7.83%</td>
       </tr>
@@ -187,6 +247,7 @@
         <td class="rank">19</td>
         <td class="ticker">00894</td>
         <td class="name">中信小資高價30</td>
+        <td class="num" style="color:#ef4444">9.98%</td>
         <td class="num" style="color:#ef4444">58.17%</td>
         <td class="num" style="color:#22c55e">-10.97%</td>
       </tr>
@@ -194,6 +255,7 @@
         <td class="rank">20</td>
         <td class="ticker">00927</td>
         <td class="name">群益半導體收益</td>
+        <td class="num" style="color:#ef4444">9.74%</td>
         <td class="num" style="color:#ef4444">57.92%</td>
         <td class="num" style="color:#22c55e">-17.39%</td>
       </tr>
@@ -201,6 +263,7 @@
         <td class="rank">21</td>
         <td class="ticker">0052</td>
         <td class="name">富邦科技</td>
+        <td class="num" style="color:#ef4444">9.94%</td>
         <td class="num" style="color:#ef4444">57.56%</td>
         <td class="num" style="color:#22c55e">-5.76%</td>
       </tr>
@@ -208,6 +271,7 @@
         <td class="rank">22</td>
         <td class="ticker">009803</td>
         <td class="name">玉山市值動能50</td>
+        <td class="num" style="color:#ef4444">9.64%</td>
         <td class="num" style="color:#ef4444">57.30%</td>
         <td class="num" style="color:#22c55e">-6.40%</td>
       </tr>
@@ -215,6 +279,7 @@
         <td class="rank">23</td>
         <td class="ticker">006208</td>
         <td class="name">富邦台50</td>
+        <td class="num" style="color:#ef4444">9.77%</td>
         <td class="num" style="color:#ef4444">56.80%</td>
         <td class="num" style="color:#22c55e">-5.94%</td>
       </tr>
@@ -222,6 +287,7 @@
         <td class="rank">24</td>
         <td class="ticker">0050</td>
         <td class="name">元大台灣50</td>
+        <td class="num" style="color:#ef4444">10.00%</td>
         <td class="num" style="color:#ef4444">56.78%</td>
         <td class="num" style="color:#22c55e">-4.59%</td>
       </tr>
@@ -229,6 +295,7 @@
         <td class="rank">25</td>
         <td class="ticker">00923</td>
         <td class="name">群益台ESG低碳50</td>
+        <td class="num" style="color:#ef4444">9.92%</td>
         <td class="num" style="color:#ef4444">55.54%</td>
         <td class="num" style="color:#22c55e">-6.08%</td>
       </tr>
@@ -236,6 +303,7 @@
         <td class="rank">26</td>
         <td class="ticker">00881</td>
         <td class="name">國泰台灣科技龍頭</td>
+        <td class="num" style="color:#ef4444">9.90%</td>
         <td class="num" style="color:#ef4444">55.12%</td>
         <td class="num" style="color:#22c55e">-7.75%</td>
       </tr>
@@ -243,6 +311,7 @@
         <td class="rank">27</td>
         <td class="ticker">00850</td>
         <td class="name">元大臺灣ESG永續</td>
+        <td class="num" style="color:#ef4444">8.75%</td>
         <td class="num" style="color:#ef4444">54.92%</td>
         <td class="num" style="color:#22c55e">-6.84%</td>
       </tr>
@@ -250,6 +319,7 @@
         <td class="rank">28</td>
         <td class="ticker">00888</td>
         <td class="name">永豐台灣ESG</td>
+        <td class="num" style="color:#ef4444">10.00%</td>
         <td class="num" style="color:#ef4444">54.64%</td>
         <td class="num" style="color:#22c55e">-17.16%</td>
       </tr>
@@ -257,6 +327,7 @@
         <td class="rank">29</td>
         <td class="ticker">00981A</td>
         <td class="name">主動統一台股增長</td>
+        <td class="num" style="color:#ef4444">9.97%</td>
         <td class="num" style="color:#ef4444">54.52%</td>
         <td class="num" style="color:#22c55e">-16.46%</td>
       </tr>
@@ -264,6 +335,7 @@
         <td class="rank">30</td>
         <td class="ticker">006203</td>
         <td class="name">元大MSCI台灣</td>
+        <td class="num" style="color:#ef4444">8.58%</td>
         <td class="num" style="color:#ef4444">54.47%</td>
         <td class="num" style="color:#22c55e">-5.93%</td>
       </tr>
@@ -275,15 +347,15 @@
   <div class="news-grid">
         <div class="news-card" style="border-left:4px solid #10b981">
           <div class="news-card-title" style="color:#10b981">📊 大盤收盤</div>
-          <ul><li>▸ 加權指數終場暴漲3,186.45點，收43,119.75點，漲幅7.9%，創下史上收盤最大漲點紀錄，盤中最高觸及43,214點</li><li>▸ 單日連闖40K、41K、42K、43K四大整數關卡，成交金額放大至8,337.1億元</li><li>▸ 台積電（2330）攻上漲停價2,425元（+220元），為多頭最強引擎；聯發科、日月光等大型權值股同步亮燈漲停</li><li>▸ 美股微軟、亞馬遜最新財報優於預期，AI資本支出持續擴張，激勵台股全面反彈</li></ul>
+          <ul><li>▸ 加權指數終場暴漲3,186.45點，收43,119.75點，漲幅7.98%，改寫盤中與收盤史上最大漲點紀錄，單日漲幅寫下歷史第二大</li><li>▸ 盤中最高觸及43,214.36點，單日連闖40K、41K、42K、43K四大整數關卡，成交金額達8,337.1億元</li><li>▸ 集中市場與櫃買市場合計上漲家數達1,752家、下跌僅228家，221檔攻上漲停、僅2檔跌停，呈現普漲格局</li><li>▸ 台積電（2330）尾盤鎖死漲停價2,425元（+220元），市值單日增加逾兆元，為多頭最強引擎；聯發科、日月光等大型權值股同步亮燈漲停</li></ul>
         </div>
         <div class="news-card" style="border-left:4px solid #06b6d4">
           <div class="news-card-title" style="color:#06b6d4">💰 三大法人動向</div>
-          <ul><li>▸ 本次爬取時點三大法人當日買賣超正式數據尚未公布，建議至證交所（twse.com.tw）查詢最終確認數字</li><li>▸ 市場觀察：00631L（元大台灣50正2）等槓桿型ETF融資餘額已連五日增加，顯示積極資金持續進場抄底</li><li>▸ 前一交易日（7/30）三大法人合計賣超508.74億元，投信連27日買超；本次史詩級反彈可能反映空頭回補與資金回流</li></ul>
+          <ul><li>▸ 三大法人終止連3賣，合計回補買超846.76億元</li><li>▸ 外資買超675.54億元、投信買超333.82億元，自營商仍賣超162.59億元</li><li>▸ 台指期部位方面，外資淨空單增加1,498口至82,515口，但十大交易人中特定法人全月份台指期淨多單翻多為5,398口，反映籌碼結構轉趨樂觀</li></ul>
         </div>
         <div class="news-card" style="border-left:4px solid #f59e0b">
           <div class="news-card-title" style="color:#f59e0b">🔧 類股與焦點股</div>
-          <ul><li>▸ 電子權值股、記憶體、被動元件及PCB族群全面點火，上市公司盤中超過1,100家上漲、119家亮燈漲停</li><li>▸ 記憶體族群強勢反彈，旺宏、華邦電、南亞科、晶豪科、鈺創、愛普、群聯、宜鼎8檔同步鎖漲停，南亞科、群聯市值單日各增逾300億元</li><li>▸ 聯發科飆漲停鎖在3,555元，台達電上漲逾8%，鴻海同步大漲逾7%</li><li>▸ 傳產塑膠、機電、電纜、玻璃類股表現強勢，金融股類股指數上漲逾4.7%</li></ul>
+          <ul><li>▸ 電子權值股、記憶體、被動元件及PCB族群全面點火，上市公司盤中超過1,100家上漲、119家亮燈漲停</li><li>▸ 記憶體族群強勢反彈，旺宏、華邦電、南亞科、晶豪科、鈺創、愛普、群聯、宜鼎8檔同步鎖漲停，南亞科、群聯市值單日各增逾300億元</li><li>▸ 聯發科飆漲停鎖在3,555元，台達電上漲逾8%，鴻海同步大漲逾7%</li><li>▸ 傳產塑膠、機電、電纜、玻璃類股表現強勢，金融股類股指數上漲逾4.7%；櫃買指數同步強彈逾6.5%</li></ul>
         </div>
         <div class="news-card" style="border-left:4px solid #3b82f6">
           <div class="news-card-title" style="color:#3b82f6">📈 ETF市場廣度（本站樣本）</div>
@@ -296,9 +368,9 @@
   </div>
   <div class="focus-card">
     <div class="focus-title">🎯 台股收盤分析報告</div>
-    <div class="focus-body">台股今日在美股科技巨頭財報報喜、AI資本支出持續擴張的激勵下強勢反攻，加權指數暴漲3,186.45點收43,119.75點，漲幅7.9%，創下史上收盤最大漲點紀錄，單日連闖四大整數關卡，成交金額達8,337.1億元。台積電領軍衝上漲停2,425元，記憶體族群8檔齊鎖漲停，聯發科、台達電、鴻海等權值股同步大漲，市場氣氛由連日弱勢急轉為全面樂觀。本站ETF樣本顯示YTD正報酬占比達62.18%，平均報酬17.43%，但近一個月平均報酬仍為-4.37%、正報酬占比僅25.82%，反映此波反彈之前市場修正壓力沉重；隨著今日單日巨幅反彈，預期短線ETF廣度數據將明顯回升。三大法人當日正式買賣超數據尚待公布，但槓桿型ETF融資餘額連日增加顯示資金已提前進場布局。後續須觀察此波反彈能否延續、法人資金是否同步轉為淨買超，以及美股AI資本支出熱潮是否持續支撐全球科技股估值。</div>
+    <div class="focus-body">台股今日在美股科技巨頭財報報喜、AI資本支出疑慮暫時緩解的激勵下強勢反攻，加權指數暴漲3,186.45點收43,119.75點，漲幅7.98%，改寫盤中與收盤史上最大漲點紀錄，單日連闖四大整數關卡，成交金額達8,337.1億元，集中與櫃買市場合計1,752檔上漲、221檔攻上漲停，呈現普漲格局。台積電領軍尾盤鎖死漲停2,425元，記憶體族群8檔齊鎖漲停，聯發科、台達電、鴻海等權值股同步大漲，市場氣氛由連日弱勢急轉為全面樂觀。消息面上，美股那斯達克大漲2.78%、費城半導體指數強彈8.19%，微軟財報優於預期激勵AI供應鏈，台積電ADR飆漲7.64%；美國6月PCE通膨數據降溫，緩解Fed政策壓力，但9月是否轉向的不確定性仍在。三大法人終止連3賣、合計回補846.76億元，外資買超675.54億元，籌碼結構明顯轉趨樂觀。本站ETF樣本顯示YTD正報酬占比達62.18%，平均報酬17.43%，但近一個月平均報酬仍為-4.37%、正報酬占比僅25.82%，反映此波反彈之前市場修正壓力沉重；隨著今日單日巨幅反彈，預期短線ETF廣度數據將明顯回升。後續須觀察此波反彈能否延續、法人資金是否持續加碼，以及美股AI資本支出熱潮與9月Fed利率決策的後續發展。</div>
   </div>
-  <div class="news-sources"><a href="https://newtalk.tw/news/view/2026-07-31/1050542" target="_blank" rel="noopener">來源1</a>　<a href="https://udn.com/news/story/7251/9662713" target="_blank" rel="noopener">來源2</a>　<a href="https://udn.com/news/story/7251/9662897" target="_blank" rel="noopener">來源3</a>　<a href="https://www.mnews.tw/story/20260731nm001" target="_blank" rel="noopener">來源4</a>　<a href="https://udn.com/news/story/7251/9662245" target="_blank" rel="noopener">來源5</a>　<a href="https://money.udn.com/money/story/5607/9662773" target="_blank" rel="noopener">來源6</a></div>
+  <div class="news-sources"><a href="https://www.storm.mg/article/11153117" target="_blank" rel="noopener">來源1</a>　<a href="https://udn.com/news/story/7251/9662713" target="_blank" rel="noopener">來源2</a>　<a href="https://udn.com/news/story/7251/9662897" target="_blank" rel="noopener">來源3</a>　<a href="https://udn.com/news/story/7251/9663123" target="_blank" rel="noopener">來源4</a>　<a href="https://www.mnews.tw/story/20260731nm001" target="_blank" rel="noopener">來源5</a>　<a href="https://udn.com/news/story/7251/9662245" target="_blank" rel="noopener">來源6</a>　<a href="https://ec.ltn.com.tw/article/breakingnews/5523702" target="_blank" rel="noopener">來源7</a>　<a href="https://money.udn.com/money/story/5607/9662110" target="_blank" rel="noopener">來源8</a></div>
 
   <a class="back-link" href="index.html">&larr; 返回歷史總覽</a>
 </div>
