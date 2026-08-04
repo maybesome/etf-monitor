@@ -1,0 +1,89 @@
+{
+  "date": "2026-08-04",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "S&P 500大漲1.5%、那斯達克飆升2.1%，道瓊上漲逾1.3%（近700點）收盤創歷史新高。",
+        "美伊局勢降溫是主要催化劑：川普稱已取消對伊朗的攻擊行動、轉向談判，市場風險偏好大幅回升。",
+        "大型科技股與AI概念股領漲那斯達克，帶動大盤氣氛偏多。",
+        "部分報導提及半導體類股表現分歧（chips down），SOX費城半導體指數與VIX恐慌指數本次未能取得精確收盤數值，建議開盤前再確認。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR約404.25美元，小漲+0.23%。",
+        "聯電ADR約19.03美元，上漲+0.48%。",
+        "台積電ADR對台北股價溢價率近期（7/30）約18.77%，8/3實際溢價需以當日換算為準。",
+        "8/3台北盤中：台積電下跌逾2%拖累大盤，聯發科、日月光逆勢走強，加權指數收42,780.42點、下跌339.33點。",
+        "美股大漲＋ADR溫和走揚，理論上有利今日開盤氣氛，但須留意台積電本身近期偏弱。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "10年期美債殖利率回落至4.70%。",
+        "美元指數DXY約99.91附近，波動不大。",
+        "新台幣兌美元近期於31.2～31.6區間震盪，今日精確開盤價未能即時取得，建議以央行/台北外匯市場報價為準。",
+        "美元走弱、殖利率下滑格局，理論上有利新興市場資金與新台幣，可能吸引外資回流。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI原油重挫至79.10美元（-6.58%），布蘭特原油82.84美元（-5.79%），因美伊局勢降溫、伊朗原油供應可望恢復。",
+        "黃金上漲至4120.34美元（+0.32%），避險買盤仍在但漲幅有限。",
+        "銅價上漲至6.56美元（+1.39%），對電子與半導體原料成本面偏正向。",
+        "油價大跌有利航運、塑化成本結構，但需留意能源類股承壓。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "韓國KOSPI 200期貨近24小時下跌約5.07%，波動明顯，須留意是否延續至現貨開盤。",
+        "日經225期貨與台指期夜盤具體點位本次搜尋未能取得精確報價，建議開盤前另行確認台指期夜盤作為最直接參考指標。",
+        "美股大漲激勵風險偏好，但亞股是否同步跟漲，或因區域性事件（如韓股大跌）出現分歧，仍待觀察。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "Fed 7月FOMC維持利率不變，三位官員罕見主張升息異議，市場關注9月會議前的CPI數據。",
+        "美國CPI年增2.9%、月增0.4%，通膨略升，主因油價及關稅成本轉嫁消費者。",
+        "美伊局勢降溫（川普取消對伊朗攻擊、轉向談判）是激勵美股走高與油價重挫的最大單一事件。",
+        "台美關稅談判落幕：對等關稅15%不疊加，半導體及衍生品獲最惠盟國待遇，降低台灣出口不確定性。",
+        "中美關係、台海議題仍是中長期變數，惟短期內美台議題成為引爆點的機率不高。"
+      ]
+    }
+  ],
+  "focus": "美股三大指數同步創高、AI科技股走強，加上美伊緊張降溫推升風險偏好，預期台股開盤偏多。主要支撐來自隔夜美股大漲與台積電ADR溫和走揚，惟須留意台積電本身近期偏弱、油價重挫對能源類股的壓力，以及韓股期貨大跌可能牽動區域情緒；建議重點關注半導體、AI供應鏈，以及受惠油價下滑的航運與塑化類股。",
+  "sources": [
+    "https://www.cnbc.com/2026/08/03/stock-market-today-live-updates.html",
+    "https://www.thestreet.com/stock-market-today/stock-market-today-aug-3-2026-dow-futures-climb-as-oil-slides-on-renewed-iran-talks",
+    "https://us.trendlyne.com/us/equity/1404971/TSM/taiwan-semiconductor-manufacturing-adr/",
+    "https://www.barchart.com/stocks/quotes/TSM",
+    "https://udn.com/news/story/7251/9666862",
+    "https://www.esunsec.com.tw/article/post/348",
+    "https://tradingeconomics.com/united-states/government-bond-yield",
+    "https://finance.yahoo.com/quote/DX-Y.NYB/",
+    "https://www.investing.com/commodities/crude-oil",
+    "https://www.investing.com/commodities/brent-oil",
+    "https://www.tradingview.com/symbols/KRX-K2I1!/",
+    "https://www.cnbc.com/2026/07/29/fed-meeting-today-live-updates.html",
+    "https://blog.104.com.tw/what-is-the-us-reciprocal-tariff-storm/"
+  ]
+}
