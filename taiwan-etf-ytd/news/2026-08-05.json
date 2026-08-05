@@ -1,0 +1,87 @@
+{
+  "date": "2026-08-05",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "S&P 500大漲1.79%收7,737點，創近兩個月新高；那斯達克飆升2.59%收26,584.99點；道瓊狂漲907點(+1.71%)首度站上54,000點創歷史新高，地緣政治緊張情勢緩和、AMD與SpaceX財報激勵科技股全面反彈。",
+        "費城半導體指數(SOX)收11,430點，上漲1.05%，晶片股買盘持續偏強。",
+        "VIX恐慌指數降至15.86，續處低檔，市場情緒偏樂觀、避險需求不高。",
+        "那斯達克漲幅居三大指數之冠，反映AI/科技權值股是本輪反彈主力，對台股電子權值股（台積電、聯發科等）有直接激勵效果。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR(TSM)收406.11美元，折溢價約0.61%，換算台股參考價約2,635.65元，顯示外資對台積電評價維持相對合理區間，尚無明顯套利偏離。",
+        "聯電ADR(UMC)收18.69美元，下跌1.79%，走勢較大盤保守，或反映成熟製程需求疑慮。",
+        "日月光ADR(ASX)盤中波動較大，一度上漲逾4%後拉回，封測族群消息面敏感度高，開盘需留意其實際表現。",
+        "整體ADR表現分歧，龍頭台積電偏多、次族群互見強弱，開盤選股可能呈現分化。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元/新台幣匯率約31.26元，新台幣維持相對穩定，未見熱錢大幅進出跡象。",
+        "美10年期公債殖利率在4.6%附近震盪，市場持續消化聯準會政策路徑與地緣政治不確定性，波動加大。",
+        "美元指數(DXY)近期於100.9附近整理，美元強弱牽動外資對新興市場（含台股）的資金流向。",
+        "台灣6月CPI年增率達2.6%，連續第二個月高於央行2%目標，通膨壓力升溫值得留意。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI原油在76-81美元/桶區間劇烈波動，Brent原油約78-83美元/桶，受荷莫茲海峽(Strait of Hormuz)美伊衝突影響，油價隨談判進展大幅震盪。",
+        "黃金現貨價格站穩4,100美元/盎司上方，地緣政治避險需求推升金價；白銀亦守穩58美元上方。",
+        "中東情勢持續為油價與金價最大變數，若衝突升級恐推升通膨預期並衝擊運輸、塑化類股成本。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "台指期夜盤大漲260點收43,604點，電子期上漲25.75點收2,765.8點，半導體30期貨上漲84點收14,856點，夜盤走勢偏多，為台股開盤最直接的領先指標。",
+        "日本日經225指數走跌0.6%至約63,300點，Topix同步下滑0.3%，科技股拖累日股表現，與台股連動性需留意。",
+        "南韓SK海力士、三星電子等半導體權值股傳出較大跌幅，區域晶片股情緒不一，建議留意台股半導體權值股開盤是否同步反應。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "美伊衝突/荷莫茲海峽危機持續延燒，美方一度規劃新一輪空襲後又喊卡，伊朗與阿曼協商建立臨時安全通行路線，地緣政治風險仍是市場最大不確定因素。",
+        "聯準會政策路徑仍是市場焦點，市場對後續升降息路徑看法分歧，需留意後續官員談話與經濟數據表態。",
+        "台灣通膨數據（CPI年增2.6%）走高，央行需在成長與物價間權衡，中長期貨幣政策方向牽動資金環境。",
+        "中東地緣政治若持續緊張，恐透過油價、避險情緒間接衝擊台股外資部位與新興市場資金流向。"
+      ]
+    }
+  ],
+  "focus": "綜合來看，隔夜美股三大指數創高、費半上漲、VIX低檔，加上台指期夜盤大漲260點收復43,600點，今日台股開盤偏多機率較高，主要支撐來自美股科技股與AI概念股的強勁帶動；惟中東地緣政治（荷莫茲海峽）與南韓晶片股重挫仍是潛在壓力與波動來源，建議留意半導體（台積電、聯發科）、AI供應鏈，以及油價相關的塑化、運輸類股表現，慎防消息面反覆造成盤中震盪。",
+  "sources": [
+    "https://www.cnn.com/2026/08/04/investing/us-stock-market",
+    "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-4-2026",
+    "https://www.fool.com/coverage/stock-market-today/2026/08/04/stock-market-today-aug-4-s-and-p-500-and-dow-set-new-highs-on-easing-geopolitical-tensions/",
+    "https://us.trendlyne.com/us/equity/1404971/TSM/taiwan-semiconductor-manufacturing-adr/",
+    "https://www.investing.com/indices/phlx-semiconductor",
+    "https://www.findrate.tw/USD/",
+    "https://tradingeconomics.com/united-states/government-bond-yield",
+    "https://www.forbes.com/advisor/investing/oil-prices-today/",
+    "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-tuesday-august-4-2026-gold-remains-above-4100-with-iran-threats-looming-122138936.html",
+    "https://www.cnn.com/2026/08/04/world/live-news/iran-war-trump",
+    "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis",
+    "https://www.ctee.com.tw/news/20260804701753-430202",
+    "https://tradingeconomics.com/taiwan/inflation-cpi",
+    "https://udn.com/news/story/7255/9656674"
+  ]
+}
