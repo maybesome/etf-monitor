@@ -1,0 +1,90 @@
+{
+  "date": "2026-08-07",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "標普500下跌0.18%收7,709.96點，那斯達克小跌0.06%收26,348.35點，道瓊重挫464點（-0.85%）收53,885點，結束連五日漲勢。",
+        "費城半導體指數（SOX）逆勢走揚，盤中上漲約1.35%至12,171點附近，半導體類股相對抗跌。",
+        "VIX恐慌指數降至15.57（-1.52%），市場情緒尚屬平穩，未見恐慌性拋售。",
+        "油價大漲帶動美債殖利率走升，成為壓抑大盤主因，投資人並關注中東荷莫茲海峽情勢與企業財報。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR約411美元，較前一交易日上漲約1.34%（+5.56美元），對台北股價呈現溢價，為開盤偏多訊號。",
+        "聯電ADR約17.4美元附近，近期因亞股ADR賣壓而承壓，走勢波動較大。",
+        "日月光ADR（ASX）約38.7美元，與半導體資本支出族群走勢一致。",
+        "台積電ADR領先大盤反彈，激勵台指期夜盤同步走揚，外資對台灣半導體供應鏈信心未減。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元/新台幣約32.27，今日走弱約0.30%，站上50日均線32.01之上，呈區間震盪。",
+        "美元指數（DXY）約99.68，維持強勢整理格局。",
+        "10年期美債殖利率約4.2%附近，因油價上漲及通膨疑慮走升。",
+        "匯率波動未見劇烈，外資進出方向仍需觀察開盤後盤中變化。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI原油大漲逾4%至78.23美元，主因中東（荷莫茲海峽）地緣風險升溫，推升運輸與塑化成本壓力。",
+        "Brent原油約83.45美元，小幅回落0.11%，與WTI走勢略有分歧。",
+        "黃金約4,295美元，小跌0.08%，避險需求持平。",
+        "銅價約6.72美元/磅，小漲0.08%，電子原料成本尚屬穩定。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "日經225指數維持強勢，來到65,700~65,900點區間，技術面呈強勢買進訊號。",
+        "台指期夜盤近期波動劇烈，隨台積電ADR與美股AI概念股連動，區間約在43,000~44,000點附近。",
+        "KOSPI、恆生指數今日開盤數據尚未明朗，建議開盤後留意韓股與港股連動表現。",
+        "亞股早盤氣氛整體偏多，呼應美股半導體類股的相對強勢。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "Fed於7月29日FOMC會議維持利率區間3.50%~3.75%不變，連續第五次按兵不動，市場對再升息機率約30%。",
+        "美國6月CPI月減0.4%，年增3.5%；核心CPI月增持平、年增2.6%。7月CPI將於8月12日公布，為近期重要觀察指標。",
+        "中東情勢（荷莫茲海峽）與油價上漲交織，推升通膨疑慮，是近期美股與國際市場主要不確定因素。",
+        "台美貿易方面，台灣關稅稅率已定為15%且不疊加，並承諾2025-2029年對美採購逾800億美元；中美台海關係仍為潛在波動來源。"
+      ]
+    }
+  ],
+  "focus": "美股道瓊重挫、但費半與台積電ADR逆勢走揚，加上台指期夜盤同步走高，今日台股開盤預期呈現「震盪偏多」，半導體與AI概念股可望延續強勢；惟中東地緣風險推升油價與美債殖利率，恐對塑化、運輸類股成本形成壓力，建議留意台積電、AI供應鏈及塑化股表現，並觀察外資是否隨新台幣走勢調整資金動向。",
+  "sources": [
+    "https://www.cnbc.com/2026/08/05/stock-market-today-live-updates.html",
+    "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-6-2026",
+    "https://www.investing.com/indices/phlx-semiconductor",
+    "https://finance.yahoo.com/quote/TSM/",
+    "https://www.investing.com/equities/united-microelectronics-corp",
+    "https://finance.yahoo.com/quote/ASX/",
+    "https://www.investing.com/currencies/usd-twd",
+    "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
+    "https://www.investing.com/commodities/crude-oil-historical-data",
+    "https://www.investing.com/commodities/brent-oil",
+    "https://www.investing.com/indices/japan-225-futures",
+    "https://money.udn.com/money/story/11112/9642380",
+    "https://www.bls.gov/news.release/cpi.nr0.htm",
+    "https://tradingeconomics.com/united-states/interest-rate",
+    "https://www.cna.com.tw/topic/newstopic/4655.aspx"
+  ]
+}
