@@ -1,0 +1,92 @@
+{
+  "date": "2026-08-11",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "S&P 500收7,753.11點，跌0.06%；那斯達克跌0.3%；道瓊跌0.1%（8/10收盤，微幅拉回，屬近期最佳單週表現後的技術性休息）",
+        "費城半導體指數(SOX)近期收12,356.79點，週漲逾2.5%，晶片股偏強，但英特爾(Intel)領跌拖累類股，輝達(Nvidia)股價同步回落",
+        "VIX恐慌指數維持低檔14.90（-1.65%），市場情緒尚屬穩定，未見恐慌訊號",
+        "原油因荷姆茲海峽(Strait of Hormuz)情勢不確定，价格急升為美股帶來一絲謹慎氣氛",
+        "7月非農就業意外減少2.3萬人，加上前兩月大幅下修，強化聯準會近期降息預期，支撐股市情緒"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR(TSM)收421.35美元（前收420.04），日內區間416.00–425.88美元",
+        "以現行匯率換算，台積電ADR隱含價約較台北現股（2330，收2,380元）高出約1成4溢價，法人開盤參考偏多",
+        "聯電ADR(UMC)收21.19美元",
+        "日月光ADR(ASX)收38.70美元",
+        "ADR整體表現偏強，可望對台北開盤提供正向支撐，惟仍須留意美股尾盤翻黑風險"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元/新台幣約32.25，新台幣近一個月貶值約0.63%，年減達7.84%",
+        "美元指數(DXY)約99.6附近，仍受降息預期壓抑",
+        "10年期美債殖利率約4.2%~4.65%（各券商報價略有落差），反映市場對聯準會近期降息機率上升",
+        "台幣偏弱有利出口股表現，但需留意外資匯出風險"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI原油收80.42美元/桶（+2.86%），Brent收87.69美元/桶（+4.95%），因荷姆茲海峽情勢升溫走揚",
+        "黃金升至4,378.76美元/盎司（+0.81%），續創逾兩個月新高，避險買盤強勁",
+        "銅價收6.61美元/磅（+0.61%），年增近49%，反映AI與電動車需求持續支撐"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "日經225大漲2.08%收66,970點，晶片與AI概念股（東京威力科創、愛德萬測試、富士古河等）領漲",
+        "KOSPI收6,299.66點，漲0.65%，SK海力士、三星走勢分歧",
+        "台指期夜盤10日一度上攻45,179點（漲189點），後翻黑收在44,804點附近（跌186點），顯示多頭追價力道不足",
+        "亞股整體氣氛偏多，但夜盤走弱需留意獲利了結賣壓"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "聯準會維持利率3.50%–3.75%不變，市場解讀下次會議降息機率升高",
+        "7月CPI通膨降溫至2.5%，優於市場預期2.6%，通膨降溫增強降息預期",
+        "美中貿易與台海地緣政治風險升溫，美國國會兩黨示警2026年美中關係恐再度轉差",
+        "美對台關稅暫維持10%（尚未提高至15%），惟半導體相關關稅仍為潛在變數"
+      ]
+    }
+  ],
+  "focus": "綜合美股拉回、SOX與亞股偏多、台指期夜盤先強後弱等訊號，預期今日台股開盤呈現震盪偏多格局；支撐主要來自台積電ADR溢價與日韓晶片股走強，壓力則來自原油急漲、荷姆茲海峽與台海地緣政治風險，以及夜盤翻黑後的獲利了結賣壓；建議留意半導體（台積電、AI供應鏈）、記憶體、以及塑化/航運等原物料連動類股表現。",
+  "sources": [
+    "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-10-dow-sp-500-nasdaq-104358890.html",
+    "https://www.cnbc.com/2026/08/09/stock-market-today-live-updates.html",
+    "https://finance.yahoo.com/quote/%5ESOX/",
+    "https://us.trendlyne.com/us/equity/1404971/TSM/taiwan-semiconductor-manufacturing-adr/",
+    "https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2330",
+    "https://www.barchart.com/stocks/quotes/UMC",
+    "https://www.barchart.com/stocks/quotes/ASX",
+    "https://www.investing.com/currencies/usd-twd",
+    "https://tradingeconomics.com/united-states/government-bond-yield",
+    "https://fortune.com/article/current-price-of-gold-08-10-2026/",
+    "https://tradingeconomics.com/commodity/copper",
+    "https://www.cnbc.com/2026/06/02/asia-pacific-markets-today-kospi-nikkei-225-hang-seng-index.html",
+    "https://www.tradingkey.com/zh-hans/analysis/stocks/more/262091620-japan-south-korea-stocks-kospi-nikkei-softbank-sk-hynix-samsung-kioxia-tradingkey",
+    "https://udn.com/news/story/7255/9682954",
+    "https://www.bls.gov/news.release/cpi.nr0.htm",
+    "https://www.cna.com.tw/news/aipl/202512270015.aspx"
+  ]
+}
