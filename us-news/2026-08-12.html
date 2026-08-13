@@ -16,6 +16,7 @@
   h1 { font-size: 1.6rem; margin-bottom: 4px; }
   .meta { color: #94a3b8; font-size: 0.9rem; margin-bottom: 24px; }
   .warn { background: #7c2d12; color: #fed7aa; border-radius: 8px; padding: 10px 14px; font-size: 0.85rem; margin-bottom: 20px; }
+  .summary { background: #1e293b; border-left: 4px solid #38bdf8; border-radius: 8px; padding: 14px 18px; font-size: 1rem; font-weight: 600; color: #f1f5f9; line-height: 1.6; margin-bottom: 24px; }
   h2.section-title { font-size: 1.1rem; color: #cbd5e1; margin: 32px 0 12px; border-left: 4px solid #38bdf8; padding-left: 10px; }
   .market-grid {
     display: grid;
@@ -51,6 +52,8 @@
 
   <div class="warn">⚠️ 網頁版 Gemini 操作失敗（Chrome 擴充功能未連線），本頁新聞、指數與總經數據改採 WebSearch fallback 結果整理。</div>
 
+  <div class="summary">美股週三（8/12）多收高：那斯達克上漲0.54%收26,588.49點、標普500上漲0.26%收7,748.50點、道瓊小跌0.04%近乎持平，費半指數在CPI溫和降溫、AI與記憶體類股強勢帶動下勁揚2.49%；惟美伊荷姆茲海峽緊張情勢未解、油價維持高檔，仍是後續市場觀察的潛在風險。</div>
+
   <h2 class="section-title">美股指數收盤</h2>
   <div class="market-grid">
         <div class="market-card">
@@ -72,10 +75,16 @@
           <div class="market-note">受惠溫和CPI與強勁財報，科技股帶動走高</div>
         </div>
         <div class="market-card">
-          <div class="market-name">費城半導體指數（SOX）／台積電ADR（TSM）</div>
-          <div class="market-value">資料查詢失敗</div>
-          <div class="market-change" style="color:#64748b">查詢失敗</div>
-          <div class="market-note">多次查詢僅取得與前一交易日重複的快取數據，判斷非8/12當日精確收盤值，故不予採用，避免錯誤引用</div>
+          <div class="market-name">費城半導體指數（SOX）</div>
+          <div class="market-value">12,399.38</div>
+          <div class="market-change" style="color:#ef4444">+300.90（+2.49%）</div>
+          <div class="market-note">CPI降溫、AI與記憶體類股強勢，帶動費半大漲；資料來源：鉅亨網美股盤後報導</div>
+        </div>
+        <div class="market-card">
+          <div class="market-name">台積電ADR（TSM）</div>
+          <div class="market-value">429.33</div>
+          <div class="market-change" style="color:#ef4444">+7.09（+1.68%）</div>
+          <div class="market-note">台股ADR多收紅；資料來源：鉅亨網美股盤後報導</div>
         </div>
   </div>
 
@@ -129,7 +138,7 @@
         </div>
 
   <footer>
-    資料來源：WebSearch fallback（CNBC、TheStreet、Yahoo Finance、BNN Bloomberg、美國勞工統計局 BLS 等，網頁版 Gemini 操作失敗已改用 fallback）<br>
+    資料來源：WebSearch fallback（CNBC、TheStreet、Yahoo Finance、BNN Bloomberg、美國勞工統計局 BLS、鉅亨網 cnyes 美股盤後報導等，網頁版 Gemini 操作失敗已改用 fallback）<br>
     由 Cowork 自動整理<br><br>
     <a href="index.html">← 返回歷史總覽</a>
   </footer>
