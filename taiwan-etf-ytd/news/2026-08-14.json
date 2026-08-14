@@ -1,0 +1,92 @@
+{
+  "date": "2026-08-14",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "▸ S&P 500 上漲0.65%，收在7,798.99創歷史新高，受美國PPI數據優於預期激勵",
+        "▸ Nasdaq 上漲0.81%，收26,803.03",
+        "▸ 道瓊上漲69.72點（+0.13%），收53,839.99",
+        "▸ 費城半導體指數（SOX）大漲1.53%，收12,589.43，記憶體股領漲",
+        "▸ VIX恐慌指數收14.45，創七個月新低，市場波動預期偏低"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "▸ 台積電ADR（TSM）收430.49美元，上漲0.31%，換算對台北股價溢價約13.71%",
+        "▸ 聯電ADR（UMC）收19.31美元，上漲1.95%",
+        "▸ 日月光ADR（ASX）收39.28美元，上漲1.63%",
+        "▸ 台積電ADR溢價維持雙位數，為法人開盤偏多參考指標之一"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "▸ 美元／新台幣約32.14~32.23，新台幣維持區間震盪",
+        "▸ 美國10年期公債殖利率降至4.65%，較前一交易日4.68%回落",
+        "▸ 美元／日圓159.46，小漲0.02%",
+        "▸ 美元指數（DXY）近期約99.99，維持在百元關卡下方"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "▸ WTI原油下跌1.39%，收82.11美元／桶",
+        "▸ Brent布蘭特原油約91.60美元／桶（近期數據）",
+        "▸ 黃金盤中震盪，收跌約1.23%至4,354美元附近，但月增近10%",
+        "▸ 銅價下跌0.44%至6.57美元／磅，年增幅仍達46.84%",
+        "▸ 天然氣下跌0.86%至2.78美元／MMBtu"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "▸ 日經225上漲0.81%（+545點），收67,515點（近期數據）",
+        "▸ 韓國KOSPI近期在SK海力士、三星電子領軍下單日大漲逾4%，記憶體／AI熱潮延續",
+        "▸ 恆生指數處於下降趨勢通道，市場態度偏謹慎",
+        "▸ 台指期夜盤開低45,950點，最低45,878、最高46,031~46,163，終場約45,975~46,133，接近平盤至小漲0.23%"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "▸ 美國7月PPI持平、核心月增0.4%，確認CPI數據偏軟，強化降息預期",
+        "▸ 7月CPI年增3.4%、核心年增2.5%，市場評估9月升息機率低，下次CPI將於9/11公布",
+        "▸ 美中貿易緊張：7/24生效12.5%關稅（涉強迫勞動），中國反制美方機器人／電力轉換器進口禁令並擴大實體清單",
+        "▸ 台海情勢：上半年解放軍軍事活動相對低調，市場留意9月可能的川習互動及11月APEC後續變化"
+      ]
+    }
+  ],
+  "focus": "美股三大指數走強、費半領漲，台積電ADR收紅且溢價維持雙位數，加上台指期夜盤貼近46,000點小漲，今日台股開盤預期偏多開出；主要支撐來自半導體與AI記憶體族群的美股表現，需留意的壓力面向為新台幣匯率波動與美中貿易、台海地緣風險的突發訊息。建議關注半導體（台積電、聯電）、記憶體／AI概念股，以及運輸、塑化類股受油價下跌的影響。",
+  "sources": [
+    "https://www.cnbc.com/2026/08/12/stock-market-today-live-updates.html",
+    "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-13-2026",
+    "https://www.washingtonpost.com/business/2026/08/13/wall-street-stocks-dow-nasdaq/c1b80e16-9754-11f1-9ef9-1be722184483_story.html",
+    "https://ts2.tech/en/vix-falls-to-a-seven-month-low-before-ppi-options-price-a-0-9-daily-move/",
+    "https://www.sinotrade.com.tw/richclub/hotstock/ADR%E6%98%AF%E4%BB%80%E9%BA%BC-%E5%8F%B0%E7%A9%8D%E9%9B%BBADR%E6%80%8E%E9%BA%BC%E6%8F%9B%E7%AE%97-%E5%BE%9ESK%E6%B5%B7%E5%8A%9B%E5%A3%AB%E8%B5%B4%E7%BE%8E%E7%99%BC%E8%A1%8C%E7%9C%8B%E6%87%82%E6%8A%98%E6%BA%A2%E5%83%B9%E8%88%87%E5%8F%B0%E7%81%A3%E4%B8%8A%E5%B8%82ADR%E6%B8%85%E5%96%AE-65ee65f65c389e5cf0a92cc1",
+    "https://udn.com/news/story/6811/9671306",
+    "https://www.investing.com/currencies/usd-twd-historical-data",
+    "https://tradingeconomics.com/united-states/government-bond-yield",
+    "https://tradingeconomics.com/commodity/crude-oil",
+    "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-thursday-august-13-2026-gold-up-nearly-10-month-over-month-ahead-of-ppi-report-120512700.html",
+    "https://tradingeconomics.com/commodity/copper",
+    "https://tradingeconomics.com/japan/stock-market",
+    "https://www.ctee.com.tw/news/20260813701857-430202",
+    "https://www.bls.gov/news.release/archives/ppi_08132026.htm",
+    "https://www.aei.org/commentary/china-taiwan-update-august-7-2026/"
+  ]
+}
