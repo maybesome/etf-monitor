@@ -1,0 +1,93 @@
+{
+  "date": "2026-08-17",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "▸ S&P 500 收7,785.76點，跌0.2%（-13.23點），自8/13歷史高點回落，獲利了結",
+        "▸ 道瓊收53,732.41點，跌0.2%（-107.58點）；那斯達克收26,729.16點，跌0.3%（-73.86點）",
+        "▸ 費城半導體指數（SOX）下跌約1%，晶片股普遍走弱",
+        "▸ VIX恐慌指數收14.63，小升0.6%，波動度仍處低檔",
+        "▸ 週線：S&P 500全週+0.4%、那斯達克+0.1%，道瓊-0.6%"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "▸ 台積電ADR（TSM）收426.35美元，跌0.96%（-4.14美元），以32.046匯率換算約合台股2,732.56元",
+        "▸ 聯電ADR（UMC）下跌1.19%，折合台股約122.74元",
+        "▸ 輝達（NVDA）收211.94美元，漲2.56%，AI概念股延續強勢",
+        "▸ 博通（AVGO）重挫5.94%收392.99美元，市場憂心AI融資推升的債務風險，恐牽動台廠設備、耗材類股情緒",
+        "▸ 台積電ADR對台北股價溢價仍處相對高檔，為法人開盤參考指標之一"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "▸ 新台幣兌美元收32.046元，升值1.22角，本週升值0.75%，外資匯入動能偏強",
+        "▸ 美國10年期公債殖利率回升至4.65%~4.70%附近，反映降息預期略降溫",
+        "▸ 美元指數（DXY）約99.67，區間整理",
+        "▸ 7月CPI年增3.4%、月增0.1%，略低於預期，市場對9月降息機率下修至約35%"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "▸ WTI原油約81美元/桶，Brent原油約87.47美元/桶，油價持穩",
+        "▸ 黃金飆升至約4,334美元/盎司，避險買盤與降息預期支撐金價維持高檔",
+        "▸ 銅價約4.65美元/磅，電子原物料成本續處高位",
+        "▸ 能源類商品波動不大，暫未見跳空缺口風險"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "▸ 日經225收68,713.80點，漲0.59%，科技股帶動",
+        "▸ KOSPI大漲2.41%收6,977.34點，SK海力士、三星、鎧俠等記憶體股領漲，AI晶片需求重燃買氣，外資淨買超逾3兆韓元",
+        "▸ 台指期夜盤（8/14）收45,727點，較盤中參考價跌85點，走勢偏保守",
+        "▸ 台股加權指數8/14盤中一度衝破46,000點大關，逼近波段前高，市場情緒偏多"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "▸ Fed 8月維持利率3.50%–3.75%不變，9名委員支持、3名主張升息，內部立場分歧",
+        "▸ 7月就業市場疲弱（淨減工作機會）抵銷通膨疑慮，降息急迫性降低，下次決策待9月會議",
+        "▸ 台美關稅談判落定：對等關稅15%不疊加，半導體及衍生品享最優惠待遇，緩解台廠出口壓力",
+        "▸ Nvidia、OpenAI相關500億美元AI融資計畫引發債務風險疑慮，恐成短線波動因子",
+        "▸ 中美關係表面暫穩，川普訪中前台海地緣風險指數預期Q3下降，惟仍須留意突發訊息"
+      ]
+    }
+  ],
+  "focus": "上週五（8/14）美股三大指數獲利了結小幅收黑、費半走弱，但台積電ADR仍守426美元關卡且對台北股價維持顯著溢價，加上KOSPI受記憶體股激勵大漲逾2%、新台幣續升值，研判今日台股開盤將呈現「震盪偏多」格局；主要壓力來自美股AI融資債務疑慮（博通重挫）與美債殖利率走升，支撐則來自半導體ADR韌性與亞股偏多氣氛，建議留意半導體、記憶體／AI供應鏈，以及對利率敏感的金融、塑化類股表現。",
+  "sources": [
+    "https://www.barchart.com/story/news/3858944/how-major-us-stock-indexes-fared-friday-8-14-2026",
+    "https://www.detroitnews.com/story/business/2026/08/14/wall-street-subdued-as-markets-pause-after-sp-record-high/91303379007/",
+    "https://ww2.money-link.com.tw/realtimenews/NewsContent.aspx?SN=6167431001&PU=0010",
+    "https://tw.stock.yahoo.com/news/%E5%8F%8B%E9%81%94adr13%E6%97%A5%E4%B8%8B%E8%B7%8C0-26%E7%BE%8E%E5%85%83%E8%B7%8C%E5%B9%855-73-%E6%8A%98%E5%8F%B0%E8%82%A115-18%E5%85%83-215610530.html",
+    "https://www.tradingkey.com/analysis/stocks/us-stocks/261897575-today-market-recap-ai-geopolitical-tensions-tsla-mu-avgo-nvda-mu-baba-trump-china-csco-f-tradingkey",
+    "https://tw.stock.yahoo.com/news/8-14%E6%96%B0%E5%8F%B0%E5%B9%A3%E5%85%8C%E7%BE%8E%E5%85%83%E5%8C%AF%E7%8E%87%E4%BB%A532-046%E5%85%83%E4%BD%9C%E6%94%B6-%E5%8D%87%E5%80%BC1-22%E8%A7%92-080400542.html",
+    "https://tradingeconomics.com/united-states/government-bond-yield",
+    "https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html",
+    "https://www.forbes.com/advisor/investing/oil-prices-today/",
+    "https://www.5huangjin.com/us/",
+    "https://www.tradingkey.com/zh-hans/analysis/stocks/more/262104909-japan-south-korea-stocks-kospi-nikkei-softbank-sk-hynix-samsung-kioxia-tradingkey",
+    "https://money.udn.com/money/story/11112/9692793",
+    "https://info.taiwantrade.com/biznews/taiwantrade-3385710.html",
+    "https://blog.104.com.tw/what-is-the-us-reciprocal-tariff-storm/",
+    "https://ts2.tech/en/nvidias-500-billion-financing-push-turns-chip-demand-into-credit-risk/"
+  ]
+}
