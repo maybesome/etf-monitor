@@ -1,0 +1,87 @@
+{
+  "date": "2026-08-18",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "S&P 500收7,785.76點，跌13.23點（-0.2%）；那斯達克收26,729.16點，跌73.86點（-0.3%）；道瓊收53,732.41點，跌107.58點（-0.2%），三大指數同步走跌。",
+        "費城半導體指數（SOX）收12,417.05點，跌0.31%；VIX恐慌指數收14.25，續處相對低檔，市場尚未出現恐慌性拋售。",
+        "美伊間諒解備忘錄到期、川普表態不急於結束衝突，地緣風險升溫推升油價與30年期公債殖利率至數十年高點，壓抑風險偏好。",
+        "科技與半導體股隨大盤同步走弱，為台股開盤增添保守氣氛。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR（TSM）收426.35美元，跌0.96%，惟週線仍上漲1.57%，中期動能未破壞。",
+        "聯電ADR（UMC）收19.16美元，跌1.16%。",
+        "日月光ADR（ASX）收39.54美元，小跌0.25%。",
+        "三檔權值ADR同步收黑，反映隔夜半導體類股承壓，法人開盤參考偏保守。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元/新台幣近期於31.27～32.25區間整理，新台幣匯價偏弱格局未變。",
+        "美元指數（DXY）維持相對強勢，與10年期公債殖利率（約4.22%–4.24%）走勢略有背離。",
+        "Fed 7月利率會議維持3.50%–3.75%不變，惟三位官員主張升息，9月政策路徑不確定性升高，市場對降息預期分歧。",
+        "新台幣若持續偏弱，可能限制外資匯入買盤力道。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI原油收84.95美元，大漲3.09%；Brent原油上看90美元，受美伊緊張情勢推升。",
+        "黃金收4,434.82美元，小漲0.06%，避險買盤尚未明顯升溫。",
+        "銅價收6.61美元/磅，微漲0.07%，電子原料成本持穩。",
+        "油價急漲對運輸、塑化成本面偏空，但有利能源類股表現。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "台指期夜盤收約46,024點，上漲157點（+0.34%），日高46,112、日低45,830，暗示台股開盤偏多方向。",
+        "恆生指數期貨（9月合約）報25,544點，小漲0.11%。",
+        "日經225、KOSPI開盤數據尚待台北時間盤中確認，需留意亞股是否跟隨隔夜美股拉回。",
+        "整體亞股氣氛中性偏多，惟美股週一收黑恐限制反彈力道。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "7月CPI年增3.4%，核心CPI年增2.5%，通膨降溫但仍高於Fed目標，9月是否升息或降息尚無定論。",
+        "美伊間諒解備忘錄到期、川普不排除延長衝突，地緣風險成為近期市場焦點與油價驅動主因。",
+        "台美關稅已由20%調降至15%且不疊加，惟供應鏈重組壓力仍是台灣中長期經濟挑戰。",
+        "地緣政治風險評估顯示第三季整體風險可望緩解，但短線美伊衝突仍是變數，須留意突發消息造成的跳空風險。"
+      ]
+    }
+  ],
+  "focus": "台指期夜盤上漲逾150點，暗示今日台股開盤偏多震盪；惟隔夜美股三大指數普跌、費半走弱，加上美伊地緣衝突推升油價與美債殖利率，風險情緒轉趨謹慎，開盤後留意賣壓測試力道。建議留意半導體（台積電ADR走弱）、能源與塑化（油價急漲）、金融（殖利率上升）等類股表現，若美股跌勢未止，台股上檔恐受壓抑。",
+  "sources": [
+    "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-oil-treasurys-094421171.html",
+    "https://www.investing.com/indices/phlx-semiconductor",
+    "https://www.barchart.com/stocks/quotes/TSM",
+    "https://www.barchart.com/stocks/quotes/UMC",
+    "https://www.barchart.com/stocks/quotes/ASX",
+    "https://www.xe.com/en-us/currencyconverter/convert/?Amount=1&From=USD&To=TWD",
+    "https://tradingeconomics.com/united-states/government-bond-yield",
+    "https://www.investing.com/commodities/brent-oil",
+    "https://tradingeconomics.com/commodity/crude-oil/news/524779",
+    "https://money.udn.com/money/story/11112/9689868",
+    "https://www.investing.com/indices/hong-kong-40-futures",
+    "https://www.cna.com.tw/news/aipl/202512270015.aspx"
+  ]
+}
