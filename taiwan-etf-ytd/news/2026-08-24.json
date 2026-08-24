@@ -1,0 +1,93 @@
+{
+  "date": "2026-08-24",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "美股週五（美東時間8/21）強勁反彈：道瓊工業指數收53,277.01點(+0.98%)、標普500收7,674.37點(+0.43%)、那斯達克綜合指數收26,180.45點(+0.43%)。",
+        "VIX恐慌指數收15.13，單日下跌5.5%，恐慌情緒明顯降溫，但本週稍早(8/16-8/19)曾因中東地緣緊張與美債殖利率飆升出現數次單日重挫，道瓊一度單日跌逾700點。",
+        "費城半導體指數(SOX)本週波動劇烈，晶片股一度隨美債殖利率走升遭拋售(8/18)，建議密切留意台積電ADR、輝達等權值股表現作為開盤參考。",
+        "整體呈現「先跌後漲」格局，週五資金逢低回補帶動三大指數收紅，為台股開盤帶來正面氣氛，但波動風險尚未完全解除。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR(TSM)最新約418.95美元，本週稍早曾隨美股全面下跌單日跌0.96%。",
+        "以台北股價2,410元(+1.47%)及美元/台幣31.837換算(ADR：普通股=1:5)，推算ADR對台北股價約有一成上下溢價，顯示外資買盤動能未歇（屬估算值，實際以開盤試搓為準）。",
+        "日本軟銀第二季大幅減碼台積電ADR部位逾七成，套現約2.7億美元，反映部分外資逢高調節。",
+        "聯電(UMC)、日月光(ASE) ADR同步受美股半導體類股情緒牽動，建議開盤留意其溢價/折價變化作為外資進出方向參考。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元/新台幣最新報31.837，較前一交易日31.866小幅走升，新台幣略升值，盤中區間31.781–31.900。",
+        "美元指數(DXY)報98.839，近24小時持平整理。",
+        "美國10年期公債殖利率彈升至4.74%(+0.03個百分點)，續處近期高檔，反映市場對Fed利率路徑仍存分歧。",
+        "新台幣走勢偏強有利外資匯出入成本，但若殖利率持續彈升，可能限制外資加碼台股意願。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI原油約85.76美元/桶，布蘭特原油自91.54美元一度彈升至94.39美元，中東(伊朗)地緣緊張持續推升油價，為近期美股波動主因之一。",
+        "金價彈升至4,416.84美元/盎司附近，續創高檔，反映避險需求並未隨美股反彈而消退。",
+        "銅價約6.58美元/磅，近24小時持平，電子原物料成本壓力暫穩。",
+        "油價走高不利航運、塑化成本，但利好能源、原物料類股；金價強勢則利好資金避險族群。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "日經225指數收66,016.36點(-0.30%)，本週波動加大，部分報導顯示晶片權值股(如鎧俠Kioxia)單日重挫逾7%，牽動半導體供應鏈情緒。",
+        "韓國KOSPI指數收6,912.95點(+0.88%)，SK海力士等記憶體股表現分歧，本週亦曾出現逾1%單日跌幅，波動明顯放大。",
+        "亞股整體呈現漲跌互見、波動加劇格局，反映投資人對晶片股評價與Fed政策不確定性仍存疑慮。",
+        "台指期夜盤及香港恆生指數即時資料未能取得，建議開盤前另行確認最新期貨夜盤點位作為最直接開盤參考指標。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "Fed主席過渡受關注：市場密切觀察新任鷹派色彩濃厚官員(Warsh)於8/27–29傑克森洞(Jackson Hole)年會的政策談話，可能牽動降息時程預期。",
+        "美國通膨仍處3.4%高檔，遠高於2%目標，7月非農就業與零售銷售雙雙走弱，市場對停滯性通膨風險升溫，FOMC內部對升降息意見分歧。",
+        "美國商務部8/19宣布將407項產品類別納入鋼鋁關稅清單，稅率達50%，關稅衝擊持續透過供應鏈傳導，須留意對台灣出口相關類股(鋼鐵、機械)的間接影響。",
+        "地緣政治方面，中國先前於台海周邊展開大規模軍演，加上日本首相將於11月提出「台灣有事」應變方案，中美台關係持續受市場關注；中東(伊朗)緊張情勢則是推升油價、擾動全球風險情緒的另一變數。"
+      ]
+    }
+  ],
+  "focus": "美股週五強力反彈（道瓊+0.98%、標普與那指皆+0.43%）、VIX回落至15附近，為台股開盤提供正面氣氛；但美債殖利率彈升至4.74%、原油因中東地緣緊張走高、金價創高反映避險情緒未散，加上本週稍晚Fed傑克森洞年會（8/27–29）將牽動利率預期，預期開盤呈現偏震盪格局。台積電ADR仍對台北股價維持溢價，外資買盤動能未歇，可望支撐半導體權值股表現；但需留意日韓晶片股（鎧俠、SK海力士）近期劇烈波動的外溢效應。建議留意類股：半導體/AI（台積電、AI伺服器供應鏈）、原物料塑化（油價走高）、金融（殖利率彈升）。",
+  "sources": [
+    "https://www.cnbc.com/2026/08/20/stock-market-today-live-updates.html",
+    "https://www.cnbc.com/2026/08/19/stock-market-today-live-updates.html",
+    "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-18-dow-sp-500-nasdaq-080822735.html",
+    "https://www.cnbc.com/2026/08/17/stock-market-today-live-updates.html",
+    "https://www.cnbc.com/2026/08/16/stock-market-today-live-updates-.html",
+    "https://finance.yahoo.com/quote/TSM/",
+    "https://www.sinotrade.com.tw/richclub/hotstock/%E5%8F%B0%E7%A9%8D%E9%9B%BB-2330-%E8%82%A1%E5%83%B9%E6%94%BB%E4%B8%8A1-650%E5%85%83%E6%96%B0%E9%AB%98-%E5%85%A9%E5%A4%A7%E5%A4%96%E8%B3%87%E5%96%8A%E5%87%BA2330%E5%85%83-2400%E5%85%83%E5%A4%A9%E5%83%B9%E7%9B%AE%E6%A8%99-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-695b2f0f24cf3b1605175e01",
+    "https://www.investing.com/currencies/usd-twd",
+    "https://tradingeconomics.com/united-states/government-bond-yield",
+    "https://finance.yahoo.com/quote/DX-Y.NYB/",
+    "https://oilprice.com/",
+    "https://tradingeconomics.com/commodity/brent-crude-oil",
+    "https://www.findbullionprices.com/spot-prices/copper-price",
+    "https://www.cls.cn/detail/2460161",
+    "https://www.tradingkey.com/zh-hant/analysis/stocks/more/262114217-japan-south-korea-stocks-kospi-nikkei-softbank-sk-hynix-samsung-kioxia-tradingkey",
+    "https://www.mufgresearch.com/rates/august-2026-fed-rates-call-update/",
+    "https://www.bloomberg.com/news/newsletters/2026-08-21/what-to-look-out-for-at-the-fed-s-jackson-hole-gathering",
+    "https://indsr.org.tw/focus?uid=11&pid=2988&typeid=26"
+  ]
+}
