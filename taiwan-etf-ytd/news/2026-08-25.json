@@ -1,0 +1,57 @@
+{
+  "date": "2026-08-25",
+  "title": "台股盤前快報",
+  "sections": [
+    {"id": "us", "emoji": "🇺🇸", "title": "隔夜美股", "items": [
+      "標普500上漲0.4%（33.21點）收7,674.37點，那斯達克上漲0.4%（113.29點）收26,180.46點，道瓊上漲1%（517.80點）收53,277.01點，三大指數表現分歧但收紅。",
+      "半導體ETF（SOXX）重挫2.7%，晶片股遭明顯拋售，AI晶片供應鏈類股承壓。",
+      "VIX恐慌指數下跌5.5%至15.13，短線恐慌情緒降溫，但半導體權重股仍疲弱。",
+      "美國財政部長貝森特宣布「Operation Economic Outcast」對伊朗擴大制裁行動，觸發部分避險賣壓。",
+      "本週市場焦點轉向輝達（NVIDIA）財報與Jackson Hole全球央行年會，波動風險升溫。"
+    ]},
+    {"id": "adr", "emoji": "🎯", "title": "台股 ADR", "items": [
+      "受SOXX重挫2.7%及晶片股遭拋售影響，台股ADR（台積電/聯電/日月光）預期承壓；本次搜尋未能取得8/24當日確切收盤與溢價數據，建議開盤後留意即時折溢價。",
+      "參考近期資料，台積電ADR溢價率曾一度來到約18.77%（8月上旬），顯示外資對台積電評價仍偏高，但波動明顯放大。",
+      "聯電、日月光ADR近期波動幅度大於台積電，單日漲跌動輒正負5%~14%，反映市場對成熟製程與封測景氣看法分歧。",
+      "建議以台北股價對比最新ADR折算價，作為外資開盤買賣超方向的參考指標。"
+    ]},
+    {"id": "fx", "emoji": "💱", "title": "匯率與利率", "items": [
+      "美元/新台幣約在31.84~31.89區間，新台幣近一個月升值約1.74%，但仍較去年同期貶值約4.79%。",
+      "美元指數（DXY）報98.99附近，月線走弱逾2.5%，接近5月以來低點，反映市場對Fed政策路徑看法分歧。",
+      "10年期美債殖利率升至4.74%，逼近20個月高點，殖利率走升可能壓抑成長股評價。",
+      "新台幣走強有利外資匯兌收益，但美債殖利率走高可能牽制外資加碼台股意願，兩者方向拉鋸。"
+    ]},
+    {"id": "commodity", "emoji": "🛢️", "title": "大宗商品", "items": [
+      "WTI原油下跌2.15%至85.19美元/桶，主因市場等待對伊朗新一輪制裁細節，地緣風險溢價暫未完全反映。",
+      "黃金持續走高至約4,630美元/盎司，創5月以來新高，反映避險需求升溫。",
+      "本次搜尋未取得銅價最新具體數據，建議留意銅價對電子上游原物料成本的影響。",
+      "油價回落有利航運、塑化成本，但地緣政治風險若升級，不排除短期跳空反彈。"
+    ]},
+    {"id": "asia", "emoji": "🌏", "title": "亞股與期貨", "items": [
+      "南韓KOSPI大跌3.12%至6,696.96點，跌幅顯著，反映區域科技股賣壓蔓延。",
+      "香港恆生指數下跌1.84%，跌破26,000點，亞股普遍走弱。",
+      "日經225期貨於65,555~66,462區間震盪，尚未見明顯方向。",
+      "台指期夜盤下跌66點，暫報44,674點，加權指數期貨同步失守45,000點關卡，夜盤走勢預示開盤偏弱。"
+    ]},
+    {"id": "macro", "emoji": "📰", "title": "總經與地緣", "items": [
+      "Fed於7/29 FOMC會議維持利率3.50%~3.75%不變，7月CPI市場預期年增3.4%、核心2.5%，通膨降溫但仍具黏性。",
+      "美國財長貝森特宣布「Operation Economic Outcast」全面擴大對伊朗制裁，並暗示若中國持續與伊朗往來也可能被納入制裁對象。",
+      "中國外交部回應稱制裁「只會導致情勢升級」，市場憂心恐重燃中美貿易緊張，習近平原訂9月24日訪美行程添變數。",
+      "本週Jackson Hole全球央行年會登場，鮑爾談話內容將牽動全球利率預期與資金流向。",
+      "NVIDIA本週公布財報，為AI供應鏈及台股半導體類股的重要指標事件。"
+    ]}
+  ],
+  "focus": "美股三大指數收紅但晶片股（SOXX -2.7%）明顯落後，加上南韓KOSPI重挫3.12%、台指期夜盤失守45,000點，預期今日台股開盤呈現震盪偏空。壓力主要來自半導體/AI供應鏈國際連動疲弱及伊朗制裁引發的地緣政治不確定性；美元走弱、新台幣月線升值則提供部分支撐。建議留意半導體、AI概念股、航運及原物料類股，並關注本週NVIDIA財報與Jackson Hole央行年會的後續影響。",
+  "sources": [
+    "https://www.washingtonpost.com/business/2026/08/24/wall-street-stocks-dow-nasdaq/27d744ee-9ff9-11f1-8606-1d40ad00172e_story.html",
+    "https://www.cnbc.com/2026/08/23/stock-market-today-live-updates.html",
+    "https://udn.com/news/story/6811/9513494",
+    "https://www.investing.com/currencies/usd-twd-historical-data",
+    "https://www.barchart.com/story/news/3912243/dxy-technical-analysis-august-2026-us-dollar-index-at-99-60-tests-rising-channel-support-below-declining-200-day-ma",
+    "https://www.forbes.com/advisor/investing/oil-prices-today/",
+    "https://www.ctee.com.tw/news/20260824701494-430202",
+    "https://vibiznews.com/index.php/2026/08/24/rekomendasi-harian-indeks-kospi-24-agustus-2026/",
+    "https://www.cnbc.com/2026/08/24/trump-iran-economy-sanctions-china-bessent.html",
+    "https://www.cnbc.com/2026/08/11/an-inflation-report-wednesday-should-be-a-big-deal-for-the-fed-heres-what-to-expect.html"
+  ]
+}
