@@ -1,0 +1,83 @@
+{
+  "date": "2026-08-26",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "標普500收7,677.28點，上漲0.32%；那斯達克指數上漲約0.6%，科技與生技股領漲；道瓊工業指數收53,579.94點，上漲0.30%，連三日收紅，主因美債殖利率回落帶動買盤。",
+        "費城半導體指數(SOX)走勢偏強，AI與半導體類股買氣持續，帶動台股半導體供應鏈連動情緒。",
+        "VIX恐慌指數維持在15.5附近低檔，市場情緒平穩，未見系統性風險訊號。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR(TSM)收416.35美元，上漲1.52%；台北現貨2,400元，上漲1.05%，ADR相對現貨呈正向溢價，粗估溢價約8-9%（以美元兌台幣約31.5換算），外資偏多氣氛延續。",
+        "聯電ADR(UMC)收19.05美元，大漲3.87%，漲幅優於台積電ADR，代工需求關注度提升。",
+        "ADR整體表現偏多，為台股開盤法人參考的正向指標。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元兌新台幣近期於31.5元上下區間波動（即時報價請以央行/銀行牌告為準），新台幣走勢牽動外資匯出入方向。",
+        "美元指數(DXY)企穩於99附近，維持區間震盪格局。",
+        "10年期美債殖利率降至4.66%，較前一交易日下滑約4個基點，殖利率回落有利成長股與科技股估值評價。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI原油跌至81.15美元/桶(-4.54%)，布蘭特原油跌至86.33美元/桶(-6.33%)，主因美伊緊張情勢緩解，油價回落有利航運、塑化成本壓力紓緩。",
+        "黃金回落至4,637美元/盎司(-0.32%)，惟月漲幅達13.73%、年漲幅逾36%，避險需求仍偏強。",
+        "銅價上漲至6.66美元/磅(+0.96%)，月漲近5%、年漲近49%，反映電子與基礎建設需求穩健。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "日經225指數8/25開盤65,195.26點，半導體、汽車類股表現偏強，日股氣氛偏多。",
+        "韓國KOSPI指數8/25大跌2.40%，收6,535.93點，跌勢明顯，亞股氣氛轉趨保守。",
+        "台指期夜盤即時數據本次未能完整取得，建議以期交所盤後行情為準；整體亞股呈現日股強、韓股弱的分歧走勢，須留意對台股開盤情緒的傳導。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "美國7月CPI年增3.4%、核心CPI年增2.5%，均符合市場預期，通膨降溫壓力趨緩但尚未完全消除。",
+        "Fed官員柯林斯(Collins)釋出鷹派訊號，暗示若數據支持不排除9月升息；市場現估9月會議按兵不動機率約六成。",
+        "關稅對核心PCE的傳導效應約0.7個百分點且逐漸淡出，未來6-12個月影響預期趨緩。",
+        "台灣國防部8月8日實施反登陸軍演，中國持續在台海周邊進行軍事活動，地緣政治風險維持背景關注層級，尚無立即升溫跡象。"
+      ]
+    }
+  ],
+  "focus": "整體美股與半導體類股上漲、VIX處於低檔，加上台積電ADR溢價擴大，有利台股開盤偏多開出；惟韓股大跌逾2%及Fed官員鷹派發言可能限制漲幅，呈現震盪偏多格局，壓力主要來自亞股氣氛轉弱與利率政策不確定性，支撐則來自美系科技股強勢與油價下跌帶來的成本紓緩，建議留意半導體、AI伺服器供應鏈，以及受惠油價回落的塑化、航運類股表現。",
+  "sources": [
+    "https://www.washingtonpost.com/business/2026/08/25/wall-street-stocks-dow-nasdaq/",
+    "https://www.cnbc.com/2026/08/24/stock-market-today-live-updates.html",
+    "https://www.investing.com/indices/phlx-semiconductor",
+    "https://money.udn.com/money/story/5607/9243040",
+    "https://tw.stock.yahoo.com/quote/TSM",
+    "https://tradingeconomics.com/united-states/government-bond-yield",
+    "https://tradingeconomics.com/commodity/brent-crude-oil",
+    "https://tradingeconomics.com/commodity/crude-oil",
+    "https://tradingeconomics.com/commodity/gold",
+    "https://tradingeconomics.com/commodity/copper",
+    "https://en.sedaily.com/finance/2026/08/25/kospi-opens-down-240-percent-at-653593",
+    "https://tw.stock.yahoo.com/news/%E9%80%9A%E8%86%A8%E6%B2%92%E5%86%8D%E5%A4%B1%E6%8E%A7-%E7%BE%8E%E5%9C%8B7%E6%9C%88%E6%A0%B8%E5%BF%83cpi%E8%BF%BD%E5%B9%B3%E9%80%BE5%E5%B9%B4%E4%BD%8E%E9%BB%9E-fed%E4%B8%8B%E6%9C%88%E5%8D%87%E6%81%AF%E6%A9%9F%E7%8E%87%E4%B8%8D%E5%88%B04%E6%88%90-123834351.html",
+    "https://www.ehime-np.co.jp/article/ky202608080122900010"
+  ]
+}
