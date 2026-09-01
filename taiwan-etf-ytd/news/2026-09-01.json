@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-01",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "上週五美股收盤：S&P 500 收 7,686.14 點（約-0.3%）、那斯達克收 26,370.89 點、道瓊收 53,185.90 點，市場一度受美國空襲伊朗消息干擾。",
+        "輝達（NVIDIA）財報帶動大盤走強，單日勁揚近9%；那斯達克單日大漲1.57%、S&P 500 大漲0.72%，AI供應鏈全面點火。",
+        "美光（Micron）公布季度營收年增346%，記憶體/AI概念股齊揚，市場視其為輝達之後最重要的AI概念指標股。",
+        "VIX恐慌指數8/31盤中報15.31，較8月中旬14.25的2026年低點回升逾6%，波動度略為升溫。",
+        "Fed主席沃許（Kevin Warsh）鷹派發言指通膨降溫不如預期，暗示政策仍有壓抑通膨的工作要做，推升美債殖利率。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR最新收約415.32美元（約-0.5%），盤後一度上探419.61美元，走勢牽動今日台北股價開盤氣氛。",
+        "聯電ADR約20.18美元，單日大漲5.85%，顯示市場對成熟製程需求回溫的期待升溫。",
+        "台積電ADR換算台股溢價率過去區間曾高達逾22%，反映海外資金對台灣半導體後市信心，仍是法人開盤前重要風向球。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元／新台幣約在31.68–31.72區間，新台幣續處相對弱勢。",
+        "美元指數DXY約99.53，小跌0.17%，美元走勢偏弱整理。",
+        "10年期美債殖利率上揚至約4.72–4.76%，受Fed官員鷹派發言影響殖利率走高，增添資金成本壓力。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI原油約85.57美元（+2.6%）、Brent原油約90.25美元（+2.44%），中東地緣政治不確定性推升油價。",
+        "黃金約4,504美元，下跌3.43%，顯示避險買盤降溫、資金轉向風險性資產。",
+        "油價走高可能對航運、塑化類股帶來成本端壓力，需留意原物料傳導效應。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "台指期近一收45,981點，小漲4點（+0.01%），夜盤變化有限，對今日開盤影響偏中性。",
+        "日經225期貨開盤約在66,104點附近整理。",
+        "南韓KOSPI近期波動放大，8月初曾單日大漲逾3%見6,603點，短線動能仍需觀察。",
+        "受隔夜美股AI供應鏈激勵，亞股早盤可望出現聯動反應，惟需留意個別市場消息面干擾。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "Fed 9/15–16 FOMC會議前，市場緊盯9/4非農就業與9/11 CPI數據，沃許鷹派發言已使9月降息預期降溫。",
+        "台灣CPI年增率維持高檔2.54%、7月PPI飆升至16.94%，央行本月升息機率升溫。",
+        "美中關稅方面，對台關稅已定案為15%，美中雙邊關稅仍處30%高檔區間，貿易不確定性猶存。",
+        "中國宣布在台海部分海域實彈射擊軍演，共機艦持續在台海周邊活動，地緣風險升溫，需留意突發消息造成開盤跳空。"
+      ]
+    }
+  ],
+  "focus": "受輝達、美光財報激勵及聯電ADR大漲帶動，AI／半導體供應鏈可望延續多頭氣氛，預期今日開盤偏多震盪；主要壓力來自美債殖利率走高、Fed鷹派表態與台海軍演升溫等地緣風險，建議留意半導體、AI伺服器供應鏈類股表現，並留意新台幣貶值對外資動向及塑化、航運類股受油價走揚牽動的成本壓力。",
+  "sources": [
+    "https://www.cnbc.com/2026/08/30/stock-market-today-live-updates.html",
+    "https://www.cnbc.com/2026/08/26/stock-market-today-live-updates.html",
+    "https://www.fool.com/investing/2026/08/31/not-nvidia-not-amd-micron-could-be-septembers-bigg/",
+    "https://invest.cnyes.com/futures/GF/VIX",
+    "https://us.trendlyne.com/us/equity/1404971/TSM/taiwan-semiconductor-manufacturing-adr/",
+    "https://www.barchart.com/stocks/quotes/UMC",
+    "https://tw.stock.yahoo.com/quote/USDTWD=X",
+    "https://www.investing.com/currencies/us-dollar-index",
+    "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
+    "https://oilprice.com/",
+    "https://tw.stock.yahoo.com/future/WTX&",
+    "https://think.ing.com/articles/rates-spark-quiet-start-to-the-week-ahead-of-the-us-cpi",
+    "https://www.cna.com.tw/tag/21667/",
+    "https://tw.dimerco.com/us-tariff-update-2026/"
+  ]
+}
