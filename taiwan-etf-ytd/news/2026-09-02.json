@@ -1,0 +1,86 @@
+{
+  "date": "2026-09-02",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "道瓊9/1收52,766.88點，跌419.02點(-0.79%)；標普500收7,631.47點，跌0.71%；那斯達克收26,099.77點，跌1.03%，那指跌幅最大。",
+        "費城半導體指數(SOX)重挫256.96點(-2.23%)，收11,278.09點，AI/半導體權值股領跌，對台股電子權值傳導風險偏大。",
+        "VIX恐慌指數大漲8.11%至16.13，避險情緒明顯升溫。",
+        "美股拉回主因為荷姆茲海峽衝突推升油價、美債殖利率走升，以及Fed升息疑慮三重壓力交織。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR(TSM)收415.32美元，跌2.20美元(-0.53%)，盤後小幅回升0.62美元，開盤參考偏弱。",
+        "聯電ADR(UMC)收20.47美元，逆勢大漲2.97%，與大盤及SOX走勢背離。",
+        "日月光(ASE)ADR當日公開數據有限，開盤前建議另行確認即時報價。",
+        "整體ADR訊號分歧：權值指標（台積電、SOX）偏弱，個別族群（聯電）逆勢走強，開盤恐呈現類股表現分歧。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元/新台幣收31.7250，小升0.06%；新台幣近一個月升值2.11%，但近12個月仍貶值3.15%。",
+        "10年期美債殖利率升至4.80%(+0.04pp)，反映通膨與財政疑慮升溫。",
+        "美元指數(DXY)升至99.66(+0.23%)，美元轉強。",
+        "殖利率走升疊加美元走強，對新興市場資金流向偏不利，需留意外資今日進出方向。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "Brent原油因荷姆茲海峽油輪遭擊中、美軍空襲伊朗而暴漲4.6%，衝上95.05美元/桶，為近期最大單日漲幅之一。",
+        "黃金期貨開盤4,498.7美元(+0.4%)，但隨後回落至4,432～4,331美元區間，避險與升息預期拉鋸下波動放大。",
+        "銅價上漲0.47%至6.62美元/磅，年增44.63%，電子原料成本持續墊高。",
+        "油價飆升加深通膨疑慮，牽動Fed利率決策及整體市場風險胃納，運輸、塑化類股需留意成本衝擊。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "日經225期貨走高+2.19%，來到47,650點，技術面偏多。",
+        "恆生指數報25,448.11點，下跌0.53%。",
+        "KOSPI報6,770.21點，下跌0.28%。",
+        "台指期夜盤(9/1晚間)由平盤轉弱，一度下探46,748點，重挫453點(-0.9%)，反映中東衝突及油價衝擊亞股情緒，為台股開盤最直接的負面訊號。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "荷姆茲海峽衝突升溫：兩艘超級油輪遭飛彈擊中，美軍隨即對伊朗革命衛隊目標發動新一輪空襲，班達阿巴斯、恰巴哈爾傳出爆炸聲。",
+        "此波美伊衝突已延燒數月，反覆攻擊嚴重干擾荷姆茲海峽航運，是近期油價與市場波動的主要地緣風險來源。",
+        "7月CPI年增3.4%，但PCE年增近4%、核心PCE逾3%；疊加中東能源衝擊，市場預期9/15-16 FOMC升息機率上升(約四成)，鷹派疑慮升溫。",
+        "地緣政治、通膨與升息預期三重壓力交織，是近期美股拉回及亞股承壓的主因，短線需留意衝突是否進一步升級。"
+      ]
+    }
+  ],
+  "focus": "今日台股開盤預期偏空、震盪加劇：隔夜美股三大指數收黑、SOX重挫逾2%、台指期夜盤失守46,748點，加上Brent原油因荷姆茲海峽衝突飆破95美元、Fed升息疑慮升溫，主要壓力來自國際地緣政治與通膨/利率面；建議留意半導體與AI權值股（台積電、聯電族群表現分歧）、原物料成本敏感的塑化與航運類股，以及美元走強下外資匯出風險。",
+  "sources": [
+    "https://www.bloomberg.com/news/articles/2026-09-01/stock-market-today-dow-s-p-live-updates",
+    "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-1-dow-sp-500-nasdaq-080617884.html",
+    "https://www.bloomberg.com/news/articles/2026-09-01/us-launches-new-round-of-iran-strikes-as-strait-tensions-grow",
+    "https://www.bloomberg.com/news/articles/2026-09-01/two-oil-supertankers-hit-by-projectiles-in-hormuz-marisks-says",
+    "https://www.investing.com/currencies/usd-twd",
+    "https://tradingeconomics.com/united-states/government-bond-yield",
+    "https://tradingeconomics.com/united-states/currency",
+    "https://tradingeconomics.com/commodity/copper",
+    "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-tuesday-september-1-2026-gold-moves-lower-as-rate-hike-expectations-grow-120810063.html",
+    "https://money.udn.com/money/story/11112/9704520",
+    "https://www.forbes.com/sites/billconerly/2026/08/12/why-the-fed-will-raise-rates-in-september-despite-cooler-cpi/"
+  ]
+}
