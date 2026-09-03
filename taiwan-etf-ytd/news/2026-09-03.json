@@ -1,0 +1,94 @@
+{
+  "date": "2026-09-03",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "美股三大指數收紅，終止連兩日跌勢：標普500 +0.46%收7,666.60，那斯達克 +0.45%收26,217.83，道瓊 +295.07點（+0.56%）收53,061.95，長天期公債殖利率略降、美元走弱提振買盤。",
+        "費城半導體指數（SOX）重挫2.23%，收11,278.09，反映AI／半導體股獲利了結賣壓明顯。",
+        "VIX恐慌指數降至15.22，單日下滑6.85%，市場風險情緒稍緩，但波動仍可能反覆。",
+        "受美伊軍事衝突升溫影響，道瓊一度單日重挫逾400點，顯示市場對地緣風險敏感度提高。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR收414.16美元，較前一交易日414.00美元幾乎持平；換算台股溢價幅度約9%～12%（不同資料源估算略有差異），開盤參考偏正向但動能趨緩。",
+        "聯電ADR大漲3.03%至19.85美元，日月光ADR上漲1.36%至36.92美元，二線半導體／封測ADR表現優於台積電ADR。",
+        "整體ADR偏多，但費半重挫2.23%可能壓抑台積電及相關供應鏈開盤動能，需留意族群分化。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元／新台幣約31.7～31.75，新台幣走貶約0.32%，反映外資匯出或避險需求升溫。",
+        "美元指數（DXY）亞洲盤站穩99.70附近，維持強勢格局。",
+        "美國10年期公債殖利率攀升至4.79%～4.80%，創2025年初以來新高，反映市場對Fed升息與通膨黏性的疑慮。",
+        "匯率與利率同步走升，可能對外資買盤形成壓力，提高台股資金成本敏感度。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI原油收90.72美元／桶（+0.56%），布蘭特原油一度漲逾4.5%至94～96美元區間，美伊軍事衝突升溫是主因。",
+        "黃金勁揚1.12%至4,377.15美元／盎司，近一年大漲近23%，避險買盤明顯升溫。",
+        "銅價小漲0.16%至6.52美元／磅，年增逾43%，反映AI與電動車相關基本金屬需求仍強。",
+        "油價急漲若持續，將推升航運、塑化成本，但可能利多能源與資產類股。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "南韓KOSPI重挫3.99%收6,562.72，受油價飆漲與公債殖利率走高雙重壓力拖累，跌幅居亞股之冠。",
+        "日經225下跌2.55%至64,524點（前收66,215），出口與科技股同步走弱。",
+        "港股恆生指數小跌0.23%，上海A股跌近1%，陸港股相對抗跌。",
+        "台指期參考：加權指數期貨近一（TXF1）收46,836點（+0.78%），近二收46,951點（+0.66%），暗示台股開盤氣氛偏多，但亞股普遍走弱形成牽制。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "美伊軍事衝突再度升級：美軍打擊荷姆茲海峽島嶼目標，伊朗反擊阿聯、約旦與巴林，中東地緣風險為近期油價與市場波動最大變數。",
+        "Fed 9月16日FOMC會議市場預期升息25基點機率達66%（CME FedWatch），主因通膨黏著（PCE年增3.7%）疊加中東供應干擾，方向與市場原先預期降息相反，需留意鷹派意外衝擊。",
+        "台美關稅已於今年初敲定為15%對等關稅，台灣承諾對美投資5,000億美元（半導體、AI、能源為主），短期貿易不確定性緩解，但美中台三方地緣關係仍是中長期變數。",
+        "通膨數據與Fed官員談話密集期，市場對利率路徑分歧擴大，波動風險偏高。"
+      ]
+    }
+  ],
+  "focus": "今日台股開盤預期呈現多空拉鋸、震盪略偏保守：美股雖收紅但費半重挫2.23%、VIX驟降後仍隱含波動風險，加上美伊衝突推升油價與美債殖利率，可能壓抑外資買盤並增添新台幣貶值壓力。建議留意半導體（費半連動）、封測（日月光、聯電ADR偏強）、航運塑化（油價敏感）及金融保險（美債殖利率）類股表現，台指期參考偏多但亞股普遍疲弱是主要牽制因素。",
+  "sources": [
+    "https://www.cnbc.com/2026/09/01/stock-market-today-live-updates.html",
+    "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-september-2-dow-sp-500-nasdaq-082624175.html",
+    "https://www.investing.com/indices/phlx-semiconductor",
+    "https://www.investing.com/indices/volatility-s-p-500-historical-data",
+    "https://us.trendlyne.com/us/equity/1404971/TSM/taiwan-semiconductor-manufacturing-adr/",
+    "https://finance.ettoday.net/news/3175987",
+    "https://www.morningstar.com/stocks/xnys/umc/quote",
+    "https://www.investing.com/equities/advanced-semiconductor-engineering",
+    "https://www.investing.com/currencies/usd-twd",
+    "https://www.fxstreet.com/news/united-states-dollar-index-hold-gains-above-9950-as-treasury-yields-hit-multi-year-highs-202609020323",
+    "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
+    "https://tradingeconomics.com/commodity/crude-oil",
+    "https://tradingeconomics.com/commodity/gold",
+    "https://tradingeconomics.com/commodity/copper",
+    "https://en.sedaily.com/finance/2026/09/02/kospi-closes-down-399-percent-at-656272",
+    "https://247wallst.com/cards/hong-kong-clawed-back-most-of-a-rough-open-to-finish-just-0-hsi-market-bell-01m1gj9sza5dmdpzg7zcc84cw0",
+    "https://www.cmoney.tw/forum/futures/TXF1",
+    "https://www.cnbc.com/2026/09/02/us-iran-war-trump-hormuz-irgc-jordan-bahrain.html",
+    "https://www.forbes.com/sites/digital-assets/2026/08/31/cme-fedwatch-provides-a-66-chance-fed-will-hike-rates-in-september/",
+    "https://www.clevelandfed.org/indicators-and-data/inflation-nowcasting"
+  ]
+}
