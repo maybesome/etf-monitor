@@ -1,0 +1,92 @@
+{
+  "date": "2026-09-04",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "S&P 500 上漲1.06%收7,747.71點；那斯達克大漲1.4%收26,584.06點；道瓊上漲624.16點(+1.18%)收53,686.11點，為8/4以來最佳單日表現。",
+        "費城半導體指數(SOX)9/2收11,339.25點，上漲0.45%，科技與半導體股續強。",
+        "VIX恐慌指數大跌至14.32附近(-5.79%)，市場恐慌情緒明顯降溫。",
+        "上漲動能來自Fed理事Waller釋出「反通膨」訊號，暗示9月可能維持利率不變，激勵風險偏好回升。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR(TSM)收413.07美元，盤中區間411.27–416.05美元，走勢持穩。",
+        "台積電期貨夜盤(9/4約21:22)報2,369元，上漲41元，隨美股與油價回落走揚。",
+        "聯電ADR(UMC)收約20.47美元，上漲近3%，表現強於大盤。",
+        "日月光ADR(ASX)收37.43美元，上漲0.94%。",
+        "整體ADR動能偏多，為今日開盤提供正向指引，惟精確溢價/折價數據來源有限，僅供參考。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元/新台幣約31.73，新台幣匯價持穩。",
+        "美元指數(DXY)跌至98.90，單日下跌0.70%，近四週累跌約0.96%。",
+        "10年期美債殖利率降至約4.76%–4.77%，殖利率回落有助股市評價。",
+        "美元轉弱環境下，外資資金可能傾向流入包括台灣在內的亞洲股市。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI原油約92.09美元/桶，稍早一度因荷莫茲海峽油輪遇襲消息急漲至92.90美元(+2.1%)，隨後傳出美伊可能達成協議，油價轉為回落。",
+        "布蘭特原油約96.24美元/桶，上漲1.07%。",
+        "黃金大漲2.82%至4,538.95美元，避險買盤明顯升溫，反映地緣政治風險仍未完全解除。",
+        "銅價約5.80美元/磅附近震盪，走勢相對分歧。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "日經225期貨上漲約360點至64,590點，帶頭領漲亞股。",
+        "恆生期貨上漲221點至25,363點。",
+        "KOSPI200期貨上漲14.55點至1,044.55點。",
+        "台指期夜盤大漲683點，重返44,027點大關，主要受惠美股大漲與美伊協議傳聞帶動油價回落。",
+        "亞股期貨全面走揚，為台股開盤營造偏多氣氛。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "2026年荷莫茲海峽危機（自2/28美、以色列對伊朗展開軍事行動起）持續延燒，伊朗革命衛隊曾攻擊油輪並布雷，全球約25%原油海運貿易經此海峽，風險尚未完全解除。",
+        "9/4傳出美伊可能達成協議消息，激勵油價自高點回落，也帶動美股期貨與台指期夜盤走揚。",
+        "Fed將於9/15–16召開FOMC會議，市場對是否升息看法分歧：CPI年增3.4%、核心CPI年增2.5%，部分機構(如J.P. Morgan)預期可能升息一碼，但Waller偏鴿言論則帶動9/3美股大漲，後續會議結果仍具不確定性。",
+        "台海方面，中國解放軍8月對台ADIZ侵擾125架次，中國智庫將台海緊張列為2026年北京首要外部安全風險，地緣政治風險依然是市場潛在變數。"
+      ]
+    }
+  ],
+  "focus": "受美股全面大漲、SOX半導體指數走強及VIX恐慌情緒降溫激勵，加上台指期夜盤大漲683點站回44,027點、台積電期貨同步走揚，預期今日台股開盤偏多、可望開高震盪走高。主要支撐來自美股科技/半導體股表現與美伊協議傳聞帶動油價回落舒緩通膨疑慮；壓力面則來自Fed 9/15-16利率會議前的不確定性及台海地緣政治風險尚未解除。建議留意半導體/AI概念股（台積電、聯電、日月光）、原物料與塑化類股（留意油價波動）、以及黃金避險相關類股。",
+  "sources": [
+    "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-sep-3-095800036.html",
+    "https://www.investing.com/indices/phlx-semiconductor",
+    "https://finance.yahoo.com/quote/%5EVIX/",
+    "https://us.trendlyne.com/us/equity/1404971/TSM/taiwan-semiconductor-manufacturing-adr/",
+    "https://www.etoro.com/markets/umc",
+    "https://www.barchart.com/stocks/quotes/ASX",
+    "https://www.investing.com/currencies/usd-twd",
+    "https://tradingeconomics.com/dxy:cur",
+    "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
+    "https://www.investing.com/commodities/crude-oil",
+    "https://www.investing.com/commodities/brent-oil",
+    "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis",
+    "https://www.cna.com.tw/news/afe/202609020149.aspx",
+    "https://www.forbes.com/sites/billconerly/2026/08/12/why-the-fed-will-raise-rates-in-september-despite-cooler-cpi/",
+    "https://www.aei.org/commentary/china-taiwan-update-september-1-2026/"
+  ]
+}
