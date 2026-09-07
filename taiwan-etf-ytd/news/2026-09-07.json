@@ -1,0 +1,94 @@
+{
+  "date": "2026-09-07",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "美股三大指數9/4(五)收盤全面小跌：道瓊53,414.25點(-0.51%)、S&P500 7,718.60點(-0.38%)、那斯達克26,506.99點(-0.29%)，因非農就業意外強勁(+16.2萬 vs 預期5.3萬)引發升息疑慮。",
+        "費城半導體指數(SOX)逆勢大漲至11,735.26點(+3.38%)，AI／半導體股續強，與大盤走勢分歧，對台股電子權值股偏正面。",
+        "VIX恐慌指數小升至14.53(+1.47%)，仍處相對低檔，市場情緒未見明顯恐慌。",
+        "Fed理事Waller表示，若通膨持續朝2%目標改善，傾向支持9月維持利率不變；但最新(9/6)利率期貨顯示市場對9月降息(1碼)機率仍偏高，看法分歧。",
+        "10年期美債殖利率一度升至4.79%，隨後因鴿派談話回落至4.76%附近。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR(TSM)最新收盤約428.91美元續創高，對台北現貨溢價擴大至近25%，為法人開盤重要參考指標。",
+        "台積電現貨9/4收在2,205元(+5元)，盤中一度大漲60元至2,260元，尾盤遭大額調節賣壓拉回。",
+        "聯電ADR(UMC)約18~21美元區間(各券商報價略有落差)，走勢偏強。",
+        "日月光ADR(ASX)約37.5~40.5美元區間，同步走揚。",
+        "ADR普遍走高且溢價擴大，暗示台股開盤半導體權值股偏多開出機率較高。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元/新台幣約31.64，較前一交易日(31.73)走弱，新台幣略升值，外資匯出壓力尚不明顯。",
+        "10年期美債殖利率於4.76%~4.79%區間震盪，反映市場對Fed利率路徑仍存分歧。",
+        "美元指數(DXY)近期於98.9~99.4區間整理，尚未出現明確方向。",
+        "Fed 9月FOMC會議將至，降息/升息預期反覆，為近期匯率波動主要變數，需留意台幣避險需求變化。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "布蘭特原油續強至96.82美元/桶(+0.56%)，單週漲近9%，創7月中以來最佳週表現，美伊軍事緊張為主因。",
+        "WTI原油升至92.06美元/桶(+0.63%)，近一個月漲幅達17.75%。",
+        "黃金回落至4,432.56美元/盎司(-0.92%)，惟月線仍上漲逾4%、年增23%，避險需求仍在。",
+        "銅價維持6.60美元/磅附近，較8/25歷史高點6.7美元略回落，供給緊張與總經逆風持續拉鋸。",
+        "油價走高需留意運輸、塑化成本壓力及對通膨預期的推升效果。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "台股加權指數9/4大漲693點收46,551點(+1.51%)，三大法人買超629億元，終結連兩日賣超，被動元件、散熱族群多檔漲停。",
+        "日經225期貨(9月合約)走強至47,650點(+2.19%)，日股偏多氣氛延續。",
+        "韓國KOSPI約6,687點(+1.64%)、香港恆生指數約25,651點(+1.74%)，亞股普遍偏多。",
+        "台指期先前一度重挫(9/2一度跌破46,189點)，惟隨美股半導體股走強及ADR溢價擴大，市場預期今日期貨/現貨可望偏多反應。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "美國8月非農就業大幅優於預期(+16.2萬)，推升9月升息/降息預期反覆拉鋸，市場波動風險上升。",
+        "美伊軍事衝突再起(本週美方對伊朗發動新一輪打擊)，為油價走揚主因，也增添地緣風險溢價。",
+        "台美關稅談判落幕：對等關稅降至15%、不疊加原MFN稅率，半導體及衍生品獲最優惠盟國待遇，中長期對台灣出口偏正面。",
+        "學者警告2026年台海情勢仍具「完美風暴」風險(北京政治時鐘 vs 美國戰略重心轉移)，非近期立即觸發事件，但需留意後續政策動向。",
+        "Fed 9月FOMC會議將至，8月CPI數據為關鍵變數，市場對利率路徑分歧擴大，留意數據公布後的波動。"
+      ]
+    }
+  ],
+  "focus": "綜合美股半導體股逆勢走強、台積電ADR溢價擴大至近25%、亞股全面偏多及台指期轉強跡象，預期今日台股將偏多開出並震盪走高，主要支撐來自半導體/AI權值股與外資回補買盤；壓力面則需留意布蘭特原油單週漲近9%推升的通膨疑慮，以及Fed 9月利率決策的不確定性。建議留意台積電、聯電、日月光等半導體權值股，以及受惠原油/塑化、被動元件與散熱概念族群表現。",
+  "sources": [
+    "https://www.cnbc.com/2026/09/03/stock-market-today-live-updates.html",
+    "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-04-2026",
+    "https://finance.yahoo.com/quote/%5ESOX/history/",
+    "https://us.trendlyne.com/us/equity/1404971/TSM/taiwan-semiconductor-manufacturing-adr/",
+    "https://finance.ettoday.net/news/3175987",
+    "https://www.investing.com/currencies/usd-twd",
+    "https://tradingeconomics.com/united-states/government-bond-yield",
+    "https://tradingeconomics.com/commodity/brent-crude-oil",
+    "https://tradingeconomics.com/commodity/gold",
+    "https://tradingeconomics.com/commodity/copper",
+    "https://www.sinotrade.com.tw/richclub/MarketTrends/-0904%E5%8F%B0%E8%82%A1%E7%9B%A4%E5%BE%8C",
+    "https://www.skis.com.tw/Report/market/TSM20260904_after.html",
+    "https://www.advisorperspectives.com/articles/2026/09/03/feds-waller-september-rate-hinges-august-cpi",
+    "https://blog.104.com.tw/what-is-the-us-reciprocal-tariff-storm/",
+    "https://money.udn.com/money/story/5599/9287605"
+  ]
+}
