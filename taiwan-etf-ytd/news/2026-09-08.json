@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-08",
+  "title": "台股盤前快報",
+  "sections": [
+    {"id": "us", "emoji": "🇺🇸", "title": "隔夜美股", "items": [
+      "美股上週五(9/4)收黑，適逢9/7勞動節休市：標普500下跌0.38%收7,718.60點，那斯達克下跌0.29%收26,506.99點，道瓊下跌271.86點(-0.51%)收53,414.25點。",
+      "費城半導體指數(SOX)逆勢大漲3.38%收11,735.26點，受輝達財報激勵，晶片股表現強於大盤。",
+      "VIX恐慌指數降至14.25(-2.6%)，波動度偏低，但中東情勢仍為潛在風險。",
+      "輝達Q2營收960億美元(資料中心890億)優於預期，並以129.3億美元收購Hugging Face；博通、美光9月將陸續公布財報，AI硬體發布密集期。",
+      "道瓊近期曾因美國對伊朗新一輪軍事行動一度重挫370-400點，地緣風險仍是最大變數。"
+    ]},
+    {"id": "adr", "emoji": "🎯", "title": "台股 ADR", "items": [
+      "台積電ADR(TSM)收428.91美元，較前一交易日417.01美元大漲約2.85%，延續晶片股買氣，為開盤最重要多方訊號。",
+      "聯電ADR(UMC)約19.93美元；日月光ADR(ASX)約37.51美元，波動不若台積電劇烈。",
+      "台積電ADR相對台北股價通常存在溢價，實際溢價幅度需留意開盤後法人參考數據。",
+      "整體ADR表現對台北股價具正向牽引，可望帶動半導體權值股開高。"
+    ]},
+    {"id": "fx", "emoji": "💱", "title": "匯率與利率", "items": [
+      "美元/新台幣約31.62-31.67，新台幣匯率持穩，未見外資大幅匯出訊號。",
+      "10年期美債殖利率報4.72%，本月已上升逾1%，反映Fed政策路徑仍有分歧。",
+      "Fed 9/18利率決議前市場預期分歧：期貨市場一度顯示逾7成機率降息，但7月CPI年增3.4%及能源價格上升，也有分析認為不排除按兵不動；川普政府持續公開施壓Fed降息。",
+      "美元指數(DXY)近期波動，建議留意開盤前最新報價。"
+    ]},
+    {"id": "commodity", "emoji": "🛢️", "title": "大宗商品", "items": [
+      "WTI原油報92.64美元/桶(+1.27%)，布蘭特原油報97.05美元/桶，創7月以來新高，主因中東(美伊衝突、荷莫茲海峽)情勢升溫，上週單週漲幅曾達9.7%。",
+      "黃金現貨約4,420美元/盎司，較前一交易日下跌57.1美元(-1.28%)，從月初高點4,489.8美元回落，顯示避險資金部分獲利了結。",
+      "油價續揚對運輸、航空、塑化成本面偏空，能源類股可能受惠；金價回落顯示風險偏好略回升。",
+      "銅價本次未取得明確數據，建議留意電子原物料成本變化。"
+    ]},
+    {"id": "asia", "emoji": "🌏", "title": "亞股與期貨", "items": [
+      "日經225期貨報66,130點，開盤65,862.5點，日內高點66,142.5點，呈偏多走勢。",
+      "南韓KOSPI報6,995.39點，開盤6,910.78點，同步走高，可能受惠半導體與AI供應鏈類股。",
+      "台指期夜盤本次未取得即時收盤數據，建議開盤前確認台灣期交所(TAIFEX)最新報價作為最直接參考指標。",
+      "亞股期貨氣氛偏多，與美股SOX強漲、台積電ADR上漲方向一致。"
+    ]},
+    {"id": "macro", "emoji": "📰", "title": "總經與地緣", "items": [
+      "美伊衝突持續逾半年(自2/28開戰)，近期美軍對伊朗新一輪打擊一度衝擊市場；另有報導指美伊可能透過巴基斯坦調解於日內瓦簽署停火並重啟荷莫茲海峽，惟情勢仍高度不確定，油價已反映部分風險溢酬。",
+      "Fed 9/18 FOMC會議為近期最大變數，本週稍後公布的8月CPI數據是判斷升息/降息/按兵不動的關鍵。",
+      "Fed官員(如Waller)談話顯示決策高度依賴通膨數據，川普政府持續施壓降息，政策路徑不確定性升高。",
+      "中東地緣風險透過油價傳導至全球通膨與運輸成本，為本週總經主軸；台海與中美關係本次未見突發重大事件。"
+    ]}
+  ],
+  "focus": "綜合美股SOX與AI概念股走強、台積電ADR大漲逾2.8%，加上日韓期貨同步走高，今日台股開盤預期偏多，主要支撐來自半導體與AI供應鏈；惟中東地緣風險推升油價、Fed 9月利率決議前不確定性仍在，建議留意早盤法人動向與台指期夜盤實際報價，類股上重點觀察半導體、AI伺服器供應鏈，並留意油價上漲對塑化、航運成本面的壓力。",
+  "sources": [
+    "https://www.cnbc.com/2026/09/03/stock-market-today-live-updates.html",
+    "https://www.cnbc.com/2026/08/31/stock-market-today-live-updates.html",
+    "https://us.trendlyne.com/us/equity/1404971/TSM/taiwan-semiconductor-manufacturing-adr/",
+    "https://www.investing.com/indices/phlx-semiconductor",
+    "https://www.investing.com/currencies/usd-twd-historical-data",
+    "https://en.macromicro.me/charts/124908/US-10Y-mei-zhai-zhi-li-lyu-VS-mei-yuan-zhi-shu-DXY",
+    "https://tradingeconomics.com/commodity/crude-oil",
+    "https://tradingeconomics.com/commodity/brent-crude-oil",
+    "https://www.cnbc.com/select/the-price-of-gold-today-september-3-2026-and-the-best-places-to-buy/",
+    "https://www.investing.com/indices/japan-225-futures",
+    "https://www.investing.com/indices/kospi",
+    "https://www.bloomberg.com/news/articles/2026-09-03/fed-s-waller-says-september-rate-decision-hinges-on-august-cpi",
+    "https://www.cnbc.com/2026/09/05/trump-warsh-fed-september-rate-hike.html",
+    "https://zh.wikipedia.org/wiki/%E4%BC%8A%E6%9C%97%E6%88%B0%E7%88%AD_(2026%E5%B9%B4)",
+    "https://www.investing.com/equities/united-microelectronics-corp"
+  ]
+}
