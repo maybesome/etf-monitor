@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-14",
+  "title": "台股盤前快報",
+  "sections": [
+    {"id": "us", "emoji": "🇺🇸", "title": "隔夜美股", "items": [
+      "美股上週五(9/11)止跌反彈，結束連四日下跌：標普500上漲0.86%收7,615.27點，那斯達克100上漲0.91%收29,030.68點，道瓊上漲0.98%收52,416.79點。",
+      "VIX恐慌指數收14.84~15.84區間，維持相對低檔，市場短線恐慌情緒未明顯升溫。",
+      "油價與美債殖利率同步止穩，但10年期公債殖利率仍逼近5%，市場對Fed鷹派立場保持警戒。",
+      "半導體類股呈現分歧：AI晶片、晶圓代工題材偏強，但記憶體概念股因中國DeepSeek新模型衝擊而承壓。",
+      "本週三(9/16)FOMC利率決策為市場焦點，8月非農就業大增16.2萬(遠優於預期5.3萬)，一度推升9月升息機率自約36%躍升至60%以上。"
+    ]},
+    {"id": "adr", "emoji": "🎯", "title": "台股 ADR", "items": [
+      "台積電ADR(TSM)收433.24美元(+1.22%)，較前一交易日428.03美元續創波段新高，為台北股價開盤最重要多方訊號。",
+      "聯電ADR(UMC)收20.77美元，大漲4.58%，漲幅優於大盤，反映外資對成熟製程/晶圓代工需求信心。",
+      "台積電ADR相對台北股價溢價幅度今年以來明顯收斂，從去年12月約26%降至5月約13.7%(兩年低點)，顯示資金回流台北掛牌股。",
+      "日月光(ASE)ADR本次未取得即時報價，建議開盤前另行查證。"
+    ]},
+    {"id": "fx", "emoji": "💱", "title": "匯率與利率", "items": [
+      "美元/新台幣約31.60，新台幣匯價區間整理，未見外資大幅匯出訊號。",
+      "美元指數(DXY)收99.13，維持高檔整理，反映市場對Fed鷹派立場的預期。",
+      "10年期美債殖利率報4.97%，逼近5%關卡，為近期全球股市評價與資金流向的重要觀察指標。",
+      "本週FOMC若釋出偏鷹訊號，美元與美債殖利率恐進一步走升，需留意新台幣匯價及外資買賣超動向。"
+    ]},
+    {"id": "commodity", "emoji": "🛢️", "title": "大宗商品", "items": [
+      "WTI原油站上99美元、布蘭特原油站上104美元，主因葉門青年運動(Houthi)攻佔紅海戰略據點，威脅曼德海峽航運要道，地緣風險溢價明顯反映在油價。",
+      "油價飆升推升全球通膨疑慮，成為本週Fed決策的重要變數，也墊高航運、塑化成本壓力。",
+      "黃金站上4,341美元/盎司(+0.76%)，續處相對高檔，反映避險資金及升息不確定性的對沖需求。",
+      "銅價小幅下跌至6.45美元(-0.26%)，工業金屬表現平淡，未見強烈全球需求擴張訊號。"
+    ]},
+    {"id": "asia", "emoji": "🌏", "title": "亞股與期貨", "items": [
+      "日經225指數9/13重挫1.93%收63,551點，主因美債殖利率走高及油價飆升，對出口權值股與美股連動族群形成壓力。",
+      "南韓KOSPI上週五收6,909.91點(-1.76%)，本週續受油價與殖利率走升壓抑；記憶體雙雄三星電子、SK海力士遭外資大舉賣超(分別逾1.24兆與1.44兆韓元)，主因中國DeepSeek發表大幅降低HBM記憶體需求的新AI模型。",
+      "台股加權指數(TAIEX)上一交易日(9/11)收46,184.85點，下跌755.64點(-1.66%)，與區域股市同步走弱。",
+      "亞股整體因地緣政治(紅海危機)與利率(美債殖利率近5%)雙重壓力偏向風險趨避，惟台積電、聯電ADR逆勢走強，形成台股開盤多空拉鋸訊號。",
+      "台指期夜盤及外資期貨動向為最直接開盤先行指標，建議開盤前確認台灣期交所(TAIFEX)最新夜盤報價。"
+    ]},
+    {"id": "macro", "emoji": "📰", "title": "總經與地緣", "items": [
+      "Fed將於台灣時間9/17凌晨公布利率決策，現行基準利率區間3.5%-3.75%，市場對9月升息機率一度自不到四成升至六成以上，反映8月非農就業大增及通膨仍具黏性。",
+      "中東情勢持續升溫：葉門青年運動(Houthi)攻佔紅海戰略要地，威脅全球油輪運輸航道，美伊緊張關係尚未緩解，為推升油價與通膨疑慮的主要地緣因素。",
+      "AI供應鏈出現結構性變化：中國DeepSeek推出大幅降低HBM/SSD需求的新一代AI模型，衝擊市場對記憶體長線資本支出的樂觀預期，短期對三星、SK海力士等記憶體廠壓力較大，晶圓代工/邏輯晶片(如台積電)受影響相對有限，但仍需留意類股連動情緒。",
+      "台海及中美關係方面，多份研究機構持續示警2026年台灣面臨關稅、供應鏈重組與地緣政治風險等外部挑戰，惟截至目前未見具體突發衝突事件。"
+    ]}
+  ],
+  "focus": "今日台股開盤預期呈現震盪格局，多空訊息交織：正面支撐來自台積電ADR(+1.22%)與聯電ADR(+4.58%)強勢表現及美股週五反彈，對晶圓代工/邏輯半導體族群有撐；壓力則來自布蘭特原油站上104美元、美債殖利率逼近5%，以及日韓股市走弱(尤其記憶體股受DeepSeek新模型衝擊)。建議留意半導體(晶圓代工優於記憶體概念的分歧)、AI供應鏈、航運(紅海運價)與金融股(殖利率敏感)表現，並留意本週三FOMC會前市場氣氛。",
+  "sources": [
+    "https://tradingeconomics.com/united-states/stock-market",
+    "https://tradingeconomics.com/japan/stock-market",
+    "https://tradingeconomics.com/commodity/gold",
+    "https://www.investing.com/equities/taiwan-semicond.manufacturing-co",
+    "https://www.investing.com/equities/united-microelectronics-corp",
+    "https://finance.yahoo.com/markets/stocks/articles/tsmc-adr-premium-falls-two-172103819.html",
+    "https://www.xe.com/en-us/currencyconverter/convert/?Amount=1&From=USD&To=TWD",
+    "https://www.forbes.com/advisor/investing/oil-prices-today/",
+    "https://en.sedaily.com/finance/2026/09/14/kospi-slips-back-below-7000-as-oil-and-yields-surge",
+    "https://en.sedaily.com/finance/2026/09/11/kospi-falls-176-percent-to-close-at-690991",
+    "https://statementdog.com/taiex",
+    "https://www.schwab.com/learn/story/fomc-meeting",
+    "https://www.vantagemarkets.com/market-news/fed-rate-decision-inflation-jobs-report-september-7-2026/",
+    "https://www.cnbc.com/2026/09/11/iran-houthis-mokha-red-sea-yemen.html",
+    "https://finance.biggo.com/news/054590cf-101d-4756-bb3c-7e0f46cf512b"
+  ]
+}
