@@ -1,0 +1,97 @@
+{
+  "date": "2026-09-18",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "美股三大指數大漲：S&P 500 收7,638.16點（+1.14%）、那斯達克收26,413.17點（+1.67%）、道瓊收51,827.42點（+0.71%）。",
+        "費城半導體指數（SOX）狂飆3.14%收11,599.5點，AI／記憶體概念股領漲全場。",
+        "英特爾執行長Lip-Bu Tan示警「記憶體將成最大瓶頸」，帶動美光（Micron）大漲逾5%，輝達、博通同步走高。",
+        "聯準會宣布升息1碼（近三年首次升息），主席Warsh鷹派談話強調控制通膨，市場消化後止跌回升。",
+        "恐慌指數VIX暴跌12.82%至15.44，反映市場風險情緒大幅降溫。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR收417.72美元（+0.96%），盤後再漲至419.80美元（+0.5%）。",
+        "以美元/台幣31.888換算，ADR隱含股價約2,664元，較台北收盤價2,425元溢價近9.9%，為多頭開盤指標。",
+        "聯電ADR收22.23美元，下跌1.81%，走勢與台積電、日月光分歧。",
+        "日月光ADR（ASX）收37.95美元，上漲2.24%，封測族群偏強。",
+        "台積電台北收盤2,425元（+1.89%），量能與美股同步放大。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元／台幣匯率31.888，小漲0.13%，接近52週高點32.528附近，新台幣維持弱勢整理。",
+        "美國10年期公債殖利率報4.94%，雖較升息當日回落5個基點，仍逼近2007年以來高點5.04%。",
+        "10年期殖利率月增23個基點、年增83個基點，反映升息循環重啟後利率壓力仍大。",
+        "美元指數（DXY）報99.68，小漲0.06%，波動有限。",
+        "Fed本次升息1碼為近三年首度升息，主席Warsh鷹派發言強化緊縮預期，須留意資金成本上升對成長股估值的壓力。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI原油約101美元/桶，布蘭特原油收104.07美元（-0.95%），因沙烏地阿拉伯搶修東西向油管，中東供給疑慮緩解。",
+        "布蘭特近一個月仍大漲14.33%、年增54.31%，反映先前美伊衝突及荷莫茲海峽緊張推升的風險溢價尚未完全消化。",
+        "黃金報4,346.72美元，上漲1.95%，避險買盤與抗通膨需求仍強。",
+        "銅價報6.55美元，上漲1.84%，電子與基礎建設需求偏多。",
+        "油價自高檔回落有利航運、塑化成本面，但地緣風險未完全解除，留意反覆。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "日經225（9/16）收63,923點，上漲0.69%；韓國KOSPI收6,717.97點，大漲1.37%。",
+        "香港恆生指數走弱，最新報24,307點，下跌約1.65%，與台、韓走勢背離。",
+        "台指期夜盤收在46,739~47,160點區間，較日盤參考價上漲約0.6%~1.5%，顯示今日台股開盤偏多氣氛濃厚。",
+        "半導體類股（SOX+3.14%）強勢，可望帶動亞股電子權值股同步走高。",
+        "亞股表現分歧，恆指偏弱提醒留意中國/香港基本面與資金面雜音。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "Fed升息1碼、近三年首見，主席Warsh鷹派談話被視為重建央行抗通膨信譽的表態，市場消化後轉為正向解讀。",
+        "美伊緊張與荷莫茲海峽情勢仍是油價波動主因，美國近期對伊朗發動打擊，沙國搶修油管暫緩緊張。",
+        "中國通過新版《國防動員法》（10月1日生效），擴大徵用民用資產（含無人機、商船）權限，被視為對台威懾升級。",
+        "美方關注中國COSCO貨櫃船隊涉入訊號情報蒐集，及台灣本土間諜案，兩岸資訊戰與認知作戰風險升溫。",
+        "中國援引「敵國條款」對日本表態，地緣政治風險擴散至東北亞，建議留意台海及區域地緣新聞是否有突發衝擊。"
+      ]
+    }
+  ],
+  "focus": "今日台股預期開盤偏多，主要支撐來自隔夜美股與費半（SOX +3.14%）強漲、VIX大幅降溫，以及台積電ADR溢價近9.9%與台指期夜盤上漲0.6~1.5%的期貨面訊號；主要壓力則來自美國10年期公債殖利率逼近2007年高點的升息循環，以及香港恆生走弱與台海地緣政治（中國新版國防動員法）帶來的不確定性。建議重點留意半導體／AI、記憶體概念股表現，並觀察金融、塑化、航運等對利率與油價較敏感的類股。",
+  "sources": [
+    "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-17-dow-sp-500-nasdaq-oil-fed-081248626.html",
+    "https://www.investing.com/indices/phlx-semiconductor",
+    "https://finance.yahoo.com/quote/%5EVIX/",
+    "https://www.investing.com/equities/taiwan-semicond.manufacturing-co",
+    "https://www.investing.com/equities/united-microelectronics-corp",
+    "https://finance.yahoo.com/quote/ASX/",
+    "https://www.cnyes.com/twstock/2330",
+    "https://invest.cnyes.com/forex/detail/USDTWD/overview",
+    "https://tradingeconomics.com/united-states/government-bond-yield",
+    "https://finance.yahoo.com/quote/DX-Y.NYB/",
+    "https://tradingeconomics.com/commodity/brent-crude-oil",
+    "https://www.21jingji.com/article/20260916/herald/a114094c62ad8627cf0a6bd211a9d7c6.html",
+    "https://hk.investing.com/indices/hang-sen-40",
+    "https://www.ctee.com.tw/news/20260917701941-430202",
+    "https://www.aei.org/commentary/china-taiwan-update-september-4-2026/",
+    "https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html"
+  ]
+}
