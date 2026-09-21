@@ -1,0 +1,91 @@
+{
+  "date": "2026-09-21",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "美股上週五(9/18)收盤：那斯達克+0.39%收26,522.55、標普500 +0.17%收7,650.50、道瓊小跌-0.18%收51,682.64；道瓊單週跌逾1.5%。",
+        "費城半導體指數(SOX)強彈+2.78%收11,921.69，晶片股從AI放緩疑慮引發的拋售中反彈；VIX恐慌指數收14.81，大跌4.08%，市場情緒轉穩。",
+        "10年期美債殖利率收近5.00%(單週+5.3bp)，2年期、3年期殖利率創52週新高，反映市場預期Fed 10月可能再升息。",
+        "聯準會9/16升息1碼至3.75%-4.00%(近三年來首度升息)，會後聲明強調通膨仍有隱憂，暗示年內恐再升一次。",
+        "網路安全股逆勢大漲(CrowdStrike單週+14%)，科技股類股輪動明顯。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR(TSM)收434.67美元，+1.02%，換算對台北股價溢價約12.38%，法人開盤參考偏多。",
+        "聯電ADR(UMC)、日月光ADR(ASX)即時收盤數據未能取得精確數字，惟受SOX指數大漲2.78%激勵，同族群ADR普遍走揚。",
+        "費半指數領漲反映美系AI/半導體資金回補，有利台股開盤半導體權值股表現。",
+        "ADR溢價偏高(逾12%)可能限制外資追價空間，短線宜留意獲利了結賣壓。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元/新台幣參考匯率約31.73–31.88(銀行間即期，僅供參考)，新台幣匯價區間震盪。",
+        "10年期美債殖利率逼近5%整數關卡，為近期高檔，反映升息循環尚未結束的預期。",
+        "Fed升息後美元走勢待觀察(本次未取得即時DXY數據)，若美元續強可能牽制外資匯入台股力道。",
+        "美台利差擴大情勢下，資金成本上升，須留意外資是否轉為匯出。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI原油收96.08美元，重挫2.34%；Brent原油約103.50美元，小跌0.36%，油價回落有助緩解通膨疑慮。",
+        "黃金約4,368–4,425美元/盎司附近整理，週五上漲0.57%後拉回，避險買盤持續。",
+        "銅價上漲至6.64美元/磅(+0.43%)，反映工業金屬需求穩健，對電子上游原物料股偏正面。",
+        "油價下跌對運輸、塑化成本面偏有利，惟須留意地緣政治(中東、俄烏)風險隨時推升油價。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "日經225上週五大漲+1.38%收65,018.95，續創波段新高，日股資金動能強勁。",
+        "台指期夜盤收47,405點，小跌23點(-0.05%)，大致持平，暗示台股開盤震盪偏平。",
+        "韓股KOSPI即時數據未能取得，惟區域科技股普遍受惠SOX走強，可望同步偏多開出。",
+        "亞股連動美股半導體反彈，激勵區域科技權值股開盤氣氛。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "Fed 9/16升息1碼至3.75%-4.00%，為2023年來首次升息，會後暗示年底前可能再升一次，市場提高10月再升息機率。",
+        "美國232條款半導體關稅已正式啟動，台廠可透過赴美投資爭取最惠國待遇/豁免，惟川普近日再度提及相關關稅言論，增添政策不確定性。",
+        "市場關注即將登場的川習會，聚焦AI競爭與貿易緊張議題，若有具體進展或摩擦升溫，恐成台股開盤變數。",
+        "Anthropic、OpenAI等機構近期呼籲AI發展降溫的言論一度引發科技股拋售，惟週五已見反彈，AI敘事仍是市場焦點。"
+      ]
+    }
+  ],
+  "focus": "今日台股預期呈現震盪偏多開出：美股週五收紅、SOX大漲2.78%且台積電ADR溢價達12%，激勵半導體權值股表現；但台指期夜盤僅小跌收平，加上美債殖利率逼近5%、Fed暗示年底恐再升息，壓抑追價力道，上檔壓力來自匯率與升息預期。建議留意半導體、AI概念股表現，並關注232條款關稅與川習會等地緣政治變數對盤中情緒的擾動。",
+  "sources": [
+    "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-18-2026",
+    "https://finance.yahoo.com/markets/live/stock-market-today-friday-september-18-dow-sp-500-nasdaq-080504071.html",
+    "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html",
+    "https://www.bloomberg.com/news/articles/2026-09-16/fed-raises-rates-as-warsh-bucks-trump-to-contain-inflation",
+    "https://www.wantgoo.com/global/tsm",
+    "https://finance.yahoo.com/quote/%5ESOX/",
+    "https://finance.yahoo.com/quote/%5EVIX/",
+    "https://finance.yahoo.com/quote/%5EN225/",
+    "https://rate.bot.com.tw/xrt?Lang=zh-TW",
+    "https://tradingeconomics.com/commodity/brent-crude-oil",
+    "https://www.investing.com/commodities/crude-oil",
+    "https://tradingeconomics.com/commodity/gold",
+    "https://tradingeconomics.com/commodity/copper",
+    "https://www.cmoney.tw/forum/futures/TXF1?s=p",
+    "https://udn.com/news/story/6811/9749025"
+  ]
+}
