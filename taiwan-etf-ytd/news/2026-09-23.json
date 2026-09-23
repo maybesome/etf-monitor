@@ -1,0 +1,97 @@
+{
+  "date": "2026-09-23",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "▸ 那斯達克連續第2個交易日創收盤新高，收27,244.28點，上漲122.18點(+0.45%)，Meta因AI代理人Muse表現亮眼帶動科技股走強",
+        "▸ 費城半導體指數(SOX)大漲2.06%收12,689.8點，半導體/AI硬體股全面走強，對台股電子股具正面指引",
+        "▸ 道瓊工業指數收51,863.69點，下跌185.14點(-0.36%)；標普500幾乎持平收7,764.64點，呈現「科技獨強、傳產金融偏弱」的分歧走勢",
+        "▸ VIX恐慌指數大跌4.44%至14.21，處於相對低位，市場情緒偏樂觀、避險需求不高",
+        "▸ Fed 9月FOMC以12-0一致決議升息25個基點至3.75%-4.00%，鮑爾強調通膨「居高不下」，暗示年底前可能再升息一次，政策朝「higher for longer」方向"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "▸ 台積電ADR(TSM)收452.00美元，大漲6.86美元(+1.54%)，盤後小跌0.37%，走勢與費半同步走強",
+        "▸ 聯電ADR(UMC)收24.61美元，上漲0.57%",
+        "▸ 日月光ADR(ASX)表現最強，收37.95美元，大漲2.24%",
+        "▸ 三大ADR同步走揚，加上費半大漲，法人開盤參考偏多，精確溢價幅度需待台北開盤後與現股比對"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "▸ 美元/新台幣報31.781，較前一交易日(31.872)貶值0.29%，新台幣小幅升值，波動不大",
+        "▸ 美元指數(DXY)升至100.55(+0.12%)，逼近7月下旬以來高點，反映Fed鷹派升息後美元偏強格局",
+        "▸ 美國10年期公債殖利率報4.97%，單日小升1.4個基點，月漲27個基點、年漲86個基點，維持高檔",
+        "▸ 利率環境對高估值科技股評價形成壓力，但油價下滑與Fed升息符合市場預期，緩解部分衝擊"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "▸ WTI原油收89.42~89.67美元，重挫約3%；北海布蘭特跌至97.64~98.56美元，連續第6個交易日下跌，因美伊外交傳出伊朗可能重開荷姆茲海峽，地緣風險緩解",
+        "▸ 黃金報4,360.95美元/盎司，小漲0.41%，市場消化Fed官員談話與中東外交進展的混合訊號，避險買盤仍存",
+        "▸ 銅價報6.83美元/磅，大漲2.19%，年漲幅逼近50%，反映AI/電動車/電網用銅需求強勁",
+        "▸ 油價下滑有利航運、塑化下游成本，但銅價飆漲可能推升電子代工/PCB上游原物料成本"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "▸ 日經225指數上一交易日收65,018.95點，大漲882.75點(+1.38%)，續創歷史新高，受惠AI熱潮與日銀政策氛圍",
+        "▸ 南韓KOSPI報7,017.91點，小漲0.15%，維持在近期高檔整理",
+        "▸ 香港恆生指數約25,000~25,068點附近，呈現溫和上漲，科技與醫療股是主要支撐",
+        "▸ 台股加權指數(TAIEX)收47,800.17點(+0.17%)；台指期日盤收48,243點(+0.4%)，夜盤時段進一步走高至48,587點附近，正價差擴大，隱含開盤偏多氣氛延續"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "▸ Fed 9月FOMC鷹派升息25個基點至3.75%-4.00%，通膨預估延至2029年才回到2%目標，「higher for longer」格局成型，對全球資金成本構成中長期變數",
+        "▸ 中國國家主席習近平9月23日起訪美3天，為半年內第2次「川習會」，中國官媒強調「台灣是紅線」，同時強調經貿合作為「壓艙石」，市場關注涉台軍售等潛在摩擦",
+        "▸ 美國232條款半導體關稅已正式啟動(稅率25%)，台灣業者可透過赴美投資換取最惠國待遇豁免，供應鏈分流為中長期變數，但短期對台積電、封測大廠衝擊有限(ADR仍走強)",
+        "▸ 美伊關係出現外交緩和訊號(荷姆茲海峽相關傳聞)，為近期油價重挫主因，需留意後續進展是否反轉"
+      ]
+    }
+  ],
+  "focus": "預期今日台股開盤偏多，主要支撐來自那斯達克創高、費半大漲2%及台積電、日月光ADR同步走揚，加上台指期夜盤走高、美伊地緣緩和帶動油價回落；但Fed鷹派升息、美債殖利率高檔及習近平訪美期間潛在台灣議題摩擦仍是短線變數，建議留意半導體、AI硬體、封測(日月光)及銅相關原物料股表現，並觀察權值股是否跟隨台積電ADR強勢表態。",
+  "sources": [
+    "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-22-nasdaq-dow-sp-500-080625961.html",
+    "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-22-2026",
+    "https://www.investing.com/indices/phlx-semiconductor",
+    "https://finance.yahoo.com/quote/%5EVIX/",
+    "https://finance.yahoo.com/quote/TSM/",
+    "https://finance.yahoo.com/quote/UMC/",
+    "https://finance.yahoo.com/quote/ASX/",
+    "https://www.investing.com/currencies/usd-twd",
+    "https://tradingeconomics.com/united-states/currency",
+    "https://tradingeconomics.com/united-states/government-bond-yield",
+    "https://tradingeconomics.com/commodity/brent-crude-oil",
+    "https://tradingeconomics.com/commodity/gold",
+    "https://tradingeconomics.com/commodity/copper",
+    "https://finance.yahoo.com/quote/%5EN225/",
+    "https://www.investing.com/indices/kospi",
+    "https://zh.tradingeconomics.com/hong-kong/stock-market",
+    "https://www.wantgoo.com/futures/wtx&",
+    "https://tw.stock.yahoo.com/quote/%5ETWII",
+    "https://tw.stock.yahoo.com/news/fed-9%E6%9C%88%E8%81%B2%E6%98%8E%E5%85%A8%E6%96%87-%E6%9C%80%E6%96%B0%E7%B6%93%E6%BF%9F%E9%A0%90%E6%B8%AC-181115339.html",
+    "https://www.chinatimes.com/realtimenews/20260922001695-260409",
+    "https://twustariff.ey.gov.tw/page/tariff/usa-order/13"
+  ]
+}
