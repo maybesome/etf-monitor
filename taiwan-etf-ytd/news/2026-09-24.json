@@ -1,0 +1,92 @@
+{
+  "date": "2026-09-24",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "道瓊指數收51,511.59點,跌352.10點(-0.68%);標普500收7,706.03點,跌58.61點(-0.75%);那斯達克收26,936.04點,跌308.24點(-1.13%),三大指數同步收黑。",
+        "VIX恐慌指數收15.18,大漲6.83%,10年期公債殖利率飆升至5.106%(創2007年以來新高),強勁經濟數據加深市場對Fed緊縮政策疑慮。",
+        "費城半導體指數(SOX)前一交易日大漲2.06%收12,689.82點,美光(Micron)、SanDisk等記憶體股領漲逾5~7%;惟殖利率急升壓抑最新一日科技股表現。",
+        "標普500成分股中僅能源類股上漲,逾72%個股收黑,羅素2000小型股重挫1.60%,風險偏好轉弱,對台股電子權值股與AI供應鏈短線恐形成壓力。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "台積電ADR(TSM)收452.00美元,大漲1.54%,換算對應台股價位較台北現貨溢價逾14%,買盤熱度延續,可望挹注台股開盤動能。",
+        "聯電ADR(UMC)報22.23美元,下跌1.81%,與台積電ADR走勢分歧,需留意晶圓代工次族群資金輪動。",
+        "日月光ADR(ASX)報40.72美元,上漲1.83%,封測族群同步走強;中華電信ADR(CHT)小漲0.20%,電信股波動平穩。",
+        "權值股ADR多數走揚(台積電、日月光),僅聯電逆勢下跌,早盤氣氛偏多但類股表現分化。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元/新台幣約31.6~31.7元,新台幣近期偏弱整理,若美元續強恐加重外資匯出壓力。",
+        "美元指數(DXY)報101.1,單日漲約0.5%,對新台幣、日圓等亞幣構成貶值壓力。",
+        "美國10年期公債殖利率約4.95%~5.0%,接近52週高點,反映市場對Fed利率路徑及財政赤字疑慮,若持續走高將壓抑成長股評價。",
+        "美元/日圓報156.9附近,漲約0.6%,日圓持續偏弱;美元/人民幣約6.70~6.71,波動有限。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI原油報92.19美元/桶,漲1.81%;布蘭特原油報102.88美元,大漲3.86%,油價走揚推升塑化、航運成本壓力,但利多中油、台塑化煉油利潤。",
+        "黃金報4,290.28美元/盎司,跌1.70%,美元走強及Fed官員鷹派談話壓抑避險買盤。",
+        "銅價報6.68美元/磅,跌1.19%但年增仍達40.5%,PCB、電線電纜類股原物料成本仍需留意。",
+        "天然氣報3.04美元,漲2.64%,能源成本走升對電子製造業與台電購電成本有間接影響。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "台指期夜盤以48,400點開高,高點48,404點,拉回至48,130點,終場在48,200點附近整理,與台股現貨收盤48,157點大致持平,今日開盤恐震盪偏平。",
+        "台股現貨最新收盤大漲357點至48,157點,續創歷史新高,台積電漲1.63%至2,500元為撐盤主力。",
+        "韓股KOSPI收漲0.90%至7,080.92點,三星電子、SK海力士等半導體權值股領軍走高。",
+        "恆生指數跌1.01%收24,834.12點,AI應用概念股領跌;日股因連假休市,最新夜盤期指約66,750點小跌,開盤動能偏平。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "Fed於9月中決議升息1碼至3.75%~4.00%,暗示年底前可能再度升息,市場為「利率維持高檔更久」預作準備,美股應聲重挫。",
+        "8月CPI數據顯示通膨升溫,為Fed緊縮立場鋪路,市場對抗通膨與利率前景疑慮同步升高。",
+        "川習會聚焦關稅、AI與伊朗議題,雙方磋商延長貿易休兵,美國貿易代表透露將持續談判,市場關注能否達成農產品、能源關稅讓步協議。",
+        "華府傳將延後對中國「過剩產能」加徵新關稅,顯示雙方試圖緩和貿易緊張,但半導體、稀土等關鍵領域摩擦仍是變數;台海地緣政治風險仍需留意。"
+      ]
+    }
+  ],
+  "focus": "綜合美股因公債殖利率飆升、Fed升息疑慮同步收黑,但台積電ADR逆勢大漲且溢價擴大至逾14%、日月光ADR同步走強,加上台指期夜盤僅小幅拉回、與現貨收盤大致持平,研判今日台股開盤呈現「震盪偏多」格局,不易大幅低開。主要壓力來自美債殖利率飆破5%引發的成長股評價疑慮與Fed緊縮預期,支撐則來自台積電ADR溢價擴大與半導體權值股買盤延續。建議留意半導體(台積電、日月光封測)、記憶體/AI供應鏈類股表現,並觀察聯電走弱是否擴散至其他晶圓代工次族群,同時留意塑化、航運類股受油價走升影響。",
+  "sources": [
+    "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-23-2026",
+    "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-september-23-dow-sp-500-nasdaq-080556640.html",
+    "https://www.investing.com/equities/taiwan-semicond.manufacturing-co",
+    "https://www.investing.com/equities/united-microelectronics-corp",
+    "https://www.investing.com/equities/advanced-semiconductor-engineering",
+    "https://rate.bot.com.tw/xrt?Lang=zh-TW",
+    "https://tradingeconomics.com/dxy:cur",
+    "https://fred.stlouisfed.org/series/dgs10",
+    "https://tradingeconomics.com/commodity/crude-oil",
+    "https://tradingeconomics.com/commodity/gold",
+    "https://tradingeconomics.com/commodity/copper",
+    "https://money.udn.com/money/story/11112/9773863",
+    "https://finance.ettoday.net/news/3242694",
+    "https://finance.sina.com.cn/stock/hkstock/marketalerts/2026-09-23/doc-inisvcqc5296303.shtml",
+    "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html",
+    "https://www.cnbc.com/2026/09/11/cpi-inflation-report-august-2026.html",
+    "https://www.cnbc.com/2026/09/21/trump-xi-china-summit-trade-tariffs.html"
+  ]
+}
