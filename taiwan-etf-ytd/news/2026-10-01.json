@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-01",
+  "title": "台股盤前快報",
+  "sections": [
+    {
+      "id": "us",
+      "emoji": "🇺🇸",
+      "title": "隔夜美股",
+      "items": [
+        "9/30 收盤：道瓊 -0.86%（50,908）、S&P 500 -0.25%（7,652）、那斯達克 +0.24%（26,861），罗素2000 -0.39%；盤中多數時間走高，尾盤翻黑，9月道瓊月跌約4.3%、S&P 月跌0.4%、那指月漲1.9%。",
+        "科技是 9 月唯一月漲的類股（約 +5%），AI 主題續為核心；Synopsys +3.4%（獲 Amazon 逾10億美元合約），HPE +4%；Jabil -5.7%。",
+        "10 年期美債殖利率衝至約 5.30%，創 2007 年以來新高，壓抑估值與非科技類股。",
+        "費城半導體指數（SOX）與 VIX 本次未取得可靠當日數據，請以盤前行情軟體為準；那指逆勢收紅顯示半導體/AI 相對抗跌。"
+      ]
+    },
+    {
+      "id": "adr",
+      "emoji": "🎯",
+      "title": "台股 ADR",
+      "items": [
+        "TSM ADR 最近可確認收盤為 9/29：456.94 美元（+0.90%），日內區間 447.07–459.43，52 週高點 479；9/30 收盤價未能取得確認。",
+        "以匯率約 31.85 估算，ADR 1 單位=5 股，TSM 456.94 美元約折合台北 ~2,911 元/股（含 ADR 溢價，需與台北收盤價比對）；實際溢價% 請以開盤前報價為準。",
+        "分析師對 TSM 12 個月平均目標價約 552 美元（20 買進/1 持有/0 賣出），基本面情緒偏多。",
+        "UMC、ASE ADR 及 ASML 當日數據本次未取得。"
+      ]
+    },
+    {
+      "id": "fx",
+      "emoji": "💱",
+      "title": "匯率與利率",
+      "items": [
+        "美元/新台幣約 31.85（-0.08%），日內區間 31.81–31.90，52 週區間 30.3–32.53。",
+        "美元指數 DXY 約 101.3–101.5，創 16 個月高點；歐元約 1.131。美元強勢通常不利新興市場資金流入。",
+        "美債 10 年期約 5.29–5.31%、30 年期約 5.64–5.65%（24 年高）、2 年期約 4.90%。",
+        "聯準會 10 月 27–28 日會議暫停升息機率升至約 63%；Williams 表示無需急於行動，但年底前可能再調整一次。"
+      ]
+    },
+    {
+      "id": "commodity",
+      "emoji": "🛢️",
+      "title": "大宗商品",
+      "items": [
+        "WTI 約 90.0–90.2 美元（+0.9~1.2%），Brent 約 97.6–103.3 美元（各來源不一），9 月累計漲約 5%。",
+        "荷莫茲海峽原油流量回升至約 1,320 萬桶/日，沙烏地管線產能恢復，但美伊談判仍不確定；OPEC+ 預期維持 11 月配額。",
+        "黃金約 4,150–4,210 美元/盎司，9 月下跌近 6%，高殖利率壓抑金價。",
+        "油價高檔對塑化、航運成本不利；銅、天然氣數據本次未取得。"
+      ]
+    },
+    {
+      "id": "asia",
+      "emoji": "🌏",
+      "title": "亞股與期貨",
+      "items": [
+        "9/30 亞股收高：日經 225 約 +0.8~1.9%（6.7 萬點附近）、KOSPI 約 +3.7%（6,579）、上證 +0.31%；恆指各來源方向不一。",
+        "中國 9 月官方製造業 PMI 升至 50.1（前值 49.8），民間 PMI 52.1 為五個月高點，為區域風險情緒加分。",
+        "南韓 KOSPI 單日大漲，對台灣電子/半導體族群有連動帶動效果。",
+        "台指期夜盤收盤價本次未能取得確認，請開盤前查看夜盤漲跌。"
+      ]
+    },
+    {
+      "id": "macro",
+      "emoji": "📰",
+      "title": "總經與地緣",
+      "items": [
+        "美國 8 月 PCE 年增 3.4%（預期 3.7%），核心 PCE 3.0%（預期 3.3%），低於預期；ADP 9 月新增就業 9 萬人優於預期 6.8 萬。",
+        "通膨降溫降低 10 月升息壓力，但殖利率仍處高檔，市場關注後續就業與 CPI 數據。",
+        "美伊談判與荷莫茲海峽航運仍具不確定性；北京指控台灣「扭曲二戰歷史」，兩岸口水戰持續但暫無軍事升級訊號。",
+        "今日 10/1 為新季度第一天，留意亞洲製造業 PMI、美國 ISM 製造業與週四初領失業金數據。"
+      ]
+    }
+  ],
+  "focus": "預期今日台股開盤偏震盪略偏多：那斯達克與科技股逆勢收紅、TSM ADR 位於高檔、亞股（日韓）強勢與 PCE 低於預期為支撐；壓力來自美債10年期殖利率飆至5.3%、美元指數16個月高點與油價高檔。建議留意半導體、AI 伺服器供應鏈與台積電，並對金融、塑化、航運保持謹慎，開盤前務必確認台指期夜盤與 TSM 9/30 收盤。",
+  "sources": [
+    "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-30-2026",
+    "https://investrade.com/market-review-september-30-2026/",
+    "https://en.sedaily.com/international/2026/10/01/treasury-yields-hit-21st-century-highs-as-us-economy-holds",
+    "https://investing.com/news/economy-news/fed-seen-on-pause-in-october-after-inflation-data-4925578",
+    "https://www.investing.com/equities/taiwan-semicond.manufacturing-co",
+    "https://tradingeconomics.com/commodity/crude-oil",
+    "https://tradingeconomics.com/commodity/gold",
+    "https://invest.cnyes.com/forex/detail/USDTWD",
+    "https://armenpress.am/en/article/1261689",
+    "https://www.riotimesonline.com/asia-intelligence-brief-wednesday-september-30-2026/"
+  ]
+}
